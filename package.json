@@ -1,0 +1,13 @@
+{
+  "name": "@halodao/halodao-contract-addresses",
+  "version": "0.0.1",
+  "description": "List of HaloDAO contract addresses across all chains",
+  "repository": "https://github.com/HaloDAO/halodao-contract-addresses",
+  "author": "HaloDAO Dev",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ]
+}
