@@ -8,7 +8,7 @@ type AddressCollection = {
     rewardsManager?: string
     epochManager?: string
   }
-  ammV1: {
+  ammV1?: {
     factory: string
     router: string
     zap: string

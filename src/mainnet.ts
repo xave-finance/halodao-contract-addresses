@@ -14,9 +14,15 @@ const addresses: AddressCollection = {
     zap: '0xE950eC7Fc508dd86fD9B36671f6B1602007D5B72',
     curves: {
       enabled: [
-        '0xa34317db73e77d453b1b8d04550c44d10e981c8e' // TCAD:USDC
+        '0xa34317db73e77d453b1b8d04550c44d10e981c8e', // TCAD:USDC
+        '0x64DCbDeb83e39f152B7Faf83E5E5673faCA0D42A', // XSGD:USDC
+        '0x2ED09E2961D72659E4002ba8C2BaDfedC7db19B7' // TGBP:USDC
       ],
-      disabled: []
+      disabled: [
+        '0x11816335DEe6763e2A7B6080b2b2980Eac7F85E4', // TAUD:USDC
+        '0x20E1d8Daf58358CF11BE5616946e1dF55F1eF8B0', // fxPHP:USDC
+        '0xc3CfdA7061b729265F58BdC07564f1cbD6C41FBc' // tagPHP:USDC
+      ]
     }
   },
   ammV2: {
