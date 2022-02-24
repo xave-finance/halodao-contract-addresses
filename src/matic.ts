@@ -1,3 +1,5 @@
+import { AddressCollection } from './types'
+
 const addresses: AddressCollection = {
   protocol: {
     RNBW: '0x18e7bDB379928A651f093ef1bC328889b33A560c',

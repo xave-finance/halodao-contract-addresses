@@ -1,4 +1,4 @@
-type AddressCollection = {
+export type AddressCollection = {
   protocol: {
     RNBW: string
     xRNBW: string
