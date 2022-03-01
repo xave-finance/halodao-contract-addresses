@@ -16,7 +16,7 @@ const addresses: AddressCollection = {
     zap: '0xE950eC7Fc508dd86fD9B36671f6B1602007D5B72',
     curves: {
       enabled: [
-        '0xa34317db73e77d453b1b8d04550c44d10e981c8e', // TCAD:USDC
+        '0xE15E50fF9d52beC41D53d3173F2ed40834D455f4', // TCAD:USDC
         '0x64DCbDeb83e39f152B7Faf83E5E5673faCA0D42A', // XSGD:USDC
         '0x2ED09E2961D72659E4002ba8C2BaDfedC7db19B7' // TGBP:USDC
       ],
