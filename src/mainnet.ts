@@ -14,6 +14,13 @@ const addresses: AddressCollection = {
     factory: '0xFA505d02269bF4Ea59355a4e37fBd882122717e5',
     router: '0x585B52fE4712a74404abA83dEB09A0E087D80802',
     zap: '0xE950eC7Fc508dd86fD9B36671f6B1602007D5B72',
+    libraries: {
+      curves: '0x99b8A93af34efAcb9A71Dd7eBC656365a2d65239',
+      orchestrator: '0xeB1879EDc723a1DbA37fd480878CaB5706F0B299',
+      proportionalLiquidity: '0xa1c6506Ff7A9C9d510daDaed6798529af2d2251B',
+      swaps: '0x85476aB9523168d8143A20Bb873e33Ee7E522FbF',
+      viewLiquidity: '0x9f9d0Bb490f7FA5894FFbd07dc46F858BD5B968b'
+    },
     curves: {
       enabled: [
         '0xE15E50fF9d52beC41D53d3173F2ed40834D455f4', // TCAD:USDC
