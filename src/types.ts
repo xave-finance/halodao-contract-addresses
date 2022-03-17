@@ -12,6 +12,13 @@ export type AddressCollection = {
     factory: string
     router: string
     zap: string
+    libraries?: {
+      curves?: string,
+      orchestrator?: string,
+      proportionalLiquidity?: string,
+      swaps?: string,
+      viewLiquidity?: string
+    },
     curves: {
       enabled: string[]
       disabled: string[]
