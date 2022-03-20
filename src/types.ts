@@ -2,6 +2,8 @@ export type AddressCollection = {
   protocol: {
     RNBW: string
     xRNBW: string
+    LPOP?: string
+    xLPOP?: string
   }
   rewards: {
     ammRewards: string
