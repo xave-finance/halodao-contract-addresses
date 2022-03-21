@@ -24,6 +24,9 @@ export type AddressCollection = {
     curves: {
       enabled: string[]
       disabled: string[]
+    },
+    assimilators?: {
+      usdToUsdcAssimilator?: string
     }
   }
   ammV2: {
