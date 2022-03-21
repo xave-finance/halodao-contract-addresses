@@ -29,13 +29,13 @@ const addresses: AddressCollection = {
         '0xDf930B5F4F21AE97439d2A211845F499D50A78A0', // XSGD:USDC
         '0xf830ebbab536ca376120565e377fa9cfba9d5a34' // LPHP:USDC
       ],
-      disabled: [
-      ]
+      disabled: []
     }
   },
   ammV2: {
     vault: '0x0000000000000000000000000000000000000000',
     pools: {
+      genesis: [],
       enabled: [],
       disabled: []
     }

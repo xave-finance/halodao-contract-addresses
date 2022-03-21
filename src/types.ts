@@ -21,12 +21,12 @@ export type AddressCollection = {
     router: string
     zap: string
     libraries?: {
-      curves?: string,
-      orchestrator?: string,
-      proportionalLiquidity?: string,
-      swaps?: string,
-      viewLiquidity?: string
-    },
+      curves: string
+      orchestrator: string
+      proportionalLiquidity: string
+      swaps: string
+      viewLiquidity: string
+    }
     curves: {
       enabled: string[]
       disabled: string[]
