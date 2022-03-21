@@ -22,6 +22,7 @@ const addresses: AddressCollection = {
   ammV2: {
     vault: '0x0000000000000000000000000000000000000000',
     pools: {
+      genesis: [],
       enabled: [],
       disabled: []
     }
