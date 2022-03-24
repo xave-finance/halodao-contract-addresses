@@ -1,3 +1,9 @@
+type Pool = {
+  address: string
+  poolId: string
+  assets: string[]
+}
+
 export type AddressCollection = {
   protocol: {
     RNBW: string
@@ -15,12 +21,12 @@ export type AddressCollection = {
     router: string
     zap: string
     libraries?: {
-      curves?: string,
-      orchestrator?: string,
-      proportionalLiquidity?: string,
-      swaps?: string,
-      viewLiquidity?: string
-    },
+      curves: string
+      orchestrator: string
+      proportionalLiquidity: string
+      swaps: string
+      viewLiquidity: string
+    }
     curves: {
       enabled: string[]
       disabled: string[]
@@ -32,11 +38,14 @@ export type AddressCollection = {
   ammV2: {
     vault: string
     pools: {
-      enabled: string[]
-      disabled: string[]
+      genesis: Pool[]
+      enabled: Pool[]
+      disabled: Pool[]
     }
   }
   tokens: {
+    wETH?: string
+    wBTC?: string
     USDC?: string
     EURS?: string
     XSGD?: string
