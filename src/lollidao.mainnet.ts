@@ -27,7 +27,8 @@ const addresses: AddressCollection = {
       enabled: [
         '0x2C0b301F942dE7a43f5BAc4A5DdcCCC67E52DcBd', // EURS:USDC
         '0xDf930B5F4F21AE97439d2A211845F499D50A78A0', // XSGD:USDC
-        '0xf830ebbab536ca376120565e377fa9cfba9d5a34' // LPHP:USDC
+        '0xf830ebbab536ca376120565e377fa9cfba9d5a34', // LPHP:USDC
+        '0x39d67d8158C19c0e240D6a3FD2F88908AbfAAbb6' // UST:USDC
       ],
       disabled: [
       ]
