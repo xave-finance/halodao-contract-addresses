@@ -25,7 +25,8 @@ const addresses: AddressCollection = {
       enabled: [
         '0xE15E50fF9d52beC41D53d3173F2ed40834D455f4', // TCAD:USDC
         '0x64DCbDeb83e39f152B7Faf83E5E5673faCA0D42A', // XSGD:USDC
-        '0x2ED09E2961D72659E4002ba8C2BaDfedC7db19B7' // TGBP:USDC
+        '0x2ED09E2961D72659E4002ba8C2BaDfedC7db19B7', // TGBP:USDC
+        '0x868084406449bda10a5bd556fb33cef5086b0797' // UST:USDC
       ],
       disabled: [
         '0x11816335DEe6763e2A7B6080b2b2980Eac7F85E4', // TAUD:USDC
