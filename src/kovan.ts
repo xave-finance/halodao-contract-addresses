@@ -106,7 +106,7 @@ const addresses: AddressCollection = {
       uiIncentiveDataProvider: '0x9f6C49dE070293C7165F65394480Ce5486057645',
       uiHaloPoolDataProvider: '0x6Af1ffC2F20e54CDED0549CEde1ba6269A615717',
     },
-    haloPriceOracles: {
+    priceOracles: {
       fxPHP: '0xa627c5e513b0B364e45AFfdb8647E1C65A416eB8',
     }
   }
