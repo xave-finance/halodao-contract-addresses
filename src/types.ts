@@ -64,6 +64,7 @@ export type AddressCollection = {
     TGBP?: string
     fxPHP?: string
     fxAUD?: string
+    UST?: string
   }
   lendingMarket?: {
     protocol: {

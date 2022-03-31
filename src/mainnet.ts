@@ -1,5 +1,12 @@
 import { AddressCollection } from './types'
 
+const tokens = {
+  USDC: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+  fxPHP: '0x3d147cD9aC957B2a5F968dE9d1c6B9d0872286a0',
+  XSGD: '0x70e8dE73cE538DA2bEEd35d14187F6959a8ecA96',
+  UST: '0xa693b19d2931d498c5b318df961919bb4aee87a5'
+}
+
 const addresses: AddressCollection = {
   protocol: {
     RNBW: '0xe94b97b6b43639e238c851a7e693f50033efd75c',
@@ -43,7 +50,12 @@ const addresses: AddressCollection = {
       disabled: []
     }
   },
-  tokens: {},
+  tokens: {
+    fxPHP: tokens.fxPHP,
+    XSGD: tokens.XSGD,
+    USDC: tokens.USDC,
+    UST: tokens.UST,
+  },
   lendingMarket: {
     protocol: {
       lendingPoolAddressesProvider: '0xD8708572AfaDccE523a8B8883a9b882a79cbC6f2',
