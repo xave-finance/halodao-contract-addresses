@@ -43,7 +43,49 @@ const addresses: AddressCollection = {
       disabled: []
     }
   },
-  tokens: {}
+  tokens: {},
+  lendingMarket: {
+    protocol: {
+      lendingPoolAddressesProvider: '0xD8708572AfaDccE523a8B8883a9b882a79cbC6f2',
+      lendingPoolAddressesProviderRegistry: '0xC0453222F519e6D561652367662C2D305C23Be3e',
+      reserveLogic: '0xD563445537F5E83B7A2a62712c6cE1D7bA39c7b4',
+      genericLogic: '0x45318D29987B70Da17C19Ac0f22c1228F42a297e',
+      validationLogic: '0x89E4b3D7Cb527a661af70f26E6F874847552de81',
+      lendingPoolImpl: '',
+      lendingPool: '0x703C054D0D709bC6F4266844CEDD86384147DC27',
+      lendingPoolConfiguratorImpl: '0xc8C8E23dfddb3082D50E18342D26a06a8150EB8C',
+      lendingPoolConfigurator: '0xc8C8E23dfddb3082D50E18342D26a06a8150EB8C',
+      stableAndVariableTokensHelper: '0xA0E91e69b43021b3c6748cfe16296FF4b933bD00',
+      aTokensAndRatesHelper: '0x2441b8071ecDf696B5CE272AADe08d9833DABE8A',
+      priceOracle: '',
+      aaveOracle: '0x50FDeD029612F6417e9c9Cb9a42848EEc772b9cC',
+      lendingRateOracle: '0xB626E339a0EF63a15585FAAb4483a1732aaD0A94',
+      aaveProtocolDataProvider: '0xa6D87C3705D17CaeC319dc8EFecdAe5a3bA518c4',
+      stableDebtToken: '0xD54F92F8aAD6c872afe4Af381c4593522C58a7A4',
+      variableDebtToken: '0xc6087e89146879b83Eaa1B810624D4C5A1F87A2E',
+      aToken: '0x07F540613ea0B7e723ffB5978515A342a134be07',
+      aTokenImpl: '',
+      defaultReserveInterestRateStrategy: '0xb8aC63190C2B5D1397a24D48e2F419F93aa39f06',
+      rateStrategyAave: '',
+      rateStrategyStableOne: '',
+      rateStrategyStableTwo: '',
+      rateStrategyStableThree: '',
+      rateStrategyVolatileTwo: '',
+      rateStrategyWeth: '',
+      wethGateway: '0xa0576E91069098271951559369a31D89A123C796',
+      lendingPoolCollateralManagerImpl: '',
+      lendingPoolCollateralManager: '',
+      walletBalanceProvider: '',
+      rnbwIncentivesController: '0x79C2c904D042fE2F4FDDf6DCafFE3631fB7c6b9f',
+      treasury: '0xcFd794e2fEA74446B598964826f324FF9Fd5e2d9',
+      uiIncentiveDataProvider: '0xB435F07C348Ae7B8122d1e50De8AF7009C9286FB',
+      uiHaloPoolDataProvider: '0x6c00EC488A2D2EB06b2Ed28e1F9f12C38fBCF426',
+      mockAggregator: '',
+      wethMocked: '',
+      mockFlashLoanReceiver: '',
+    },
+    reserves: {}
+  }
 }
 
 export default addresses
