@@ -92,6 +92,7 @@ export type AddressCollection = {
       fxPHP?: string,
       XSGD?: string,
       UST?: string,
+      HLP_PHP_USD?: string,
     }
   }
 }

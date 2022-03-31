@@ -104,6 +104,7 @@ const addresses: AddressCollection = {
     },
     priceOracles: {
       fxPHP: '0xa627c5e513b0B364e45AFfdb8647E1C65A416eB8',
+      HLP_PHP_USD: '0x8B48390E9566F056EbC028BA4803E1E3a3021410',
     }
   }
 }
