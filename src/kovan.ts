@@ -130,7 +130,7 @@ const addresses: AddressCollection = {
         interestRateStrategyAddress: '0xbE62e58181ff3a1fc02A290597e6C0AA0Fb08D92',
       },
       XSGD: {
-        underlyingAsset: '',
+        underlyingAsset: tokens.XSGD,
         aTokenImpl: '',
         stableDebtTokenImpl: '',
         variableDebtTokenImpl: '',
