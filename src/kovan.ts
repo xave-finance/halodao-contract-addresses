@@ -73,7 +73,11 @@ const addresses: AddressCollection = {
       disabled: []
     }
   },
-  tokens,
+  tokens: {
+    fxPHP: tokens.fxPHP,
+    XSGD: tokens.XSGD,
+    USDC: tokens.USDC,
+  },
   lendingMarket: {
     protocol: {
       lendingPoolAddressesProvider: '0x737a452ec095D0fd6740E0190670847841cE7F93',
@@ -94,12 +98,7 @@ const addresses: AddressCollection = {
       variableDebtToken: '0x60b08B0b202c07B252dA9c56896f8d532F976de5',
       aToken: '0xd8E6eFcCC3bFDE7FCD8Ec600A9c5C0C1036259F3',
       defaultReserveInterestRateStrategy: '0xdE96293F0f911c23eC7f62E2950CE569cfd8EA15',
-      rateStrategyStableTwo: '0x98cbB9790bAa17109Fd8dC78eAaeacD9C1351899',
-      rateStrategyStableThree: '0x58ccd81C7dCa242eA618e3c2BB951700b09e28e0',
-      rateStrategyVolatileTwo: '0x8503Bc457e5a369a7c516C62919F38035cdce57d',
-      rateStrategyWeth: '0xdE96293F0f911c23eC7f62E2950CE569cfd8EA15',
       wethGateway: '0x6C07F2741D7C143E4e96eB4EA7aDcc1571bE8bEf',
-      lendingPoolCollateralManagerImpl: '0xd90a9877401914091287CF6CEEe5E2876cD78Df7',
       lendingPoolCollateralManager: '0xd90a9877401914091287CF6CEEe5E2876cD78Df7',
       walletBalanceProvider: '0xB5bf2f1386f549524b7Fa8E136c3cb52ceCb8a3F',
       rnbwIncentivesController: '0xAe8F4476073ea67c964F92E90cdEfd7C662181Dd',
@@ -107,31 +106,8 @@ const addresses: AddressCollection = {
       uiIncentiveDataProvider: '0x9f6C49dE070293C7165F65394480Ce5486057645',
       uiHaloPoolDataProvider: '0x6Af1ffC2F20e54CDED0549CEde1ba6269A615717',
     },
-    reserves: {
-      fxPHP: {
-        underlyingAsset: tokens.fxPHP,
-        haloPriceOracle: '0xa627c5e513b0B364e45AFfdb8647E1C65A416eB8',
-        aTokenImpl: '0x3851d9c61A8aB6c7995197688d7e37A5c3c55361',
-        stableDebtTokenImpl: '0x75FD789433Dc07f083A6DeecAd1a4dEDcD9325f2',
-        variableDebtTokenImpl: '0x106fd23aE72Eb9a02Ea2056f2b10F0d32394b003',
-        interestRateStrategyAddress: '0xf759C0D65a5baF29355c8D9Ae19c37B924fb31e3',
-      },
-      HLP_EURS_USDC: {
-        underlyingAsset: '0xEb06cF1cD90d75eC6d10bbdc43B555483674F6ff',
-        haloPriceOracle: '0x8B48390E9566F056EbC028BA4803E1E3a3021410',
-        aTokenImpl: '0xD8707A3f05e11492b52035D80e2F2550CB0DDA2f',
-        stableDebtTokenImpl: '0x14728E0997BE392Af7E35ff99191dc259d11D901',
-        variableDebtTokenImpl: '0xA28ee68F5EFf86130FCCe7171a66cfc7df2F9766',
-        interestRateStrategyAddress: '0xbE62e58181ff3a1fc02A290597e6C0AA0Fb08D92',
-      },
-      XSGD: {
-        underlyingAsset: tokens.XSGD,
-        haloPriceOracle: '',
-        aTokenImpl: '',
-        stableDebtTokenImpl: '',
-        variableDebtTokenImpl: '',
-        interestRateStrategyAddress: '',
-      },
+    haloPriceOracles: {
+      fxPHP: '0xa627c5e513b0B364e45AFfdb8647E1C65A416eB8',
     }
   }
 }

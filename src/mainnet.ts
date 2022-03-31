@@ -63,7 +63,6 @@ const addresses: AddressCollection = {
       reserveLogic: '0xD563445537F5E83B7A2a62712c6cE1D7bA39c7b4',
       genericLogic: '0x45318D29987B70Da17C19Ac0f22c1228F42a297e',
       validationLogic: '0x89E4b3D7Cb527a661af70f26E6F874847552de81',
-      lendingPoolImpl: '',
       lendingPool: '0x703C054D0D709bC6F4266844CEDD86384147DC27',
       lendingPoolConfiguratorImpl: '0xc8C8E23dfddb3082D50E18342D26a06a8150EB8C',
       lendingPoolConfigurator: '0xc8C8E23dfddb3082D50E18342D26a06a8150EB8C',
@@ -76,14 +75,7 @@ const addresses: AddressCollection = {
       variableDebtToken: '0xc6087e89146879b83Eaa1B810624D4C5A1F87A2E',
       aToken: '0x07F540613ea0B7e723ffB5978515A342a134be07',
       defaultReserveInterestRateStrategy: '0xb8aC63190C2B5D1397a24D48e2F419F93aa39f06',
-      rateStrategyAave: '',
-      rateStrategyStableOne: '',
-      rateStrategyStableTwo: '',
-      rateStrategyStableThree: '',
-      rateStrategyVolatileTwo: '',
-      rateStrategyWeth: '',
       wethGateway: '0xa0576E91069098271951559369a31D89A123C796',
-      lendingPoolCollateralManagerImpl: '',
       lendingPoolCollateralManager: '0x9355fDFbA6acd5178F6fcBa48a4d3218F705b673',
       walletBalanceProvider: '0x11FBF40b9BD5441da7078B761B33Dae3c46f5Cc5',
       rnbwIncentivesController: '0x79C2c904D042fE2F4FDDf6DCafFE3631fB7c6b9f',
@@ -91,7 +83,7 @@ const addresses: AddressCollection = {
       uiIncentiveDataProvider: '0xB435F07C348Ae7B8122d1e50De8AF7009C9286FB',
       uiHaloPoolDataProvider: '0x6c00EC488A2D2EB06b2Ed28e1F9f12C38fBCF426',
     },
-    reserves: {}
+    haloPriceOracles: {}
   }
 }
 

@@ -4,15 +4,6 @@ type Pool = {
   assets: string[]
 }
 
-type ReserveData = {
-  underlyingAsset: string
-  haloPriceOracle: string
-  aTokenImpl: string
-  stableDebtTokenImpl: string
-  variableDebtTokenImpl: string
-  interestRateStrategyAddress: string
-}
-
 export type AddressCollection = {
   protocol: {
     RNBW: string
@@ -73,29 +64,20 @@ export type AddressCollection = {
       reserveLogic: string
       genericLogic: string
       validationLogic: string
-      lendingPoolImpl: string
+      lendingPoolImpl?: string
       lendingPool: string
       lendingPoolConfiguratorImpl: string
       lendingPoolConfigurator: string
       stableAndVariableTokensHelper: string
       aTokensAndRatesHelper: string
-      priceOracle?: string
       aaveOracle: string
       lendingRateOracle: string
       aaveProtocolDataProvider: string
       stableDebtToken: string
       variableDebtToken: string
       aToken: string
-      aTokenImpl?: string
       defaultReserveInterestRateStrategy: string
-      rateStrategyAave?: string
-      rateStrategyStableOne?: string
-      rateStrategyStableTwo: string
-      rateStrategyStableThree: string
-      rateStrategyVolatileTwo: string
-      rateStrategyWeth: string
       wethGateway: string
-      lendingPoolCollateralManagerImpl: string
       lendingPoolCollateralManager: string
       walletBalanceProvider: string
       rnbwIncentivesController: string
@@ -106,10 +88,10 @@ export type AddressCollection = {
       wethMocked?: string
       mockFlashLoanReceiver?: string
     },
-    reserves: {
-      fxPHP?: ReserveData,
-      HLP_EURS_USDC?: ReserveData,
-      XSGD?: ReserveData,
+    priceOracles: {
+      fxPHP?: string,
+      XSGD?: string,
+      UST?: string,
     }
   }
 }
