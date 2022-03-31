@@ -6,6 +6,7 @@ type Pool = {
 
 type ReserveData = {
   underlyingAsset: string
+  haloPriceOracle: string
   aTokenImpl: string
   stableDebtTokenImpl: string
   variableDebtTokenImpl: string
@@ -77,17 +78,17 @@ export type AddressCollection = {
       lendingPoolConfigurator: string
       stableAndVariableTokensHelper: string
       aTokensAndRatesHelper: string
-      priceOracle: string
+      priceOracle?: string
       aaveOracle: string
       lendingRateOracle: string
       aaveProtocolDataProvider: string
       stableDebtToken: string
       variableDebtToken: string
       aToken: string
-      aTokenImpl: string
+      aTokenImpl?: string
       defaultReserveInterestRateStrategy: string
-      rateStrategyAave: string
-      rateStrategyStableOne: string
+      rateStrategyAave?: string
+      rateStrategyStableOne?: string
       rateStrategyStableTwo: string
       rateStrategyStableThree: string
       rateStrategyVolatileTwo: string
@@ -106,7 +107,7 @@ export type AddressCollection = {
     },
     reserves: {
       fxPHP?: ReserveData,
-      HLP_FXPHP_USDC?: ReserveData,
+      HLP_EURS_USDC?: ReserveData,
       XSGD?: ReserveData,
     }
   }
