@@ -73,11 +73,7 @@ const addresses: AddressCollection = {
       disabled: []
     }
   },
-  tokens: {
-    fxPHP: tokens.fxPHP,
-    XSGD: tokens.XSGD,
-    USDC: tokens.USDC,
-  },
+  tokens,
   lendingMarket: {
     protocol: {
       lendingPoolAddressesProvider: '0x737a452ec095D0fd6740E0190670847841cE7F93',

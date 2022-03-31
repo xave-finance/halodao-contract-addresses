@@ -50,12 +50,7 @@ const addresses: AddressCollection = {
       disabled: []
     }
   },
-  tokens: {
-    fxPHP: tokens.fxPHP,
-    XSGD: tokens.XSGD,
-    USDC: tokens.USDC,
-    UST: tokens.UST,
-  },
+  tokens,
   lendingMarket: {
     protocol: {
       lendingPoolAddressesProvider: '0xD8708572AfaDccE523a8B8883a9b882a79cbC6f2',
@@ -83,7 +78,7 @@ const addresses: AddressCollection = {
       uiIncentiveDataProvider: '0xB435F07C348Ae7B8122d1e50De8AF7009C9286FB',
       uiHaloPoolDataProvider: '0x6c00EC488A2D2EB06b2Ed28e1F9f12C38fBCF426',
     },
-    haloPriceOracles: {}
+    priceOracles: {}
   }
 }
 
