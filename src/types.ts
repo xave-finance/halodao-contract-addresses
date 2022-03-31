@@ -4,6 +4,14 @@ type Pool = {
   assets: string[]
 }
 
+type ReserveData = {
+  underlyingAsset: string
+  aTokenImpl: string
+  stableDebtTokenImpl: string
+  variableDebtTokenImpl: string
+  interestRateStrategyAddress: string
+}
+
 export type AddressCollection = {
   protocol: {
     RNBW: string
@@ -97,27 +105,9 @@ export type AddressCollection = {
       mockFlashLoanReceiver?: string
     },
     reserves: {
-      fxPHP?: {
-        underlyingAsset: string
-        aTokenImpl: string
-        stableDebtTokenImpl: string
-        variableDebtTokenImpl: string
-        interestRateStrategyAddress: string
-      },
-      HLP_FXPHP_USDC?: {
-        underlyingAsset: string,
-        aTokenImpl: string,
-        stableDebtTokenImpl: string,
-        variableDebtTokenImpl: string,
-        interestRateStrategyAddress: string,
-      },
-      XSGD?: {
-        underlyingAsset: string
-        aTokenImpl: string
-        stableDebtTokenImpl: string
-        variableDebtTokenImpl: string
-        interestRateStrategyAddress: string
-      },
+      fxPHP?: ReserveData,
+      HLP_FXPHP_USDC?: ReserveData,
+      XSGD?: ReserveData,
     }
   }
 }
