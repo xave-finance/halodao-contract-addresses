@@ -116,7 +116,7 @@ const addresses: AddressCollection = {
     },
     reserves: {
       fxPHP: {
-        underlyingAsset: '0xFE459D84Ec94cF8a5095ebeD34B54B118DabD209',
+        underlyingAsset: tokens.fxPHP,
         aTokenImpl: '0x3851d9c61A8aB6c7995197688d7e37A5c3c55361',
         stableDebtTokenImpl: '0x75FD789433Dc07f083A6DeecAd1a4dEDcD9325f2',
         variableDebtTokenImpl: '0x106fd23aE72Eb9a02Ea2056f2b10F0d32394b003',
@@ -130,7 +130,7 @@ const addresses: AddressCollection = {
         interestRateStrategyAddress: '0xbE62e58181ff3a1fc02A290597e6C0AA0Fb08D92',
       },
       XSGD: {
-        underlyingAsset: '',
+        underlyingAsset: tokens.XSGD,
         aTokenImpl: '',
         stableDebtTokenImpl: '',
         variableDebtTokenImpl: '',
