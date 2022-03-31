@@ -55,5 +55,44 @@ export type AddressCollection = {
     TGBP?: string
     fxPHP?: string
     fxAUD?: string
+    UST?: string
+  }
+  lendingMarket?: {
+    protocol: {
+      lendingPoolAddressesProvider: string
+      lendingPoolAddressesProviderRegistry: string
+      reserveLogic: string
+      genericLogic: string
+      validationLogic: string
+      lendingPoolImpl?: string
+      lendingPool: string
+      lendingPoolConfiguratorImpl: string
+      lendingPoolConfigurator: string
+      stableAndVariableTokensHelper: string
+      aTokensAndRatesHelper: string
+      aaveOracle: string
+      lendingRateOracle: string
+      aaveProtocolDataProvider: string
+      stableDebtToken: string
+      variableDebtToken: string
+      aToken: string
+      defaultReserveInterestRateStrategy: string
+      wethGateway: string
+      lendingPoolCollateralManager: string
+      walletBalanceProvider: string
+      rnbwIncentivesController: string
+      treasury: string
+      uiIncentiveDataProvider: string
+      uiHaloPoolDataProvider: string
+      mockAggregator?: string
+      wethMocked?: string
+      mockFlashLoanReceiver?: string
+    },
+    priceOracles: {
+      fxPHP?: string,
+      XSGD?: string,
+      UST?: string,
+      HLP_PHP_USD?: string,
+    }
   }
 }
