@@ -92,7 +92,11 @@ const addresses: AddressCollection = {
       HLP_XSGD_USDC: curves.HLP_XSGD_USDC,
       HLP_UST_USDC: curves.HLP_UST_USDC
     },
-    priceOracles: {}
+    priceOracles: {
+      XSGD: '0xE1bA4190e8a907154A4b7EFe4c5bbF0f584847a7',
+      HLP_XSGD_USDC: '0xE911bA4d01b64830160284E42BfC9b9933fA19BA',
+      HLP_UST_USDC: '0x6859a10034b260b80dfb4755D9AF4811045bb10f'
+    }
   }
 }
 
