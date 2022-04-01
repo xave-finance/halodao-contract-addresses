@@ -56,6 +56,7 @@ export type AddressCollection = {
     fxPHP?: string
     fxAUD?: string
     UST?: string
+    CHF?: string
   }
   lendingMarket?: {
     protocol: {
@@ -97,6 +98,7 @@ export type AddressCollection = {
       fxPHP?: string
       XSGD?: string
       UST?: string
+      CHF?: string
       HLP_PHP_USD?: string
       HLP_XSGD_USDC?: string
       HLP_UST_USDC?: string
