@@ -88,11 +88,19 @@ export type AddressCollection = {
       wethMocked?: string
       mockFlashLoanReceiver?: string
     },
+    lpAssets: {
+      HLP_XSGD_USDC?: string
+      HLP_UST_USDC?: string
+      HLP_CHF_USDC?: string
+    }
     priceOracles: {
-      fxPHP?: string,
-      XSGD?: string,
-      UST?: string,
-      HLP_PHP_USD?: string,
+      fxPHP?: string
+      XSGD?: string
+      UST?: string
+      HLP_PHP_USD?: string
+      HLP_XSGD_USDC?: string
+      HLP_UST_USDC?: string
+      HLP_CHF_USDC?: string
     }
   }
 }

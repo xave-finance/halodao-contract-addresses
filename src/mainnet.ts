@@ -76,7 +76,11 @@ const addresses: AddressCollection = {
       rnbwIncentivesController: '0x79C2c904D042fE2F4FDDf6DCafFE3631fB7c6b9f',
       treasury: '0xcFd794e2fEA74446B598964826f324FF9Fd5e2d9',
       uiIncentiveDataProvider: '0xB435F07C348Ae7B8122d1e50De8AF7009C9286FB',
-      uiHaloPoolDataProvider: '0x6c00EC488A2D2EB06b2Ed28e1F9f12C38fBCF426',
+      uiHaloPoolDataProvider: '0x6c00EC488A2D2EB06b2Ed28e1F9f12C38fBCF426'
+    },
+    lpAssets: {
+      HLP_XSGD_USDC: '0x64DCbDeb83e39f152B7Faf83E5E5673faCA0D42A',
+      HLP_UST_USDC: '0x868084406449bda10a5bd556fb33cef5086b0797'
     },
     priceOracles: {}
   }
