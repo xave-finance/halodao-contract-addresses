@@ -7,6 +7,16 @@ const tokens = {
   UST: '0xa693b19d2931d498c5b318df961919bb4aee87a5'
 }
 
+const curves = {
+  HLP_TCAD_USDC: '0xE15E50fF9d52beC41D53d3173F2ed40834D455f4',
+  HLP_XSGD_USDC: '0x64DCbDeb83e39f152B7Faf83E5E5673faCA0D42A',
+  HLP_TGBP_USDC: '0x2ED09E2961D72659E4002ba8C2BaDfedC7db19B7',
+  HLP_UST_USDC: '0x868084406449bda10a5bd556fb33cef5086b0797',
+  HLP_TAUD_USDC: '0x11816335DEe6763e2A7B6080b2b2980Eac7F85E4',
+  HLP_fxPHP_USDC: '0x20E1d8Daf58358CF11BE5616946e1dF55F1eF8B0',
+  HLP_tagPHP_USDC: '0xc3CfdA7061b729265F58BdC07564f1cbD6C41FBc'
+}
+
 const addresses: AddressCollection = {
   protocol: {
     RNBW: '0xe94b97b6b43639e238c851a7e693f50033efd75c',
@@ -30,15 +40,15 @@ const addresses: AddressCollection = {
     },
     curves: {
       enabled: [
-        '0xE15E50fF9d52beC41D53d3173F2ed40834D455f4', // TCAD:USDC
-        '0x64DCbDeb83e39f152B7Faf83E5E5673faCA0D42A', // XSGD:USDC
-        '0x2ED09E2961D72659E4002ba8C2BaDfedC7db19B7', // TGBP:USDC
-        '0x868084406449bda10a5bd556fb33cef5086b0797' // UST:USDC
+        curves.HLP_TCAD_USDC, // TCAD:USDC
+        curves.HLP_XSGD_USDC, // XSGD:USDC
+        curves.HLP_TGBP_USDC, // TGBP:USDC
+        curves.HLP_UST_USDC // UST:USDC
       ],
       disabled: [
-        '0x11816335DEe6763e2A7B6080b2b2980Eac7F85E4', // TAUD:USDC
-        '0x20E1d8Daf58358CF11BE5616946e1dF55F1eF8B0', // fxPHP:USDC
-        '0xc3CfdA7061b729265F58BdC07564f1cbD6C41FBc' // tagPHP:USDC
+        curves.HLP_TAUD_USDC, // TAUD:USDC
+        curves.HLP_fxPHP_USDC, // fxPHP:USDC
+        curves.HLP_tagPHP_USDC // tagPHP:USDC
       ]
     }
   },
@@ -79,8 +89,8 @@ const addresses: AddressCollection = {
       uiHaloPoolDataProvider: '0x6c00EC488A2D2EB06b2Ed28e1F9f12C38fBCF426'
     },
     lpAssets: {
-      HLP_XSGD_USDC: '0x64DCbDeb83e39f152B7Faf83E5E5673faCA0D42A',
-      HLP_UST_USDC: '0x868084406449bda10a5bd556fb33cef5086b0797'
+      HLP_XSGD_USDC: curves.HLP_XSGD_USDC,
+      HLP_UST_USDC: curves.HLP_UST_USDC
     },
     priceOracles: {}
   }

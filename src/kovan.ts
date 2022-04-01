@@ -10,6 +10,14 @@ const tokens = {
   CHF: '0xE9958574866587c391735b7e7CE0D79432d3b9d0'
 }
 
+const curves = {
+    HLP_CHF_USDC: '0x02e673e79cE5122a3B83Afa9964637C259cb090F',
+    HLP_EURS_USDC: '0xEb06cF1cD90d75eC6d10bbdc43B555483674F6ff',
+    HLP_GBP_USDC: '0x7169866E13F58E045D77D5bE3d79ad8cCADC0fbF',
+    HLP_WETH_USDC: '0x184B1a8985316Ca061cC1e043Ec1C666f4A73A18',
+    HLP_XIDR_USDC: '0xEe1ab46877d1DeFE18bAfC749F32919dF6928a16'
+}
+
 const addresses: AddressCollection = {
   protocol: {
     RNBW: '0x16D185d025bF592114D1A68f83085F36159f6CdA',
@@ -25,11 +33,11 @@ const addresses: AddressCollection = {
     zap: '0xf3429A0cC9Ed42929ac7Bae8D1B2ED42F0325C11',
     curves: {
       enabled: [
-        '0xEb06cF1cD90d75eC6d10bbdc43B555483674F6ff', // EURS:USDC
-        '0x02e673e79cE5122a3B83Afa9964637C259cb090F', // CHF:USDC
-        '0x7169866E13F58E045D77D5bE3d79ad8cCADC0fbF', // GBP:USDC
-        '0x184B1a8985316Ca061cC1e043Ec1C666f4A73A18', // WETH:USDC
-        '0xEe1ab46877d1DeFE18bAfC749F32919dF6928a16' // XIDR:USDC
+        curves.HLP_EURS_USDC, // EURS:USDC
+        curves.HLP_CHF_USDC, // CHF:USDC
+        curves.HLP_GBP_USDC, // GBP:USDC
+        curves.HLP_WETH_USDC, // WETH:USDC
+        curves.HLP_XIDR_USDC // XIDR:USDC
       ],
       disabled: []
     }
@@ -104,7 +112,7 @@ const addresses: AddressCollection = {
       uiHaloPoolDataProvider: '0x6Af1ffC2F20e54CDED0549CEde1ba6269A615717'
     },
     lpAssets: {
-      HLP_CHF_USDC: '0x02e673e79cE5122a3B83Afa9964637C259cb090F'
+      HLP_CHF_USDC: curves.HLP_CHF_USDC
     },
     priceOracles: {
       fxPHP: '0xa627c5e513b0B364e45AFfdb8647E1C65A416eB8',
