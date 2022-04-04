@@ -1,6 +1,6 @@
 {
   "name": "@halodao/halodao-contract-addresses",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "List of HaloDAO contract addresses across all chains",
   "repository": "https://github.com/HaloDAO/halodao-contract-addresses",
   "author": "HaloDAO Dev",
