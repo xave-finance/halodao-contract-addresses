@@ -44,6 +44,7 @@ export type AddressCollection = {
     }
   }
   tokens: {
+    AMPL?: string
     wETH?: string
     wBTC?: string
     USDC?: string
@@ -95,6 +96,7 @@ export type AddressCollection = {
       HLP_CHF_USDC?: string
     }
     priceOracles: {
+      AMPL?: string
       fxPHP?: string
       XSGD?: string
       UST?: string
