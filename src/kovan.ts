@@ -112,7 +112,8 @@ const addresses: AddressCollection = {
       uiHaloPoolDataProvider: '0x6Af1ffC2F20e54CDED0549CEde1ba6269A615717'
     },
     lpAssets: {
-      HLP_CHF_USDC: curves.HLP_CHF_USDC
+      HLP_CHF_USDC: curves.HLP_CHF_USDC,
+      HLP_GBP_USDC: curves.HLP_GBP_USDC,
     },
     priceOracles: {
       fxPHP: '0xa627c5e513b0B364e45AFfdb8647E1C65A416eB8',
