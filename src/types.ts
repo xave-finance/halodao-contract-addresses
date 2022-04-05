@@ -102,6 +102,8 @@ export type AddressCollection = {
       XSGD?: string
       UST?: string
       CHF?: string
+      RNBW?: string
+      xRNBW?: string
       HLP_PHP_USD?: string
       HLP_XSGD_USDC?: string
       HLP_UST_USDC?: string
