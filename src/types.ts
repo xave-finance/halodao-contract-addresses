@@ -30,7 +30,7 @@ export type AddressCollection = {
     curves: {
       enabled: string[]
       disabled: string[]
-    },
+    }
     assimilators?: {
       usdToUsdcAssimilator?: string
     }
@@ -41,6 +41,14 @@ export type AddressCollection = {
       genesis: Pool[]
       enabled: Pool[]
       disabled: Pool[]
+    }
+    proportionalLiquidity: string
+    assimilatorFactory: string
+    oracles: {
+      USDC?: string
+      fxPHP?: string
+      XSGD?: string
+      EURS?: string
     }
   }
   tokens: {
@@ -58,6 +66,8 @@ export type AddressCollection = {
     fxAUD?: string
     UST?: string
     CHF?: string
+    fakeUSDC?: string
+    fakeFxPHP?: string
   }
   lendingMarket?: {
     protocol: {
@@ -89,7 +99,7 @@ export type AddressCollection = {
       mockAggregator?: string
       wethMocked?: string
       mockFlashLoanReceiver?: string
-    },
+    }
     lpAssets: {
       HLP_XSGD_USDC?: string
       HLP_UST_USDC?: string
@@ -112,3 +122,5 @@ export type AddressCollection = {
     }
   }
 }
+
+export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'

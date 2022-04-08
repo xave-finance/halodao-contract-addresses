@@ -7,15 +7,15 @@ const tokens = {
   USDC: '0x7e6F38922B59545bB5A6dc3A71039b85dFB1B7cE',
   WBTC: '0x41dE675d148f6acC84E5e88A9515Db0889519d1D',
   WETH: '0x9b1FeAAd523A4f6BA73215C103208907938EA7F1',
-  XSGD: '0x4DCE1178D2A368397c09fc6C63e2f82F00a2Ca09',
+  XSGD: '0x4DCE1178D2A368397c09fc6C63e2f82F00a2Ca09'
 }
 
 const curves = {
-    HLP_CHF_USDC: '0x02e673e79cE5122a3B83Afa9964637C259cb090F',
-    HLP_EURS_USDC: '0xEb06cF1cD90d75eC6d10bbdc43B555483674F6ff',
-    HLP_GBP_USDC: '0x7169866E13F58E045D77D5bE3d79ad8cCADC0fbF',
-    HLP_WETH_USDC: '0x184B1a8985316Ca061cC1e043Ec1C666f4A73A18',
-    HLP_XIDR_USDC: '0xEe1ab46877d1DeFE18bAfC749F32919dF6928a16'
+  HLP_CHF_USDC: '0x02e673e79cE5122a3B83Afa9964637C259cb090F',
+  HLP_EURS_USDC: '0xEb06cF1cD90d75eC6d10bbdc43B555483674F6ff',
+  HLP_GBP_USDC: '0x7169866E13F58E045D77D5bE3d79ad8cCADC0fbF',
+  HLP_WETH_USDC: '0x184B1a8985316Ca061cC1e043Ec1C666f4A73A18',
+  HLP_XIDR_USDC: '0xEe1ab46877d1DeFE18bAfC749F32919dF6928a16'
 }
 
 const addresses: AddressCollection = {
@@ -62,31 +62,29 @@ const addresses: AddressCollection = {
       enabled: [
         {
           assets: [tokens.fxPHP, tokens.USDC],
-          address: '0xca9eC9CF8cBCF7DB2a2d08e43B176bA8d92e381C',
+          address: '0xe2094130f94CC23BDfe46FF0EF63A13899F4D708',
           poolId:
-            '0xca9ec9cf8cbcf7db2a2d08e43b176ba8d92e381c00010000000000000000071e'
-        },
-        {
-          assets: [tokens.XSGD, tokens.USDC],
-          address: '0x979fc3D80D11D0b58d0E1FFE6a4463cBB813761c',
-          poolId:
-            '0x979fc3d80d11d0b58d0e1ffe6a4463cbb813761c00010000000000000000071f'
-        },
-        {
-          assets: [tokens.EURS, tokens.USDC],
-          address: '0x0A7900dDe4cA3211D3367Cfad739E91b49F46402',
-          poolId:
-            '0x0a7900dde4ca3211d3367cfad739e91b49f46402000100000000000000000720'
+            '0xe2094130f94cc23bdfe46ff0ef63a13899f4d7080002000000000000000007e9'
         }
       ],
       disabled: []
+    },
+    proportionalLiquidity: '0x0dEf4438AdEcedE57A861b0964c84a50C68eEaDe',
+    assimilatorFactory: '0x4c13F1E2397f083bbaCCB4E53325d5389845BE2e',
+    oracles: {
+      USDC: '0x9211c6b3BF41A10F78539810Cf5c64e1BB78Ec60',
+      fxPHP: '0x84fdC8dD500F29902C99c928AF2A91970E7432b6',
+      XSGD: '0x8CE3cAc0E6635ce04783709ca3CC4F5fc5304299',
+      EURS: '0x0c15Ab9A0DB086e062194c273CC79f41597Bbf13'
     }
   },
   tokens,
   lendingMarket: {
     protocol: {
-      lendingPoolAddressesProvider: '0x737a452ec095D0fd6740E0190670847841cE7F93',
-      lendingPoolAddressesProviderRegistry: '0x2Ef9AB2ce7Bd97b1e893583ba91aCA6A883dF0F2',
+      lendingPoolAddressesProvider:
+        '0x737a452ec095D0fd6740E0190670847841cE7F93',
+      lendingPoolAddressesProviderRegistry:
+        '0x2Ef9AB2ce7Bd97b1e893583ba91aCA6A883dF0F2',
       reserveLogic: '0x19EEF75223F5E191D1022a11dAf7f9c29e9473f3',
       genericLogic: '0x5BE30F3731a18F5288C078D28a6454b8bC5C73bc',
       validationLogic: '0xF3771CBeCBC82064f638B0B6eEA2d0e73532Aa37',
@@ -94,7 +92,8 @@ const addresses: AddressCollection = {
       lendingPool: '0xc336fa438c51862395b82bcCA809dB0257bCa968',
       lendingPoolConfiguratorImpl: '0xa70c722ACf41a99e8e97f76CEdBb3E907712028d',
       lendingPoolConfigurator: '0x2a048cA932F0e915fec301Dcc9E87a9ECb6df1C9',
-      stableAndVariableTokensHelper: '0xD103fdC482401F1d687caBA784d02Ee48a170D56',
+      stableAndVariableTokensHelper:
+        '0xD103fdC482401F1d687caBA784d02Ee48a170D56',
       aTokensAndRatesHelper: '0x1a7Ec858A6c1119BdB5a501A31F7F05b40673CD4',
       aaveOracle: '0x2A26137812Ce58488EBc5cB372273Aa43Dc01351',
       lendingRateOracle: '0x49329490953ecAa2418b5b717ebD6E47Ef140dE4',
@@ -102,9 +101,11 @@ const addresses: AddressCollection = {
       stableDebtToken: '0xcCC6936d4401D06f297DabDD120ae297669F0173',
       variableDebtToken: '0x60b08B0b202c07B252dA9c56896f8d532F976de5',
       aToken: '0xd8E6eFcCC3bFDE7FCD8Ec600A9c5C0C1036259F3',
-      defaultReserveInterestRateStrategy: '0xdE96293F0f911c23eC7f62E2950CE569cfd8EA15',
+      defaultReserveInterestRateStrategy:
+        '0xdE96293F0f911c23eC7f62E2950CE569cfd8EA15',
       wethGateway: '0x6C07F2741D7C143E4e96eB4EA7aDcc1571bE8bEf',
-      lendingPoolCollateralManager: '0xd90a9877401914091287CF6CEEe5E2876cD78Df7',
+      lendingPoolCollateralManager:
+        '0xd90a9877401914091287CF6CEEe5E2876cD78Df7',
       walletBalanceProvider: '0xB5bf2f1386f549524b7Fa8E136c3cb52ceCb8a3F',
       rnbwIncentivesController: '0xAe8F4476073ea67c964F92E90cdEfd7C662181Dd',
       treasury: '0x7A949bdcd4A4d0af5b609257Cd9d4FB36cFC759d',
@@ -113,7 +114,7 @@ const addresses: AddressCollection = {
     },
     lpAssets: {
       HLP_CHF_USDC: curves.HLP_CHF_USDC,
-      HLP_GBP_USDC: curves.HLP_GBP_USDC,
+      HLP_GBP_USDC: curves.HLP_GBP_USDC
     },
     priceOracles: {
       fxPHP: '0xa627c5e513b0B364e45AFfdb8647E1C65A416eB8',
@@ -122,7 +123,7 @@ const addresses: AddressCollection = {
       xRNBW: '0xa627c5e513b0B364e45AFfdb8647E1C65A416eB8',
       HLP_PHP_USD: '0x8B48390E9566F056EbC028BA4803E1E3a3021410',
       HLP_CHF_USDC: '0x8B48390E9566F056EbC028BA4803E1E3a3021410',
-      HLP_GBP_USDC: '0x8B48390E9566F056EbC028BA4803E1E3a3021410',
+      HLP_GBP_USDC: '0x8B48390E9566F056EbC028BA4803E1E3a3021410'
     }
   }
 }
