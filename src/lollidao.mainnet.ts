@@ -1,16 +1,16 @@
-import { AddressCollection } from './types'
+import { AddressCollection, ZERO_ADDRESS } from './types'
 
 const addresses: AddressCollection = {
   protocol: {
-    RNBW: '0x0000000000000000000000000000000000000000',
-    xRNBW: '0x0000000000000000000000000000000000000000',
+    RNBW: ZERO_ADDRESS,
+    xRNBW: ZERO_ADDRESS,
     LPOP: '0x6335A2E4a2E304401fcA4Fc0deafF066B813D055',
     xLPOP: '0x75aeD8009f1c3B92b5691a580cc8a5A96b952966'
   },
   rewards: {
     ammRewards: '0x9E04B7a4Bea3C827FEdf5f86E76F889C459D0f98',
     rewardsManager: '0x12B6773A0057B1a35248159555883a524246C746',
-    epochManager: '0x0000000000000000000000000000000000000000'
+    epochManager: ZERO_ADDRESS
   },
   ammV1: {
     factory: '0x796aF82AbaB46D68FFA66c5B56b953A1ABFda101',
@@ -30,20 +30,22 @@ const addresses: AddressCollection = {
         '0xf830ebbab536ca376120565e377fa9cfba9d5a34', // LPHP:USDC
         '0x39d67d8158C19c0e240D6a3FD2F88908AbfAAbb6' // UST:USDC
       ],
-      disabled: [
-      ]
+      disabled: []
     },
     assimilators: {
       usdToUsdcAssimilator: '0xDB70e4cF1eE40Ed01A6eE3E4a200AabBf0facCbC'
-    },
+    }
   },
   ammV2: {
-    vault: '0x0000000000000000000000000000000000000000',
+    vault: ZERO_ADDRESS,
     pools: {
       genesis: [],
       enabled: [],
       disabled: []
-    }
+    },
+    proportionalLiquidity: ZERO_ADDRESS,
+    assimilatorFactory: ZERO_ADDRESS,
+    oracles: {}
   },
   tokens: {}
 }

@@ -1,4 +1,4 @@
-import { AddressCollection } from './types'
+import { AddressCollection, ZERO_ADDRESS } from './types'
 
 const addresses: AddressCollection = {
   protocol: {
@@ -26,7 +26,10 @@ const addresses: AddressCollection = {
       genesis: [],
       enabled: [],
       disabled: []
-    }
+    },
+    proportionalLiquidity: ZERO_ADDRESS,
+    assimilatorFactory: ZERO_ADDRESS,
+    oracles: {}
   },
   tokens: {}
 }

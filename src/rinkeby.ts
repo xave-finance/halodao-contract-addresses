@@ -1,4 +1,4 @@
-import { AddressCollection } from './types'
+import { AddressCollection, ZERO_ADDRESS } from './types'
 
 const tokens = {
   WETH: '0x8Ac6F66307d1bcFBb4a7b7d4EB86b36b644192Ca',
@@ -42,6 +42,12 @@ const addresses: AddressCollection = {
         }
       ],
       disabled: []
+    },
+    proportionalLiquidity: ZERO_ADDRESS,
+    assimilatorFactory: ZERO_ADDRESS,
+    oracles: {
+      USDC: '0xa24de01df22b63d23Ebc1882a5E3d4ec0d907bFB',
+      EURS: '0x78F9e60608bF48a1155b4B2A5e31F32318a1d85F'
     }
   },
   tokens
