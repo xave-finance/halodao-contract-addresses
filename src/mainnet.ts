@@ -77,7 +77,7 @@ const addresses: AddressCollection = {
       validationLogic: '0x89E4b3D7Cb527a661af70f26E6F874847552de81',
       lendingPool: '0x703C054D0D709bC6F4266844CEDD86384147DC27',
       lendingPoolConfiguratorImpl: '0xc8C8E23dfddb3082D50E18342D26a06a8150EB8C',
-      lendingPoolConfigurator: '0xc8C8E23dfddb3082D50E18342D26a06a8150EB8C',
+      lendingPoolConfigurator: '0xCeE5D0fb8fF915D8C089f2B05edF138801E1dB0B',
       stableAndVariableTokensHelper:
         '0xA0E91e69b43021b3c6748cfe16296FF4b933bD00',
       aTokensAndRatesHelper: '0x2441b8071ecDf696B5CE272AADe08d9833DABE8A',
