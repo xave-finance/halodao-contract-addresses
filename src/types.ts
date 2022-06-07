@@ -32,7 +32,8 @@ export type AddressCollection = {
       disabled: string[]
     }
     assimilators?: {
-      usdToUsdcAssimilator?: string
+      usdcToUsdAssimilator?: string
+      xsgdToUsdcAssimilator?: string
     }
   }
   ammV2: {
@@ -66,6 +67,7 @@ export type AddressCollection = {
     fxAUD?: string
     UST?: string
     CHF?: string
+    indexUSDC?: string
     fakeUSDC?: string
     fakeFxPHP?: string
   }
@@ -80,6 +82,7 @@ export type AddressCollection = {
       lendingPool: string
       lendingPoolConfiguratorImpl: string
       lendingPoolConfigurator: string
+      lendingPoolProxy: string
       stableAndVariableTokensHelper: string
       aTokensAndRatesHelper: string
       aaveOracle: string
@@ -119,6 +122,9 @@ export type AddressCollection = {
       HLP_UST_USDC?: string
       HLP_CHF_USDC?: string
       HLP_GBP_USDC?: string
+    }
+    hTokens?: {
+      HLP_XSGD_USDC?: string
     }
   }
 }
