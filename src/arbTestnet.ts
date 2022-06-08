@@ -1,5 +1,10 @@
 import { AddressCollection, ZERO_ADDRESS } from './types'
 
+const tokens = {
+  USDC: '0xB626E339a0EF63a15585FAAb4483a1732aaD0A94',
+  fxPHP: '0xE467402aE64952a520818733248bD6d4586773fA'
+}
+
 const addresses: AddressCollection = {
   protocol: {
     RNBW: '0xfbBf11Ae3E8A4b6D9C866B3f16741D1641ccc4d5',
@@ -28,9 +33,12 @@ const addresses: AddressCollection = {
     },
     proportionalLiquidity: ZERO_ADDRESS,
     assimilatorFactory: ZERO_ADDRESS,
-    oracles: {}
+    oracles: {
+      USDC: '0xe020609A0C31f4F96dCBB8DF9882218952dD95c4',
+      fxPHP: '0xF4764A9536B0ef7195ad3902c4Fc68eEc48f9C67'
+    }
   },
-  tokens: {}
+  tokens
 }
 
 export default addresses
