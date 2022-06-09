@@ -142,6 +142,12 @@ export type AddressCollection = {
     hTokens?: {
       HLP_XSGD_USDC?: string
     }
+    variableDebtTokens?: {
+      USDC?: string
+    }
+    fixedDebtTokens?: {
+      USDC?: string
+    }
   }
 }
 
