@@ -41,17 +41,22 @@ const addresses: AddressCollection = {
       viewLiquidity: '0x9f9d0Bb490f7FA5894FFbd07dc46F858BD5B968b'
     },
     curves: {
+      all: curves,
       enabled: [
-        curves.HLP_TCAD_USDC, // TCAD:USDC
-        curves.HLP_XSGD_USDC, // XSGD:USDC
-        curves.HLP_TGBP_USDC, // TGBP:USDC
-        curves.HLP_UST_USDC // UST:USDC
+        curves.HLP_TCAD_USDC,
+        curves.HLP_XSGD_USDC,
+        curves.HLP_TGBP_USDC,
+        curves.HLP_UST_USDC
       ],
       disabled: [
-        curves.HLP_TAUD_USDC, // TAUD:USDC
-        curves.HLP_fxPHP_USDC, // fxPHP:USDC
-        curves.HLP_tagPHP_USDC // tagPHP:USDC
+        curves.HLP_TAUD_USDC,
+        curves.HLP_fxPHP_USDC,
+        curves.HLP_tagPHP_USDC
       ]
+    },
+    assimilators: {
+      usdcToUsdAssimilator: '0x311FDdE361e6258e9730c6147aAf584aC0F9c59A',
+      xsgdToUsdAssimilator: '0xCaE2502093413290bc0E5c2CfA1039C661103bf1'
     }
   },
   ammV2: {
@@ -78,6 +83,7 @@ const addresses: AddressCollection = {
       lendingPool: '0x703C054D0D709bC6F4266844CEDD86384147DC27',
       lendingPoolConfiguratorImpl: '0xc8C8E23dfddb3082D50E18342D26a06a8150EB8C',
       lendingPoolConfigurator: '0xCeE5D0fb8fF915D8C089f2B05edF138801E1dB0B',
+      lendingPoolProxy: '0xC73b2c6ab14F25e1EAd3DE75b4F6879DEde3968E',
       stableAndVariableTokensHelper:
         '0xA0E91e69b43021b3c6748cfe16296FF4b933bD00',
       aTokensAndRatesHelper: '0x2441b8071ecDf696B5CE272AADe08d9833DABE8A',
@@ -108,6 +114,9 @@ const addresses: AddressCollection = {
       UST: '0xa20623070413d42a5C01Db2c8111640DD7A5A03a',
       HLP_XSGD_USDC: '0xE911bA4d01b64830160284E42BfC9b9933fA19BA',
       HLP_UST_USDC: '0x6859a10034b260b80dfb4755D9AF4811045bb10f'
+    },
+    hTokens: {
+      HLP_XSGD_USDC: '0xA8A04EcBBCc5f1B05773A34cE8495507aD6CcA22'
     }
   }
 }

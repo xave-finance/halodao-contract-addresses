@@ -1,5 +1,12 @@
 import { AddressCollection, ZERO_ADDRESS } from './types'
 
+const curves = {
+  HLP_EURS_USDC: '0x2C0b301F942dE7a43f5BAc4A5DdcCCC67E52DcBd',
+  HLP_XSGD_USDC: '0xDf930B5F4F21AE97439d2A211845F499D50A78A0',
+  HLP_LPHP_USDC: '0xf830ebbab536ca376120565e377fa9cfba9d5a34',
+  HLP_UST_USDC: '0x39d67d8158C19c0e240D6a3FD2F88908AbfAAbb6'
+}
+
 const addresses: AddressCollection = {
   protocol: {
     RNBW: ZERO_ADDRESS,
@@ -24,16 +31,17 @@ const addresses: AddressCollection = {
       viewLiquidity: '0xE8654a57B8d2930c621401758A9a534c1FDec71d'
     },
     curves: {
+      all: curves,
       enabled: [
-        '0x2C0b301F942dE7a43f5BAc4A5DdcCCC67E52DcBd', // EURS:USDC
-        '0xDf930B5F4F21AE97439d2A211845F499D50A78A0', // XSGD:USDC
-        '0xf830ebbab536ca376120565e377fa9cfba9d5a34', // LPHP:USDC
-        '0x39d67d8158C19c0e240D6a3FD2F88908AbfAAbb6' // UST:USDC
+        curves.HLP_EURS_USDC,
+        curves.HLP_XSGD_USDC,
+        curves.HLP_LPHP_USDC,
+        curves.HLP_UST_USDC
       ],
       disabled: []
     },
     assimilators: {
-      usdToUsdcAssimilator: '0xDB70e4cF1eE40Ed01A6eE3E4a200AabBf0facCbC'
+      usdcToUsdAssimilator: '0xDB70e4cF1eE40Ed01A6eE3E4a200AabBf0facCbC'
     }
   },
   ammV2: {

@@ -7,7 +7,8 @@ const tokens = {
   USDC: '0x7e6F38922B59545bB5A6dc3A71039b85dFB1B7cE',
   WBTC: '0x41dE675d148f6acC84E5e88A9515Db0889519d1D',
   WETH: '0x9b1FeAAd523A4f6BA73215C103208907938EA7F1',
-  XSGD: '0x4DCE1178D2A368397c09fc6C63e2f82F00a2Ca09'
+  XSGD: '0x4DCE1178D2A368397c09fc6C63e2f82F00a2Ca09',
+  indexUSDC: '0x29ad0599a113a11bEfb9cd47fC4BA76AA8606680'
 }
 
 const curves = {
@@ -29,18 +30,17 @@ const addresses: AddressCollection = {
     rewardsManager: '0x3B25a58Ca40c93F690388126478cc0F58E42Bd3C'
   },
   ammV1: {
-    factory: '',
-    router: '0xa02dCeB15cc32249beC33C2808b4799a44F8B0D5',
-    zap: '0xf3429A0cC9Ed42929ac7Bae8D1B2ED42F0325C11',
+    factory: '0x61Ed43d57a03e1184735A274aF75748255E41963',
+    router: '0xAfD5DB2333978033F280d535012274Ec4598FB2b',
+    zap: '0x7F1A07fd07261BF1Ad778c88eA732273EC85940b',
     curves: {
-      enabled: [
-        curves.HLP_EURS_USDC, // EURS:USDC
-        curves.HLP_CHF_USDC, // CHF:USDC
-        curves.HLP_GBP_USDC, // GBP:USDC
-        curves.HLP_WETH_USDC, // WETH:USDC
-        curves.HLP_XIDR_USDC // XIDR:USDC
-      ],
+      all: curves,
+      enabled: [curves.HLP_XSGD_USDC],
       disabled: []
+    },
+    assimilators: {
+      usdcToUsdAssimilator: '0x8ce04DF75775afAfe67A4F0860b0aFE67292277d',
+      xsgdToUsdAssimilator: '0x66D0aA383333e53cfA9dE70f78eea7Ca7bfEEc22'
     }
   },
   ammV2: {
@@ -93,6 +93,7 @@ const addresses: AddressCollection = {
       lendingPool: '0xc336fa438c51862395b82bcCA809dB0257bCa968',
       lendingPoolConfiguratorImpl: '0xa70c722ACf41a99e8e97f76CEdBb3E907712028d',
       lendingPoolConfigurator: '0x2a048cA932F0e915fec301Dcc9E87a9ECb6df1C9',
+      lendingPoolProxy: '0xc336fa438c51862395b82bcCA809dB0257bCa968',
       stableAndVariableTokensHelper:
         '0xD103fdC482401F1d687caBA784d02Ee48a170D56',
       aTokensAndRatesHelper: '0x1a7Ec858A6c1119BdB5a501A31F7F05b40673CD4',
@@ -127,6 +128,9 @@ const addresses: AddressCollection = {
       HLP_CHF_USDC: '0x8B48390E9566F056EbC028BA4803E1E3a3021410',
       HLP_GBP_USDC: '0x8B48390E9566F056EbC028BA4803E1E3a3021410',
       HLP_XSGD_USDC: '0x89e0983094c0659CF60F6627273DfD40817b8e4E'
+    },
+    hTokens: {
+      HLP_XSGD_USDC: '0x8f5E5B08c73cEA95E902f1f8b0dAbeb734eAdD3F'
     }
   }
 }

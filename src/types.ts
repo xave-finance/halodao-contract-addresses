@@ -28,11 +28,28 @@ export type AddressCollection = {
       viewLiquidity: string
     }
     curves: {
+      all: {
+        HLP_CHF_USDC?: string
+        HLP_EURS_USDC?: string
+        HLP_GBP_USDC?: string
+        HLP_WETH_USDC?: string
+        HLP_XIDR_USDC?: string
+        HLP_XSGD_USDC?: string
+        HLP_TCAD_USDC?: string
+        HLP_TGBP_USDC?: string
+        HLP_UST_USDC?: string
+        HLP_TAUD_USDC?: string
+        HLP_fxPHP_USDC?: string
+        HLP_tagPHP_USDC?: string
+        HLP_LPHP_USDC?: string
+        HLP_fxAUD_USDC?: string
+      }
       enabled: string[]
       disabled: string[]
     }
     assimilators?: {
-      usdToUsdcAssimilator?: string
+      usdcToUsdAssimilator?: string
+      xsgdToUsdAssimilator?: string
     }
   }
   ammV2: {
@@ -66,6 +83,7 @@ export type AddressCollection = {
     fxAUD?: string
     UST?: string
     CHF?: string
+    indexUSDC?: string
     fakeUSDC?: string
     fakeFxPHP?: string
   }
@@ -80,6 +98,7 @@ export type AddressCollection = {
       lendingPool: string
       lendingPoolConfiguratorImpl: string
       lendingPoolConfigurator: string
+      lendingPoolProxy: string
       stableAndVariableTokensHelper: string
       aTokensAndRatesHelper: string
       aaveOracle: string
@@ -119,6 +138,9 @@ export type AddressCollection = {
       HLP_UST_USDC?: string
       HLP_CHF_USDC?: string
       HLP_GBP_USDC?: string
+    }
+    hTokens?: {
+      HLP_XSGD_USDC?: string
     }
   }
 }

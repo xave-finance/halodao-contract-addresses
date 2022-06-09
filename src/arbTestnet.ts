@@ -5,6 +5,10 @@ const tokens = {
   fxPHP: '0xE467402aE64952a520818733248bD6d4586773fA'
 }
 
+const curves = {
+  HLP_fxPHP_USDC: '0x05aB48cb139bD6a5f67676A7F0cfb21B68c46275'
+}
+
 const addresses: AddressCollection = {
   protocol: {
     RNBW: '0xfbBf11Ae3E8A4b6D9C866B3f16741D1641ccc4d5',
@@ -18,9 +22,8 @@ const addresses: AddressCollection = {
     router: '0x303Fe605077f251a123A41b5241a164c49Eba9b5',
     zap: '0x70bA0482FD6343e8fcbd2480C8b4C11d6c654DF5',
     curves: {
-      enabled: [
-        '0x05aB48cb139bD6a5f67676A7F0cfb21B68c46275' // fxPHP:USDC
-      ],
+      all: curves,
+      enabled: [curves.HLP_fxPHP_USDC],
       disabled: []
     }
   },
