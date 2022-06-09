@@ -33,7 +33,7 @@ const addresses: AddressCollection = {
       disabled: []
     },
     assimilators: {
-      usdToUsdcAssimilator: '0xDB70e4cF1eE40Ed01A6eE3E4a200AabBf0facCbC'
+      usdcToUsdAssimilator: '0xDB70e4cF1eE40Ed01A6eE3E4a200AabBf0facCbC'
     }
   },
   ammV2: {
