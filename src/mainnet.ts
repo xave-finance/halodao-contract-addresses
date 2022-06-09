@@ -41,16 +41,17 @@ const addresses: AddressCollection = {
       viewLiquidity: '0x9f9d0Bb490f7FA5894FFbd07dc46F858BD5B968b'
     },
     curves: {
+      all: curves,
       enabled: [
-        curves.HLP_TCAD_USDC, // TCAD:USDC
-        curves.HLP_XSGD_USDC, // XSGD:USDC
-        curves.HLP_TGBP_USDC, // TGBP:USDC
-        curves.HLP_UST_USDC // UST:USDC
+        curves.HLP_TCAD_USDC,
+        curves.HLP_XSGD_USDC,
+        curves.HLP_TGBP_USDC,
+        curves.HLP_UST_USDC
       ],
       disabled: [
-        curves.HLP_TAUD_USDC, // TAUD:USDC
-        curves.HLP_fxPHP_USDC, // fxPHP:USDC
-        curves.HLP_tagPHP_USDC // tagPHP:USDC
+        curves.HLP_TAUD_USDC,
+        curves.HLP_fxPHP_USDC,
+        curves.HLP_tagPHP_USDC
       ]
     },
     assimilators: {

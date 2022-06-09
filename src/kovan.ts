@@ -33,9 +33,8 @@ const addresses: AddressCollection = {
     router: '0xAfD5DB2333978033F280d535012274Ec4598FB2b',
     zap: '0x7F1A07fd07261BF1Ad778c88eA732273EC85940b',
     curves: {
-      enabled: [
-        curves.HLP_XSGD_USDC // XSGD:USDC
-      ],
+      all: curves,
+      enabled: [curves.HLP_XSGD_USDC],
       disabled: []
     },
     assimilators: {

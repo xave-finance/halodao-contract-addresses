@@ -18,6 +18,7 @@ const addresses: AddressCollection = {
     router: '0x26f2860cdeB7cC785eE5d59a5Efb2D0D3842C39D',
     zap: '0xA187b61e9F8f6E58bB0eB8D88cAda05710143Ce8',
     curves: {
+      all: {},
       enabled: [
         '0x6156f030B877344470BAC075a708d7E27602cc17', // tagPHP:USDC
         '0x8123C64D6607412C7Ac9E880f12245ef22558b14' // XSGD:USDC
