@@ -49,7 +49,7 @@ export type AddressCollection = {
     }
     assimilators?: {
       usdcToUsdAssimilator?: string
-      xsgdToUsdcAssimilator?: string
+      xsgdToUsdAssimilator?: string
     }
   }
   ammV2: {

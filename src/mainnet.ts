@@ -56,7 +56,7 @@ const addresses: AddressCollection = {
     },
     assimilators: {
       usdcToUsdAssimilator: '0x311FDdE361e6258e9730c6147aAf584aC0F9c59A',
-      xsgdToUsdcAssimilator: '0xCaE2502093413290bc0E5c2CfA1039C661103bf1'
+      xsgdToUsdAssimilator: '0xCaE2502093413290bc0E5c2CfA1039C661103bf1'
     }
   },
   ammV2: {

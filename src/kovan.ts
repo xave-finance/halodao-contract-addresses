@@ -39,7 +39,7 @@ const addresses: AddressCollection = {
     },
     assimilators: {
       usdcToUsdAssimilator: '0x8ce04DF75775afAfe67A4F0860b0aFE67292277d',
-      xsgdToUsdcAssimilator: '0x66D0aA383333e53cfA9dE70f78eea7Ca7bfEEc22'
+      xsgdToUsdAssimilator: '0x66D0aA383333e53cfA9dE70f78eea7Ca7bfEEc22'
     }
   },
   ammV2: {
