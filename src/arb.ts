@@ -81,7 +81,8 @@ const addresses: AddressCollection = {
       USDC: '0x8AFAf5d086B5d97fC5045Bce452Ee1FA9adCC93e',
       USDT: '0x813abe589753c7dA64cC4EBEC638F6BeC530C12e'
     },
-    hTokens: {}
+    hTokens: {},
+    wrappedNativeToken: '0x82af49447d8a07e3bd95bd0d56f35241523fbab1'
   }
 }
 

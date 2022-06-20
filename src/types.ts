@@ -150,6 +150,7 @@ export type AddressCollection = {
     fixedDebtTokens?: {
       USDC?: string
     }
+    wrappedNativeToken?: string
   }
 }
 
