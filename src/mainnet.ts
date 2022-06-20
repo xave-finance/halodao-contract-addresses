@@ -124,7 +124,8 @@ const addresses: AddressCollection = {
     },
     variableDebtTokens: {
       USDC: '0xb9c4268a13c00af2F6e20458D6252d09faD8650e'
-    }
+    },
+    wrappedNativeToken: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
   }
 }
 
