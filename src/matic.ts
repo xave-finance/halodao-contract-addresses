@@ -55,7 +55,7 @@ const addresses: AddressCollection = {
       reserveLogic: '0x06EEDD74387fBd3FB7165aB39fda1beD3fead536',
       genericLogic: '0xE3eef400C835dfB0Ffb8dA5cE925492bE06f9c4c',
       validationLogic: '0x6D3dB03f082802037D1F44A5b12813903AFf13C9',
-      lendingPool: '0x023f2B1Ea0F8e862A29C2F5ca73E40F45c23d540',
+      lendingPool: '0xF62EC4f92e30A4C6A1241616A65cd9BA2dc0C9E1',
       lendingPoolConfiguratorImpl: '0x587dA1dBdb1A8B801A4b04c4dCB36B8d37DEcACE',
       lendingPoolConfigurator: '0x41913b1038714584Efc0624bA3CE84eC8cd515A1',
       lendingPoolProxy: '0x023f2B1Ea0F8e862A29C2F5ca73E40F45c23d540',
