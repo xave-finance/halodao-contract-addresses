@@ -120,6 +120,7 @@ const addresses: AddressCollection = {
       HLP_XSGD_USDC: curves.HLP_XSGD_USDC
     },
     priceOracles: {
+      USDC: '0x64EaC61A2DFda2c3Fa04eED49AA33D021AeC8838',
       fxPHP: '0xa627c5e513b0B364e45AFfdb8647E1C65A416eB8',
       CHF: '0xa627c5e513b0B364e45AFfdb8647E1C65A416eB8',
       RNBW: '0xa627c5e513b0B364e45AFfdb8647E1C65A416eB8',
