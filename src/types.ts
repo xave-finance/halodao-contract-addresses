@@ -134,7 +134,8 @@ export type AddressCollection = {
       RNBW?: string
       xRNBW?: string
       USDC?: string
-      USDT?: string
+      USDT?: string,
+      TAGPHP?: string,
       HLP_PHP_USD?: string
       HLP_XSGD_USDC?: string
       HLP_UST_USDC?: string
