@@ -11,6 +11,7 @@ const tokens = {
 
 const addresses: AddressCollection = {
   protocol: {
+    XAV: ZERO_ADDRESS,
     RNBW: '0x357bdb97FB9555bede5ed5201dBD15a8f3f6B7B8',
     xRNBW: '0xC1cFbAdE2df5fe70C18273F926553D9d2c8f944C'
   },
@@ -45,6 +46,7 @@ const addresses: AddressCollection = {
     },
     proportionalLiquidity: ZERO_ADDRESS,
     assimilatorFactory: ZERO_ADDRESS,
+    swapLibrary: ZERO_ADDRESS,
     oracles: {
       USDC: '0xa24de01df22b63d23Ebc1882a5E3d4ec0d907bFB',
       EURS: '0x78F9e60608bF48a1155b4B2A5e31F32318a1d85F'
