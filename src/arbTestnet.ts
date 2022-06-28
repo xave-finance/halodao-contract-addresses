@@ -11,6 +11,7 @@ const curves = {
 
 const addresses: AddressCollection = {
   protocol: {
+    XAV: ZERO_ADDRESS,
     RNBW: '0xfbBf11Ae3E8A4b6D9C866B3f16741D1641ccc4d5',
     xRNBW: '0xAe0429F26ed25c8Ad22D2582315Cc99aa5de8fF6'
   },
@@ -36,6 +37,7 @@ const addresses: AddressCollection = {
     },
     proportionalLiquidity: ZERO_ADDRESS,
     assimilatorFactory: ZERO_ADDRESS,
+    swapLibrary: ZERO_ADDRESS,
     oracles: {
       USDC: '0xe020609A0C31f4F96dCBB8DF9882218952dD95c4',
       fxPHP: '0xF4764A9536B0ef7195ad3902c4Fc68eEc48f9C67'

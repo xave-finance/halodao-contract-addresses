@@ -6,6 +6,7 @@ type Pool = {
 
 export type AddressCollection = {
   protocol: {
+    XAV: string
     RNBW: string
     xRNBW: string
     LPOP?: string
@@ -61,11 +62,13 @@ export type AddressCollection = {
     }
     proportionalLiquidity: string
     assimilatorFactory: string
+    swapLibrary: string
     oracles: {
       USDC?: string
       fxPHP?: string
       XSGD?: string
       EURS?: string
+      CHF?: string
     }
   }
   tokens: {
@@ -86,6 +89,8 @@ export type AddressCollection = {
     indexUSDC?: string
     fakeUSDC?: string
     fakeFxPHP?: string
+    fakeXSGD?: string
+    fakeEURS?: string
   }
   lendingMarket?: {
     protocol: {

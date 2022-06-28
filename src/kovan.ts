@@ -22,6 +22,7 @@ const curves = {
 
 const addresses: AddressCollection = {
   protocol: {
+    XAV: '0xDdD46A4966a2197396BeFdF1d922569bf5F3163b',
     RNBW: '0x16D185d025bF592114D1A68f83085F36159f6CdA',
     xRNBW: '0xbcbfEac78133D1efe71Ba16D4F4221b9AD4bAd01'
   },
@@ -63,20 +64,34 @@ const addresses: AddressCollection = {
       enabled: [
         {
           assets: [tokens.fxPHP, tokens.USDC],
-          address: '0xe2094130f94CC23BDfe46FF0EF63A13899F4D708',
+          address: '0x7e3771D33E3731F790e6FCd8ca0a14B08d44a98d',
           poolId:
-            '0xe2094130f94cc23bdfe46ff0ef63a13899f4d7080002000000000000000007e9'
+            '0x7e3771d33e3731f790e6fcd8ca0a14b08d44a98d0002000000000000000008fd'
+        },
+        {
+          assets: [tokens.EURS, tokens.USDC],
+          address: '0xd98F5042648f304a150f4f9D054516e9125C8088',
+          poolId:
+            '0xd98f5042648f304a150f4f9d054516e9125c80880002000000000000000008fe'
+        },
+        {
+          assets: [tokens.CHF, tokens.USDC],
+          address: '0xAa33da6719A7F9181BEEb20a27f4464DF461E7e4',
+          poolId:
+            '0xaa33da6719a7f9181beeb20a27f4464df461e7e400020000000000000000096d'
         }
       ],
       disabled: []
     },
-    proportionalLiquidity: '0x0dEf4438AdEcedE57A861b0964c84a50C68eEaDe',
-    assimilatorFactory: '0x4c13F1E2397f083bbaCCB4E53325d5389845BE2e',
+    proportionalLiquidity: '0x000f891aD773aBE5548446b4528161563113566a',
+    assimilatorFactory: '0x5fF15655C1E9de73eA63465F2BCA0D1636318240',
+    swapLibrary: '0xc9A5DA4a6BD896dee1eaB92C75C41101e835dF2A',
     oracles: {
       USDC: '0x9211c6b3BF41A10F78539810Cf5c64e1BB78Ec60',
       fxPHP: '0x84fdC8dD500F29902C99c928AF2A91970E7432b6',
-      XSGD: '0x8CE3cAc0E6635ce04783709ca3CC4F5fc5304299',
-      EURS: '0x0c15Ab9A0DB086e062194c273CC79f41597Bbf13'
+      XSGD: '0xa5FC4B3757Ce2533087de51752D12d908E48FEEF', // Mock
+      EURS: '0x0c15Ab9A0DB086e062194c273CC79f41597Bbf13',
+      CHF: '0xed0616BeF04D374969f302a34AE4A63882490A8C'
     }
   },
   tokens,

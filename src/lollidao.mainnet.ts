@@ -9,6 +9,7 @@ const curves = {
 
 const addresses: AddressCollection = {
   protocol: {
+    XAV: ZERO_ADDRESS,
     RNBW: ZERO_ADDRESS,
     xRNBW: ZERO_ADDRESS,
     LPOP: '0x6335A2E4a2E304401fcA4Fc0deafF066B813D055',
@@ -53,6 +54,7 @@ const addresses: AddressCollection = {
     },
     proportionalLiquidity: ZERO_ADDRESS,
     assimilatorFactory: ZERO_ADDRESS,
+    swapLibrary: ZERO_ADDRESS,
     oracles: {}
   },
   tokens: {}
