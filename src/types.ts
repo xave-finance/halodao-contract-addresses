@@ -157,12 +157,11 @@ export type AddressCollection = {
     }
     wrappedNativeToken?: string
   }
-  strats?:
-    {
-      shortName: string,
-      fullName: string,
-      address: string
-    }[]
+  strats?: {
+    shortName: string
+    fullName: string
+    address: string
+  }[]
 }
 
 export const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
