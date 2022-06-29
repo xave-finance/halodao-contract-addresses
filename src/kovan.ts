@@ -151,7 +151,14 @@ const addresses: AddressCollection = {
     variableDebtTokens: {
       USDC: '0xC99AD035150433B35AeDdB4adf983CaB6675AF5f'
     }
-  }
+  },
+  strats: [
+    {
+      shortName: 'XSGD',
+      fullName: 'XSGD-USDC-indexUSDC',
+      address: '0x111E7965c95ca95A7EeED4993d3b88aA64fe5a7b'
+    }
+  ]
 }
 
 export default addresses
