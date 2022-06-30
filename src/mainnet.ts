@@ -50,13 +50,13 @@ const addresses: AddressCollection = {
       enabled: [
         curves.HLP_TCAD_USDC,
         curves.HLP_XSGD_USDC,
-        curves.HLP_TGBP_USDC,
-        curves.HLP_UST_USDC
+        curves.HLP_TGBP_USDC
       ],
       disabled: [
         curves.HLP_TAUD_USDC,
         curves.HLP_fxPHP_USDC,
-        curves.HLP_tagPHP_USDC
+        curves.HLP_tagPHP_USDC,
+        curves.HLP_UST_USDC
       ]
     },
     assimilators: {

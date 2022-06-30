@@ -12,12 +12,11 @@ const tokens = {
 }
 
 const curves = {
-  HLP_CHF_USDC: '0x02e673e79cE5122a3B83Afa9964637C259cb090F',
+  HLP_XSGD_USDC: '0x7Fb6Ac9B01dDbAb407f19c23370639913c741c81',
   HLP_EURS_USDC: '0xB8D93735647453a6138FC6449922A442f2Fd068B',
-  HLP_GBP_USDC: '0x7169866E13F58E045D77D5bE3d79ad8cCADC0fbF',
-  HLP_WETH_USDC: '0x184B1a8985316Ca061cC1e043Ec1C666f4A73A18',
-  HLP_XIDR_USDC: '0xEe1ab46877d1DeFE18bAfC749F32919dF6928a16',
-  HLP_XSGD_USDC: '0x7Fb6Ac9B01dDbAb407f19c23370639913c741c81'
+  HLP_CHF_USDC: '0x35Eeaf4243AdB81C421c18FfA19fd8A0f3B7F252',
+  HLP_CHF_USDC_inactive: '0x02e673e79cE5122a3B83Afa9964637C259cb090F',
+  HLP_GBP_USDC_inactive: '0x7169866E13F58E045D77D5bE3d79ad8cCADC0fbF'
 }
 
 const addresses: AddressCollection = {
@@ -36,7 +35,11 @@ const addresses: AddressCollection = {
     zap: '0x7F1A07fd07261BF1Ad778c88eA732273EC85940b',
     curves: {
       all: curves,
-      enabled: [curves.HLP_XSGD_USDC, curves.HLP_EURS_USDC],
+      enabled: [
+        curves.HLP_XSGD_USDC,
+        curves.HLP_EURS_USDC,
+        curves.HLP_CHF_USDC
+      ],
       disabled: []
     },
     assimilators: {
@@ -130,8 +133,8 @@ const addresses: AddressCollection = {
       uiHaloPoolDataProvider: '0x6Af1ffC2F20e54CDED0549CEde1ba6269A615717'
     },
     lpAssets: {
-      HLP_CHF_USDC: curves.HLP_CHF_USDC,
-      HLP_GBP_USDC: curves.HLP_GBP_USDC,
+      HLP_CHF_USDC: curves.HLP_CHF_USDC_inactive,
+      HLP_GBP_USDC: curves.HLP_GBP_USDC_inactive,
       HLP_XSGD_USDC: curves.HLP_XSGD_USDC
     },
     priceOracles: {

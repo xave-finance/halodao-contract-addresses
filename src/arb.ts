@@ -12,7 +12,8 @@ const tokens = {
 
 const curves = {
   HLP_fxPHP_USDC: '0x90B48Bb20048786b167473dfEeC443142D043CF7',
-  HLP_fxAUD_USDC: '0xD5AD9eed5c5f28D83933779CD7E677e112991f51'
+  HLP_fxAUD_USDC: '0xD5AD9eed5c5f28D83933779CD7E677e112991f51',
+  HLP_fxPHP_USDC_inactive: '0xF5bD24215Fc8581Eb1429bFbf28174F76f740314'
 }
 
 const addresses: AddressCollection = {
@@ -31,7 +32,7 @@ const addresses: AddressCollection = {
     curves: {
       all: curves,
       enabled: [curves.HLP_fxPHP_USDC, curves.HLP_fxAUD_USDC],
-      disabled: []
+      disabled: [curves.HLP_fxPHP_USDC_inactive]
     }
   },
   ammV2: {
