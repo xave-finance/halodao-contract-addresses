@@ -5,6 +5,14 @@ const tokens = {
   fakeFxPHP: '0xe1Ca353a88a8822ed95293a7E76bd20eEA2ff662'
 }
 
+const curves = {
+  HLP_XSGD_USDC: '0x8123C64D6607412C7Ac9E880f12245ef22558b14',
+  HLP_TAGPHP_USDC: '0x6156f030B877344470BAC075a708d7E27602cc17',
+  HLP_WTGBP_USDC: '0xbF772a745533f6bAd97C58D2cb6B241eF7487242',
+  HLP_WTCAD_USDC: '0xaEad273bc7E17DD6951ceD3264B1dBa8A19114C2',
+  HLP_WTAUD_USDC: '0x95AB308bE1e209eB6FfdD3279B5ea71D365AD30B'
+}
+
 const addresses: AddressCollection = {
   protocol: {
     XAV: ZERO_ADDRESS,
@@ -19,15 +27,12 @@ const addresses: AddressCollection = {
     router: '0x26f2860cdeB7cC785eE5d59a5Efb2D0D3842C39D',
     zap: '0xA187b61e9F8f6E58bB0eB8D88cAda05710143Ce8',
     curves: {
-      all: {},
-      enabled: [
-        '0x6156f030B877344470BAC075a708d7E27602cc17', // tagPHP:USDC
-        '0x8123C64D6607412C7Ac9E880f12245ef22558b14' // XSGD:USDC
-      ],
+      all: curves,
+      enabled: [curves.HLP_XSGD_USDC, curves.HLP_TAGPHP_USDC],
       disabled: [
-        '0x95AB308bE1e209eB6FfdD3279B5ea71D365AD30B', // wTAUD:USDC
-        '0xaEad273bc7E17DD6951ceD3264B1dBa8A19114C2', // wTCAD:USDC
-        '0xbF772a745533f6bAd97C58D2cb6B241eF7487242' // wTGBP:USDC
+        curves.HLP_WTGBP_USDC,
+        curves.HLP_WTCAD_USDC,
+        curves.HLP_WTAUD_USDC
       ]
     }
   },
