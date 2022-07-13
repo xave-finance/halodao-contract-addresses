@@ -74,6 +74,7 @@ export type AddressCollection = {
       enabled: Pool[]
       disabled: Pool[]
     }
+    fxPoolFactory: string
     proportionalLiquidity: string
     assimilatorFactory: string
     swapLibrary: string

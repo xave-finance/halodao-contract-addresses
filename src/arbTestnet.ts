@@ -35,6 +35,7 @@ const addresses: AddressCollection = {
       enabled: [],
       disabled: []
     },
+    fxPoolFactory: ZERO_ADDRESS,
     proportionalLiquidity: ZERO_ADDRESS,
     assimilatorFactory: ZERO_ADDRESS,
     swapLibrary: ZERO_ADDRESS,
