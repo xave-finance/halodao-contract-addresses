@@ -43,8 +43,10 @@ const addresses: AddressCollection = {
       disabled: []
     },
     assimilators: {
-      usdcToUsdAssimilator: '0x8ce04DF75775afAfe67A4F0860b0aFE67292277d',
-      xsgdToUsdAssimilator: '0x66D0aA383333e53cfA9dE70f78eea7Ca7bfEEc22'
+      USDC_USD: '0x8ce04DF75775afAfe67A4F0860b0aFE67292277d',
+      XSGD_USD: '0x66D0aA383333e53cfA9dE70f78eea7Ca7bfEEc22',
+      EURS_USD: '0x6F37A8ed9baCF0D4a6CEA4f47acB1171d0C073D2',
+      CHF_USD: '0xD4296d20d3427fc6b361E126AeD75A9E7AFbD0d6'
     }
   },
   ammV2: {
@@ -89,6 +91,12 @@ const addresses: AddressCollection = {
     proportionalLiquidity: '0x000f891aD773aBE5548446b4528161563113566a',
     assimilatorFactory: '0x5fF15655C1E9de73eA63465F2BCA0D1636318240',
     swapLibrary: '0xc9A5DA4a6BD896dee1eaB92C75C41101e835dF2A',
+    assimilators: {
+      USDC_USD: '0x075B8cEf218A79fbD63448802DBCf33706729263',
+      fxPHP_USD: '0x22b9cD2a5c7B1914304A780a982Ed0C18436793C',
+      EURS_USD: '0x07Db287958A584Be4874493d9EE261095a0608C6',
+      CHF_USD: '0x44655F715BFAD9EA264bA1F1a6EBBF663B40d84C'
+    },
     oracles: {
       USDC: '0x9211c6b3BF41A10F78539810Cf5c64e1BB78Ec60',
       fxPHP: '0x84fdC8dD500F29902C99c928AF2A91970E7432b6',

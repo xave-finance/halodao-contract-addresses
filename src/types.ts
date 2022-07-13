@@ -4,6 +4,23 @@ type Pool = {
   assets: string[]
 }
 
+type Assimilators = {
+  USDC_USD?: string
+  XSGD_USD?: string
+  fxPHP_USD?: string
+  tagPHP_USD?: string
+  XIDR_USD?: string
+  fxAUD_USD?: string
+  EURS_USD?: string
+  UST_USD?: string
+  CHF_USD?: string
+  GBP_USD?: string
+  TUSD_USD?: string
+  TCAD_USD?: string
+  TGBP_USD?: string
+  TAUD_USD?: string
+}
+
 export type AddressCollection = {
   protocol: {
     XAV: string
@@ -48,10 +65,7 @@ export type AddressCollection = {
       enabled: string[]
       disabled: string[]
     }
-    assimilators?: {
-      usdcToUsdAssimilator?: string
-      xsgdToUsdAssimilator?: string
-    }
+    assimilators?: Assimilators
   }
   ammV2: {
     vault: string
@@ -63,6 +77,7 @@ export type AddressCollection = {
     proportionalLiquidity: string
     assimilatorFactory: string
     swapLibrary: string
+    assimilators?: Assimilators
     oracles: {
       USDC?: string
       fxPHP?: string
