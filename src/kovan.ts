@@ -158,7 +158,7 @@ const addresses: AddressCollection = {
   strats: [
     {
       shortName: 'xSGD Thetanuts',
-      fullName: 'XSGD-USDC-indexUSDC',
+      fullName: 'xSGD-USDC-indexUSDC',
       address: '0x111E7965c95ca95A7EeED4993d3b88aA64fe5a7b',
       pool: {
         address: curves.HLP_XSGD_USDC,
