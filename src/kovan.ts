@@ -69,34 +69,20 @@ const addresses: AddressCollection = {
       enabled: [
         {
           assets: [tokens.fxPHP, tokens.USDC],
-          address: '0xFa61E597abC1E5e4F0D176Fc647A290a5b28f49d',
+          address: '0xB45812F17ff4e5D02BBca8cBA282C13d4750aBa3',
           poolId:
-            '0xfa61e597abc1e5e4f0d176fc647a290a5b28f49d0002000000000000000009c0'
-        },
-        {
-          assets: [tokens.EURS, tokens.USDC],
-          address: '0x116A8351cF1743df017B34FA6e0B3566F5e40Ab4',
-          poolId:
-            '0x116a8351cf1743df017b34fa6e0b3566f5e40ab40002000000000000000009c1'
-        },
-        {
-          assets: [tokens.CHF, tokens.USDC],
-          address: '0xe74Ad365c5FA0bF0fa2Ae9fA0929355A9a0a2d40',
-          poolId:
-            '0xe74ad365c5fa0bf0fa2ae9fa0929355a9a0a2d400002000000000000000009c2'
+            '0xb45812f17ff4e5d02bbca8cba282c13d4750aba30002000000000000000009e6'
         }
       ],
       disabled: []
     },
-    fxPoolFactory: '0x567Fd50fBf8F5f5E6557D7BCFa089EBc3d0B83ED',
-    proportionalLiquidity: '0x8f095b796Fb2C5304478c3A1DA7dEb6061B0c6E6',
-    assimilatorFactory: '0x400Db885cf977F51491251f290E0f59769df3C9f',
-    swapLibrary: '0x387850B4F0Aa5960b53b0dB39abc790D002F7718',
+    fxPoolFactory: '0x16491c68A0C79bCE3E21C0af43C1D0461D7546f4',
+    proportionalLiquidity: '0x057548Aa2Ba1CFE1a5c89F8f1412C74337308d9F',
+    assimilatorFactory: '0xf2F62D05FECB259550A3c35534372B6d5Cc92829',
+    swapLibrary: '0x5Ce680FF2FA8cAFCf8f9a301D998ff5f4A0B7fd0',
     assimilators: {
-      USDC_USD: '0x4e80039B93A3Bd0544A0a572721d1a4df04b9195',
-      fxPHP_USD: '0xe2EFfF6772FF472E860AC537d200E99d4b3d877f',
-      EURS_USD: '0x05c04013C78BC963BAbe1aE59c4077aCaAdE48Ad',
-      CHF_USD: '0xF52820123b15528f5F916349576a42394819Aa22'
+      USDC_USD: '0x68556F63eF4C51567e1d956D2A8a8e74495F20Cc',
+      fxPHP_USD: '0xd33b64D39B7c3A8fFbF6FB2F1De6b1a71E6f7273'
     },
     oracles: {
       USDC: '0x9211c6b3BF41A10F78539810Cf5c64e1BB78Ec60',
