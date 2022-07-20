@@ -123,7 +123,7 @@ const addresses: AddressCollection = {
     },
     hTokens: {
       HLP_XSGD_USDC: '0xA8A04EcBBCc5f1B05773A34cE8495507aD6CcA22',
-      HLP_HUSDC_USDC: '0xd7687315a276936103Ef9912721Ed48b83eF61C0'
+      USDC: '0xd7687315a276936103Ef9912721Ed48b83eF61C0'
     },
     variableDebtTokens: {
       USDC: '0xb9c4268a13c00af2F6e20458D6252d09faD8650e'
