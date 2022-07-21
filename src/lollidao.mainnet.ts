@@ -42,7 +42,7 @@ const addresses: AddressCollection = {
       disabled: []
     },
     assimilators: {
-      usdcToUsdAssimilator: '0xDB70e4cF1eE40Ed01A6eE3E4a200AabBf0facCbC'
+      USDC_USD: '0xDB70e4cF1eE40Ed01A6eE3E4a200AabBf0facCbC'
     }
   },
   ammV2: {
@@ -52,6 +52,7 @@ const addresses: AddressCollection = {
       enabled: [],
       disabled: []
     },
+    fxPoolFactory: ZERO_ADDRESS,
     proportionalLiquidity: ZERO_ADDRESS,
     assimilatorFactory: ZERO_ADDRESS,
     swapLibrary: ZERO_ADDRESS,

@@ -43,8 +43,10 @@ const addresses: AddressCollection = {
       disabled: []
     },
     assimilators: {
-      usdcToUsdAssimilator: '0x8ce04DF75775afAfe67A4F0860b0aFE67292277d',
-      xsgdToUsdAssimilator: '0x66D0aA383333e53cfA9dE70f78eea7Ca7bfEEc22'
+      USDC_USD: '0x8ce04DF75775afAfe67A4F0860b0aFE67292277d',
+      XSGD_USD: '0x66D0aA383333e53cfA9dE70f78eea7Ca7bfEEc22',
+      EURS_USD: '0x6F37A8ed9baCF0D4a6CEA4f47acB1171d0C073D2',
+      CHF_USD: '0xD4296d20d3427fc6b361E126AeD75A9E7AFbD0d6'
     }
   },
   ammV2: {
@@ -67,28 +69,21 @@ const addresses: AddressCollection = {
       enabled: [
         {
           assets: [tokens.fxPHP, tokens.USDC],
-          address: '0x7e3771D33E3731F790e6FCd8ca0a14B08d44a98d',
+          address: '0xB45812F17ff4e5D02BBca8cBA282C13d4750aBa3',
           poolId:
-            '0x7e3771d33e3731f790e6fcd8ca0a14b08d44a98d0002000000000000000008fd'
-        },
-        {
-          assets: [tokens.EURS, tokens.USDC],
-          address: '0xd98F5042648f304a150f4f9D054516e9125C8088',
-          poolId:
-            '0xd98f5042648f304a150f4f9d054516e9125c80880002000000000000000008fe'
-        },
-        {
-          assets: [tokens.CHF, tokens.USDC],
-          address: '0xAa33da6719A7F9181BEEb20a27f4464DF461E7e4',
-          poolId:
-            '0xaa33da6719a7f9181beeb20a27f4464df461e7e400020000000000000000096d'
+            '0xb45812f17ff4e5d02bbca8cba282c13d4750aba30002000000000000000009e6'
         }
       ],
       disabled: []
     },
-    proportionalLiquidity: '0x000f891aD773aBE5548446b4528161563113566a',
-    assimilatorFactory: '0x5fF15655C1E9de73eA63465F2BCA0D1636318240',
-    swapLibrary: '0xc9A5DA4a6BD896dee1eaB92C75C41101e835dF2A',
+    fxPoolFactory: '0x16491c68A0C79bCE3E21C0af43C1D0461D7546f4',
+    proportionalLiquidity: '0x057548Aa2Ba1CFE1a5c89F8f1412C74337308d9F',
+    assimilatorFactory: '0xf2F62D05FECB259550A3c35534372B6d5Cc92829',
+    swapLibrary: '0x5Ce680FF2FA8cAFCf8f9a301D998ff5f4A0B7fd0',
+    assimilators: {
+      USDC_USD: '0x68556F63eF4C51567e1d956D2A8a8e74495F20Cc',
+      fxPHP_USD: '0xd33b64D39B7c3A8fFbF6FB2F1De6b1a71E6f7273'
+    },
     oracles: {
       USDC: '0x9211c6b3BF41A10F78539810Cf5c64e1BB78Ec60',
       fxPHP: '0x84fdC8dD500F29902C99c928AF2A91970E7432b6',
@@ -162,11 +157,8 @@ const addresses: AddressCollection = {
       address: '0x111E7965c95ca95A7EeED4993d3b88aA64fe5a7b',
       pool: {
         address: curves.HLP_XSGD_USDC,
-        poolId: "",
-        assets: [
-          tokens.XSGD,
-          tokens.USDC
-        ]
+        poolId: '',
+        assets: [tokens.XSGD, tokens.USDC]
       }
     }
   ]
