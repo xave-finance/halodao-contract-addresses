@@ -69,20 +69,27 @@ const addresses: AddressCollection = {
       enabled: [
         {
           assets: [tokens.fxPHP, tokens.USDC],
-          address: '0xB45812F17ff4e5D02BBca8cBA282C13d4750aBa3',
+          address: '0xc6233C45D07D5b5a7438F7044A9D512c13234B77',
           poolId:
-            '0xb45812f17ff4e5d02bbca8cba282c13d4750aba30002000000000000000009e6'
+            '0xc6233c45d07d5b5a7438f7044a9d512c13234b770002000000000000000009fa'
+        },
+        {
+          assets: [tokens.XSGD, tokens.USDC],
+          address: '0xc1CbE9733B845d3ab7C4004B118003d5554Cf1d1',
+          poolId:
+            '0xc1cbe9733b845d3ab7c4004b118003d5554cf1d10002000000000000000009fd'
         }
       ],
       disabled: []
     },
-    fxPoolFactory: '0x16491c68A0C79bCE3E21C0af43C1D0461D7546f4',
-    proportionalLiquidity: '0x057548Aa2Ba1CFE1a5c89F8f1412C74337308d9F',
-    assimilatorFactory: '0xf2F62D05FECB259550A3c35534372B6d5Cc92829',
-    swapLibrary: '0x5Ce680FF2FA8cAFCf8f9a301D998ff5f4A0B7fd0',
+    fxPoolFactory: '0xC54c21F2f15ea03402a9d04ffc77844FF4f7e296',
+    proportionalLiquidity: '0xBea9e4cF645aAC52f72A50cF0648B57974F9Ad02',
+    assimilatorFactory: '0xDD0546342E48a35f5DE1f32c410120C850847233',
+    swapLibrary: '0x9E56018a5b903651AfD5E28357Dd78b06ca84B07',
     assimilators: {
-      USDC_USD: '0x68556F63eF4C51567e1d956D2A8a8e74495F20Cc',
-      fxPHP_USD: '0xd33b64D39B7c3A8fFbF6FB2F1De6b1a71E6f7273'
+      USDC_USD: '0xab44DF70796aC8ce84E2FE134b7e4F557e118c4D',
+      fxPHP_USD: '0xe7FD8A06C79D5E1888B02B08E1a138E15C899061',
+      XSGD_USD: '0x1593362e55cB1271f4C6fe778eA0d07B746fDC90'
     },
     oracles: {
       USDC: '0x9211c6b3BF41A10F78539810Cf5c64e1BB78Ec60',
