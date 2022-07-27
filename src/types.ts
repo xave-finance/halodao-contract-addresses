@@ -87,7 +87,6 @@ export type AddressCollection = {
     UST?: string
     CHF?: string
     indexUSDC?: string
-    ahUSDC?: string
     fakeUSDC?: string
     fakeFxPHP?: string
     fakeXSGD?: string
