@@ -78,6 +78,12 @@ const addresses: AddressCollection = {
           address: '0xc1CbE9733B845d3ab7C4004B118003d5554Cf1d1',
           poolId:
             '0xc1cbe9733b845d3ab7c4004b118003d5554cf1d10002000000000000000009fd'
+        },
+        {
+          assets: [tokens.EURS, tokens.USDC],
+          address: '0x7e6046887525ce201f0E90E6398D4728371deDaF',
+          poolId:
+            '0x7e6046887525ce201f0e90e6398d4728371dedaf000200000000000000000a08'
         }
       ],
       disabled: []
