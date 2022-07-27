@@ -178,7 +178,8 @@ export type AddressCollection = {
     shortName: string
     fullName: string
     address: string
-    pool: Pool
+    pool?: Pool
+    USDC?: string
   }[]
 }
 

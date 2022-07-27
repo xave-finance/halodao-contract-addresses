@@ -1,4 +1,4 @@
-import { AddressCollection } from './types'
+import { AddressCollection, ZERO_ADDRESS } from './types'
 
 const tokens = {
   CHF: '0xE9958574866587c391735b7e7CE0D79432d3b9d0',
@@ -158,7 +158,7 @@ const addresses: AddressCollection = {
     },
     hTokens: {
       HLP_XSGD_USDC: '0xad7b437eB7D1CD9a2fFcc009c34E9ed5A4Cf0A22',
-      USDC: '0xd047940cF4aAcc5a63BcE296A76C002B6bd9b806'
+      USDC: '0x0a4f3a725d7C10030d437d1f409f3d99B928bf97'
     },
     variableDebtTokens: {
       USDC: '0xC99AD035150433B35AeDdB4adf983CaB6675AF5f'
@@ -174,6 +174,12 @@ const addresses: AddressCollection = {
         poolId: '',
         assets: [tokens.XSGD, tokens.USDC]
       }
+    },
+    {
+      shortName: 'USDC Lending',
+      fullName: 'USDC',
+      address: ZERO_ADDRESS,
+      USDC: tokens.USDC
     }
   ]
 }
