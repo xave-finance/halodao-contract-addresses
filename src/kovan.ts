@@ -1,10 +1,11 @@
-import { AddressCollection } from './types'
+import { AddressCollection, ZERO_ADDRESS } from './types'
 
 const tokens = {
   CHF: '0xE9958574866587c391735b7e7CE0D79432d3b9d0',
   EURS: '0xaA64D57E3c781bcFB2e8B1e1C9936C302Db84bCE',
   fxPHP: '0x07bAB1e2D6DCb965d250F376B811ab8c2373AAE0',
   USDC: '0x7e6F38922B59545bB5A6dc3A71039b85dFB1B7cE',
+  ahUSDC: '0x0a4f3a725d7C10030d437d1f409f3d99B928bf97',
   WBTC: '0x41dE675d148f6acC84E5e88A9515Db0889519d1D',
   WETH: '0x9b1FeAAd523A4f6BA73215C103208907938EA7F1',
   XSGD: '0x4DCE1178D2A368397c09fc6C63e2f82F00a2Ca09',
@@ -169,6 +170,12 @@ const addresses: AddressCollection = {
           tokens.USDC
         ]
       }
+    },
+    {
+      shortName: 'USDC Lending',
+      fullName: 'USDC',
+      address: ZERO_ADDRESS,
+      USDC: tokens.USDC
     }
   ]
 }

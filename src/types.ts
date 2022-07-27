@@ -87,6 +87,7 @@ export type AddressCollection = {
     UST?: string
     CHF?: string
     indexUSDC?: string
+    ahUSDC?: string
     fakeUSDC?: string
     fakeFxPHP?: string
     fakeXSGD?: string
@@ -162,7 +163,8 @@ export type AddressCollection = {
     shortName: string
     fullName: string
     address: string
-    pool: Pool
+    pool?: Pool
+    USDC?: string
   }[]
 }
 
