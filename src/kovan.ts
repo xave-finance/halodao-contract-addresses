@@ -87,9 +87,9 @@ const addresses: AddressCollection = {
         },
         {
           assets: [tokens.EURS, tokens.USDC],
-          address: '0x7e6046887525ce201f0E90E6398D4728371deDaF',
+          address: '0x4B8fB6DAD63EF68154BE0278aa18Ec56878ac1C7',
           poolId:
-            '0x7e6046887525ce201f0e90e6398d4728371dedaf000200000000000000000a08'
+            '0x4b8fb6dad63ef68154be0278aa18ec56878ac1c7000200000000000000000a0c'
         }
       ],
       disabled: []
