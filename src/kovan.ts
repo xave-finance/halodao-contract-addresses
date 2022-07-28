@@ -22,7 +22,7 @@ const curves = {
 const fxPools = {
   LP_XSGD_USDC: '0xc1CbE9733B845d3ab7C4004B118003d5554Cf1d1',
   LP_FXPHP_USDC: '0xc6233C45D07D5b5a7438F7044A9D512c13234B77',
-  LP_EURS_USDC: '0x7e6046887525ce201f0E90E6398D4728371deDaF'
+  LP_EURS_USDC: '0x4B8fB6DAD63EF68154BE0278aa18Ec56878ac1C7'
 }
 
 const addresses: AddressCollection = {
@@ -75,19 +75,19 @@ const addresses: AddressCollection = {
       enabled: [
         {
           assets: [tokens.fxPHP, tokens.USDC],
-          address: '0xc6233C45D07D5b5a7438F7044A9D512c13234B77',
+          address: fxPools.LP_FXPHP_USDC,
           poolId:
             '0xc6233c45d07d5b5a7438f7044a9d512c13234b770002000000000000000009fa'
         },
         {
           assets: [tokens.XSGD, tokens.USDC],
-          address: '0xc1CbE9733B845d3ab7C4004B118003d5554Cf1d1',
+          address: fxPools.LP_XSGD_USDC,
           poolId:
             '0xc1cbe9733b845d3ab7c4004b118003d5554cf1d10002000000000000000009fd'
         },
         {
           assets: [tokens.EURS, tokens.USDC],
-          address: '0x4B8fB6DAD63EF68154BE0278aa18Ec56878ac1C7',
+          address: fxPools.LP_EURS_USDC,
           poolId:
             '0x4b8fb6dad63ef68154be0278aa18ec56878ac1c7000200000000000000000a0c'
         }
