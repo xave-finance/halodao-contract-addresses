@@ -19,6 +19,12 @@ const curves = {
   HLP_GBP_USDC_inactive: '0x7169866E13F58E045D77D5bE3d79ad8cCADC0fbF'
 }
 
+const fxPools = {
+  LP_XSGD_USDC: '0xc1CbE9733B845d3ab7C4004B118003d5554Cf1d1',
+  LP_FXPHP_USDC: '0xc6233C45D07D5b5a7438F7044A9D512c13234B77',
+  LP_EURS_USDC: '0x7e6046887525ce201f0E90E6398D4728371deDaF'
+}
+
 const addresses: AddressCollection = {
   protocol: {
     XAV: '0xDdD46A4966a2197396BeFdF1d922569bf5F3163b',
@@ -170,7 +176,7 @@ const addresses: AddressCollection = {
       fullName: 'xSGD-USDC-indexUSDC',
       address: '0x111E7965c95ca95A7EeED4993d3b88aA64fe5a7b',
       pool: {
-        address: curves.HLP_XSGD_USDC,
+        address: fxPools.LP_XSGD_USDC,
         poolId: '',
         assets: [tokens.XSGD, tokens.USDC]
       }
