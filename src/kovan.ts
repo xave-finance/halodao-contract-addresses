@@ -1,4 +1,4 @@
-import { AddressCollection, ZERO_ADDRESS } from './types'
+import { AddressCollection } from './types'
 
 const tokens = {
   CHF: '0xE9958574866587c391735b7e7CE0D79432d3b9d0',
@@ -180,12 +180,6 @@ const addresses: AddressCollection = {
         poolId: '',
         assets: [tokens.XSGD, tokens.USDC]
       }
-    },
-    {
-      shortName: 'USDC Lending',
-      fullName: 'USDC',
-      address: ZERO_ADDRESS,
-      USDC: tokens.USDC
     }
   ]
 }
