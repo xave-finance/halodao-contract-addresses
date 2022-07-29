@@ -58,6 +58,7 @@ const addresses: AddressCollection = {
   ammV2: {
     vault: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
     pools: {
+      all: fxPools,
       genesis: [
         {
           assets: [tokens.WETH, tokens.USDC],
@@ -168,7 +169,8 @@ const addresses: AddressCollection = {
     },
     hTokens: {
       HLP_XSGD_USDC: '0xad7b437eB7D1CD9a2fFcc009c34E9ed5A4Cf0A22',
-      USDC: '0x0a4f3a725d7C10030d437d1f409f3d99B928bf97'
+      USDC: '0x0a4f3a725d7C10030d437d1f409f3d99B928bf97',
+      LP_XSGD_USDC: '0x0a4f3a725d7C10030d437d1f409f3d99B928bf97'
     },
     variableDebtTokens: {
       USDC: '0xC99AD035150433B35AeDdB4adf983CaB6675AF5f'

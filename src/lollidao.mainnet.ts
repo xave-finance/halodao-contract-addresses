@@ -48,6 +48,7 @@ const addresses: AddressCollection = {
   ammV2: {
     vault: ZERO_ADDRESS,
     pools: {
+      all: {},
       genesis: [],
       enabled: [],
       disabled: []
