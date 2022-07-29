@@ -70,6 +70,22 @@ export type AddressCollection = {
   ammV2: {
     vault: string
     pools: {
+      all: {
+        LP_CHF_USDC?: string
+        LP_EURS_USDC?: string
+        LP_GBP_USDC?: string
+        LP_WETH_USDC?: string
+        LP_XIDR_USDC?: string
+        LP_XSGD_USDC?: string
+        LP_TCAD_USDC?: string
+        LP_TGBP_USDC?: string
+        LP_UST_USDC?: string
+        LP_TAUD_USDC?: string
+        LP_fxPHP_USDC?: string
+        LP_tagPHP_USDC?: string
+        LP_LPHP_USDC?: string
+        LP_fxAUD_USDC?: string
+      }
       genesis: Pool[]
       enabled: Pool[]
       disabled: Pool[]
@@ -169,6 +185,7 @@ export type AddressCollection = {
     hTokens?: {
       HLP_XSGD_USDC?: string
       USDC?: string
+      LP_XSGD_USDC?: string
     }
     variableDebtTokens?: {
       USDC?: string
