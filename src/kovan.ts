@@ -170,7 +170,7 @@ const addresses: AddressCollection = {
     hTokens: {
       HLP_XSGD_USDC: '0xad7b437eB7D1CD9a2fFcc009c34E9ed5A4Cf0A22',
       USDC: '0x0a4f3a725d7C10030d437d1f409f3d99B928bf97',
-      LP_XSGD_USDC: '0x0a4f3a725d7C10030d437d1f409f3d99B928bf97'
+      LP_XSGD_USDC: '0xd79DEc9722bB6902d86E18724c7C2DD8fb52E6CC'
     },
     variableDebtTokens: {
       USDC: '0xC99AD035150433B35AeDdB4adf983CaB6675AF5f'
