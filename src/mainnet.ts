@@ -12,7 +12,8 @@ const tokens = {
   TCAD: '0x00000100F2A2bd000715001920eB70D229700085',
   TGBP: '0x00000000441378008EA67F4284A57932B1c000a5',
   fakeUSDC: '0x7558f7F023d676841ab118D4637a68943e650196', // fake mintable token
-  fakeXSGD: '0x3E58d34C8cf108897b1296eF462AD18522f7e122' // fake mintable token
+  fakeXSGD: '0x3E58d34C8cf108897b1296eF462AD18522f7e122', // fake mintable token
+  fakeFxPHP: '0x02510A18068B57B010b4CBc2E02D8CE5cCBdf8F5' // fake mintable token
 }
 
 const curves = {
