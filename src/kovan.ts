@@ -20,9 +20,8 @@ const curves = {
 }
 
 const fxPools = {
-  LP_XSGD_USDC: '0xc1CbE9733B845d3ab7C4004B118003d5554Cf1d1',
-  LP_FXPHP_USDC: '0xc6233C45D07D5b5a7438F7044A9D512c13234B77',
-  LP_EURS_USDC: '0x4B8fB6DAD63EF68154BE0278aa18Ec56878ac1C7'
+  LP_FXPHP_USDC: '0xB2978AC7b018A308495526fEB9413580F87F6a5b',
+  LP_XSGD_USDC: '0x1304Af4cB75919058A2dbFCDC1AF532598934697'
 }
 
 const addresses: AddressCollection = {
@@ -78,31 +77,25 @@ const addresses: AddressCollection = {
           assets: [tokens.fxPHP, tokens.USDC],
           address: fxPools.LP_FXPHP_USDC,
           poolId:
-            '0xc6233c45d07d5b5a7438f7044a9d512c13234b770002000000000000000009fa'
+            '0xb2978ac7b018a308495526feb9413580f87f6a5b000200000000000000000a24'
         },
         {
           assets: [tokens.XSGD, tokens.USDC],
           address: fxPools.LP_XSGD_USDC,
           poolId:
-            '0xc1cbe9733b845d3ab7c4004b118003d5554cf1d10002000000000000000009fd'
-        },
-        {
-          assets: [tokens.EURS, tokens.USDC],
-          address: fxPools.LP_EURS_USDC,
-          poolId:
-            '0x4b8fb6dad63ef68154be0278aa18ec56878ac1c7000200000000000000000a0c'
+            '0x1304af4cb75919058a2dbfcdc1af532598934697000200000000000000000a25'
         }
       ],
       disabled: []
     },
-    fxPoolFactory: '0xC54c21F2f15ea03402a9d04ffc77844FF4f7e296',
-    proportionalLiquidity: '0xBea9e4cF645aAC52f72A50cF0648B57974F9Ad02',
-    assimilatorFactory: '0xDD0546342E48a35f5DE1f32c410120C850847233',
-    swapLibrary: '0x9E56018a5b903651AfD5E28357Dd78b06ca84B07',
+    fxPoolFactory: '0xFd144A8d7c3d67e9D61023F88336d83707896b5F',
+    proportionalLiquidity: '0xB570E74D9FC205667aE4E511bE25a0A3b16081e8',
+    assimilatorFactory: '0xB5c3237c17c588bAa28F9b8ef6543a7Ff654a8e4',
+    swapLibrary: '0x0d65350F0e83f67534bB0D4a8fb50b33FBE9D1AC',
     assimilators: {
-      USDC_USD: '0xab44DF70796aC8ce84E2FE134b7e4F557e118c4D',
-      fxPHP_USD: '0xe7FD8A06C79D5E1888B02B08E1a138E15C899061',
-      XSGD_USD: '0x1593362e55cB1271f4C6fe778eA0d07B746fDC90'
+      USDC_USD: '0x79EE248FB0007905e42549B4574CfA48574e562a',
+      fxPHP_USD: '0x0B6773500172cC07968Edb7D8884Fe500AA1cb3a',
+      XSGD_USD: '0x62fB9B70F6dD2c7F2727973767c45421ef9B260d'
     },
     oracles: {
       USDC: '0x9211c6b3BF41A10F78539810Cf5c64e1BB78Ec60',
