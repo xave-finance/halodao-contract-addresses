@@ -79,7 +79,12 @@ const addresses: AddressCollection = {
     proportionalLiquidity: ZERO_ADDRESS,
     assimilatorFactory: ZERO_ADDRESS,
     swapLibrary: ZERO_ADDRESS,
-    oracles: {}
+    oracles: {
+      USDC: '0x8fFfFfd4AfB6115b954Bd326cbe7B4BA576818f6',
+      fxPHP: '0x9481e7ad8BE6BbB22A8B9F7B9fB7588d1df65DF6',
+      XSGD: '0xe25277fF4bbF9081C75Ab0EB13B4A13a721f3E13',
+      EURS: '0xb49f677943BC038e9857d61E7d053CaA2C1734C1'
+    }
   },
   tokens,
   lendingMarket: {
