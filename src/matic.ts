@@ -2,7 +2,9 @@ import { AddressCollection, ZERO_ADDRESS } from './types'
 
 const tokens = {
   fakeUSDC: '0xd92295aDCE5B6961853394Ad05fb4670012D8c60',
-  fakeFxPHP: '0xe1Ca353a88a8822ed95293a7E76bd20eEA2ff662'
+  fakeFxPHP: '0xe1Ca353a88a8822ed95293a7E76bd20eEA2ff662',
+  fakeXSGD: '0x7112AE5d61eb28c7b00413882B59b7F796e2A505',
+  fakeEURS: '0xBb54874397Beb2Dd8673eb3B8Cd7C07d54bbd02D'
 }
 
 const curves = {
