@@ -20,8 +20,8 @@ const curves = {
 }
 
 const fxPools = {
-  LP_FXPHP_USDC: '0xB2978AC7b018A308495526fEB9413580F87F6a5b',
-  LP_XSGD_USDC: '0x1304Af4cB75919058A2dbFCDC1AF532598934697'
+  LP_FXPHP_USDC: '0x0E344Fa46db19CFc3924b51CdBDD8B94faF0cDbF',
+  LP_XSGD_USDC: '0x56225362715133403A294A1C0F69f5D4E59b4dd8'
 }
 
 const addresses: AddressCollection = {
@@ -77,13 +77,13 @@ const addresses: AddressCollection = {
           assets: [tokens.fxPHP, tokens.USDC],
           address: fxPools.LP_FXPHP_USDC,
           poolId:
-            '0xb2978ac7b018a308495526feb9413580f87f6a5b000200000000000000000a24'
+            '0x0e344fa46db19cfc3924b51cdbdd8b94faf0cdbf000200000000000000000a46'
         },
         {
           assets: [tokens.XSGD, tokens.USDC],
           address: fxPools.LP_XSGD_USDC,
           poolId:
-            '0x1304af4cb75919058a2dbfcdc1af532598934697000200000000000000000a25'
+            '0x56225362715133403a294a1c0f69f5d4e59b4dd8000200000000000000000a45'
         }
       ],
       disabled: []
@@ -163,7 +163,7 @@ const addresses: AddressCollection = {
     hTokens: {
       HLP_XSGD_USDC: '0xad7b437eB7D1CD9a2fFcc009c34E9ed5A4Cf0A22',
       USDC: '0x0a4f3a725d7C10030d437d1f409f3d99B928bf97',
-      LP_XSGD_USDC: '0xd79DEc9722bB6902d86E18724c7C2DD8fb52E6CC'
+      LP_XSGD_USDC: '0x78Fb5111e08a3C4AB477f7b26CE126ea2de7d93b'
     },
     variableDebtTokens: {
       USDC: '0xC99AD035150433B35AeDdB4adf983CaB6675AF5f'
@@ -173,10 +173,10 @@ const addresses: AddressCollection = {
     {
       shortName: 'xSGD Thetanuts',
       fullName: 'xSGD-USDC-indexUSDC',
-      address: '0x111E7965c95ca95A7EeED4993d3b88aA64fe5a7b',
+      address: '0xC6b596068Ab44Cf1285972bC928e2cF82DD4b785',
       pool: {
         address: fxPools.LP_XSGD_USDC,
-        poolId: '',
+        poolId: '0x56225362715133403a294a1c0f69f5d4e59b4dd8000200000000000000000a45',
         assets: [tokens.XSGD, tokens.USDC]
       }
     },
