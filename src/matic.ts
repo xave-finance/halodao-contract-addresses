@@ -17,6 +17,10 @@ const curves = {
   HLP_WTAUD_USDC: '0x95AB308bE1e209eB6FfdD3279B5ea71D365AD30B'
 }
 
+const fxPools = {
+  LP_XSGD_USDC: '0x726E324c29a1e49309672b244bdC4Ff62A270407'
+}
+
 const addresses: AddressCollection = {
   protocol: {
     XAV: ZERO_ADDRESS,
@@ -43,15 +47,22 @@ const addresses: AddressCollection = {
   ammV2: {
     vault: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
     pools: {
-      all: {},
+      all: fxPools,
       genesis: [],
-      enabled: [],
+      enabled: [
+        {
+          assets: [tokens.XSGD, tokens.USDC],
+          address: fxPools.LP_XSGD_USDC,
+          poolId:
+            '0x726e324c29a1e49309672b244bdc4ff62a270407000200000000000000000702'
+        }
+      ],
       disabled: []
     },
-    fxPoolFactory: ZERO_ADDRESS,
-    proportionalLiquidity: ZERO_ADDRESS,
-    assimilatorFactory: ZERO_ADDRESS,
-    swapLibrary: ZERO_ADDRESS,
+    fxPoolFactory: '0x627D759314D5c4007b461A74eBaFA7EBC5dFeD71',
+    proportionalLiquidity: '0xe35A4e171F5568e8619DA1e097DAD18928187D85',
+    assimilatorFactory: '0x9CB3961ec9E54563602d96D2b3332028aa54dd13',
+    swapLibrary: '0x6256447F6dAa532d5A650cFeAf305D2DD7Bd296E',
     oracles: {
       USDC: '0xfE4A8cc5b5B2366C1B58Bea3858e81843581b2F7',
       fxPHP: '0x218231089Bebb2A31970c3b77E96eCfb3BA006D1',
