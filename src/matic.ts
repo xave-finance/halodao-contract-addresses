@@ -50,7 +50,7 @@ const addresses: AddressCollection = {
       lendingPoolAddressesProvider:
         '0x1D5da10918CAC00a62a22532881B9c83C1C9551a',
       lendingPoolAddressesProviderRegistry:
-        '0x86a9cd9489B5D33c1eC10fdccCaBC3555cBfAAD2',
+        '0x2Ee7e1FE1B65600A3bD28B06d0b958B3b6cc4695',
       reserveLogic: '0xaf133753F37694cD4b9aD2A886bCb2eb76CDfa51',
       genericLogic: '0x434A125D77218589014aA60900CAE870ed9BcDA8',
       validationLogic: '0x539b12ADAD0f5fC6b2365657f8a4669c0e3Eb7Ab',
@@ -70,7 +70,7 @@ const addresses: AddressCollection = {
       aToken: '0xaAA14D6559d4b8091759824186999c6f0AD592dE',
       defaultReserveInterestRateStrategy:
         '0xF894fA826926DF73ef43D10272Fb97102dA957C4',
-      wethGateway: '0x679f321BAdD89a2037521a9611A35BAdDAAdF6Ad',
+      wethGateway: '0xda863d0a24E242f552f4b9b36d1fDF0844274e02',
       lendingPoolCollateralManager:
         '0xeEc23b994F27B6914A06180c6B5FA4f83ec80712',
       walletBalanceProvider: '0x1Fc9639c1eDe7ba2d33E609A0F2956A23eF99E3e',
