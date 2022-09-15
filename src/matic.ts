@@ -120,7 +120,26 @@ const addresses: AddressCollection = {
       USDC: '0x4870f9c3676FD543AfEe6630B5f923c28e38Ad9f'
     },
     wrappedNativeToken: '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270'
-  }
+  },
+  strats: [
+    {
+      shortName: 'XSGD Thetanuts',
+      fullName: 'XSGD-USDC-indexUSDC',
+      address: '0x9AaAA7774593F1bCaba8B2c8Ceac196F509a9262',
+      pool: {
+        address: fxPools.LP_XSGD_USDC,
+        poolId:
+          '0x726e324c29a1e49309672b244bdc4ff62a270407000200000000000000000702',
+        assets: [tokens.XSGD, tokens.USDC]
+      }
+    },
+    {
+      shortName: 'USDC Lending',
+      fullName: 'USDC',
+      address: ZERO_ADDRESS,
+      USDC: tokens.USDC
+    }
+  ]
 }
 
 export default addresses
