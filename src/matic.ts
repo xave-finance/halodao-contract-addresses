@@ -3,7 +3,7 @@ import { AddressCollection, ZERO_ADDRESS } from './types'
 const tokens = {
   USDC: '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174',
   XSGD: '0xDC3326e71D45186F113a2F448984CA0e8D201995',
-  indexUSDC: '0x35b51ff33be10a9a741e9c9d3f17585e4b7d15c0',
+  indexUSDC: '0x35b51Ff33bE10a9a741e9C9d3f17585e4b7D15C0',
   fakeUSDC: '0xd92295aDCE5B6961853394Ad05fb4670012D8c60',
   fakeFxPHP: '0xe1Ca353a88a8822ed95293a7E76bd20eEA2ff662',
   fakeXSGD: '0x7112AE5d61eb28c7b00413882B59b7F796e2A505',
@@ -125,7 +125,7 @@ const addresses: AddressCollection = {
     {
       shortName: 'XSGD Thetanuts',
       fullName: 'XSGD-USDC-indexUSDC',
-      address: '0x9AaAA7774593F1bCaba8B2c8Ceac196F509a9262',
+      address: '0xFFBa1d36Ca89C26A77A5239E76940DD9faC3D390',
       pool: {
         address: fxPools.LP_XSGD_USDC,
         poolId:
