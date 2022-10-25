@@ -110,7 +110,7 @@ const addresses: AddressCollection = {
       LP_XSGD_USDC: fxPools.LP_XSGD_USDC
     },
     priceOracles: {
-      LP_XSGD_USDC: ''
+      LP_XSGD_USDC: '0xbca5c841eC9cC6Bd54ee18450eAe3B4D7b68146b'
     },
     hTokens: {
       LP_XSGD_USDC: '0xF2505AA3efAd1Fef6c36464329b50652ABC7e385',
