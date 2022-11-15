@@ -101,6 +101,8 @@ export type AddressCollection = {
       XSGD?: string
       EURS?: string
       CHF?: string
+      XIDR?: string
+      DAI?: string
     }
   }
   tokens: {
@@ -118,6 +120,7 @@ export type AddressCollection = {
     fxAUD?: string
     UST?: string
     CHF?: string
+    DAI?: string
     indexUSDC?: string
     fakeUSDC?: string
     fakeFxPHP?: string
