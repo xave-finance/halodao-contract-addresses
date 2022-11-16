@@ -22,7 +22,9 @@ const curves = {
 }
 
 const fxPools = {
-  LP_XSGD_USDC: '0x726E324c29a1e49309672b244bdC4Ff62A270407'
+  LP_XSGD_USDC: '0x726E324c29a1e49309672b244bdC4Ff62A270407',
+  LP_DAI_USDC: '0x216B176513C500dBE1D677939103E350A9373a39',
+  LP_EURS_USDC: '0xfd24Afa5416C8De94FDbaf344840F524155A4DD0'
 }
 
 const addresses: AddressCollection = {
@@ -59,6 +61,18 @@ const addresses: AddressCollection = {
           address: fxPools.LP_XSGD_USDC,
           poolId:
             '0x726e324c29a1e49309672b244bdc4ff62a270407000200000000000000000702'
+        },
+        {
+          assets: [tokens.DAI, tokens.USDC],
+          address: fxPools.LP_DAI_USDC,
+          poolId:
+            '0x216b176513c500dbe1d677939103e350a9373a390002000000000000000008da'
+        },
+        {
+          assets: [tokens.EURS, tokens.USDC],
+          address: fxPools.LP_EURS_USDC,
+          poolId:
+            '0xfd24afa5416c8de94fdbaf344840f524155a4dd00002000000000000000008db'
         }
       ],
       disabled: []
