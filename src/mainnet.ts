@@ -11,6 +11,7 @@ const tokens = {
   EURS: '0xdB25f211AB05b1c97D595516F45794528a807ad8',
   TCAD: '0x00000100F2A2bd000715001920eB70D229700085',
   TGBP: '0x00000000441378008EA67F4284A57932B1c000a5',
+  DAI: '0x6B175474E89094C44Da98b954EedeAC495271d0F',
   fakeUSDC: '0x7558f7F023d676841ab118D4637a68943e650196', // fake mintable token
   fakeXSGD: '0x3E58d34C8cf108897b1296eF462AD18522f7e122', // fake mintable token
   fakeFxPHP: '0x02510A18068B57B010b4CBc2E02D8CE5cCBdf8F5' // fake mintable token
@@ -24,6 +25,10 @@ const curves = {
   HLP_TAUD_USDC: '0x11816335DEe6763e2A7B6080b2b2980Eac7F85E4',
   HLP_fxPHP_USDC: '0x20E1d8Daf58358CF11BE5616946e1dF55F1eF8B0',
   HLP_tagPHP_USDC: '0xc3CfdA7061b729265F58BdC07564f1cbD6C41FBc'
+}
+
+const fxPools = {
+  LP_XSGD_USDC: '0x55bEC22f8f6C69137cEAf284d9B441Db1B9bFedc'
 }
 
 const addresses: AddressCollection = {
@@ -72,18 +77,26 @@ const addresses: AddressCollection = {
     pools: {
       all: {},
       genesis: [],
-      enabled: [],
+      enabled: [
+        {
+          assets: [tokens.XSGD, tokens.USDC],
+          address: fxPools.LP_XSGD_USDC,
+          poolId:
+            '0x55bec22f8f6c69137ceaf284d9b441db1b9bfedc0002000000000000000003cd'
+        }
+      ],
       disabled: []
     },
-    fxPoolFactory: ZERO_ADDRESS,
-    proportionalLiquidity: ZERO_ADDRESS,
-    assimilatorFactory: ZERO_ADDRESS,
-    swapLibrary: ZERO_ADDRESS,
+    fxPoolFactory: '0x81fE9e5B28dA92aE949b705DfDB225f7a7cc5134',
+    proportionalLiquidity: '0xB741984C8ce63F4cbD923842Ee0B9e32Dd9df48c',
+    assimilatorFactory: '0x5127fa6aEb261d519B9E843345265e2845dF449D',
+    swapLibrary: '0x390Bcd94446fcC6DA992995c66b58e3A7a7b279C',
     oracles: {
       USDC: '0x8fFfFfd4AfB6115b954Bd326cbe7B4BA576818f6',
       fxPHP: '0x9481e7ad8BE6BbB22A8B9F7B9fB7588d1df65DF6',
       XSGD: '0xe25277fF4bbF9081C75Ab0EB13B4A13a721f3E13',
-      EURS: '0xb49f677943BC038e9857d61E7d053CaA2C1734C1'
+      EURS: '0xb49f677943BC038e9857d61E7d053CaA2C1734C1',
+      DAI: '0xAed0c38402a5d19df6E4c03F4E2DceD6e29c1ee9'
     }
   },
   tokens,
