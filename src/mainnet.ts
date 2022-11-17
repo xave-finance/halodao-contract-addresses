@@ -29,6 +29,7 @@ const curves = {
 
 const fxPools = {
   LP_XSGD_USDC: '0x55bEC22f8f6C69137cEAf284d9B441Db1B9bFedc',
+  LP_DAI_USDC: '0x66bB9D104c55861feb3Ec3559433F01f6373c966',
   LP_EURS_USDC: '0xAd0e5e0778cAC28f1ff459602b31351871B5754a'
 }
 
@@ -84,6 +85,12 @@ const addresses: AddressCollection = {
           address: fxPools.LP_XSGD_USDC,
           poolId:
             '0x55bec22f8f6c69137ceaf284d9b441db1b9bfedc0002000000000000000003cd'
+        },
+        {
+          assets: [tokens.DAI, tokens.USDC],
+          address: fxPools.LP_DAI_USDC,
+          poolId:
+            '0x66bb9d104c55861feb3ec3559433f01f6373c9660002000000000000000003cf'
         },
         {
           assets: [tokens.EURS, tokens.USDC],
