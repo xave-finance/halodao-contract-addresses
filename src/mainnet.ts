@@ -35,7 +35,7 @@ const fxPools = {
 
 const addresses: AddressCollection = {
   protocol: {
-    XAV: '0x2c66D4a60F9dEcDDAb32856E2E50dd50926438E2',
+    XAV: '0x40370aed88933021e20cf7c4d67e00417cda2202',
     RNBW: '0xe94b97b6b43639e238c851a7e693f50033efd75c',
     xRNBW: '0x47BE779De87de6580d0548cde80710a93c502405'
   },
