@@ -111,7 +111,8 @@ const addresses: AddressCollection = {
       XSGD: '0xe25277fF4bbF9081C75Ab0EB13B4A13a721f3E13',
       EURS: '0xb49f677943BC038e9857d61E7d053CaA2C1734C1',
       DAI: '0xAed0c38402a5d19df6E4c03F4E2DceD6e29c1ee9'
-    }
+    },
+    balancerProtocolFeeCollector: ZERO_ADDRESS
   },
   tokens,
   lendingMarket: {

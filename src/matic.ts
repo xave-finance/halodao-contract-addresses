@@ -87,7 +87,8 @@ const addresses: AddressCollection = {
       EURS: '0x73366Fe0AA0Ded304479862808e02506FE556a98',
       XSGD: '0x8CE3cAc0E6635ce04783709ca3CC4F5fc5304299',
       DAI: '0x4746DeC9e833A82EC7C2C1356372CcF2cfcD2F3D'
-    }
+    },
+    balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
   },
   tokens,
   lendingMarket: {
