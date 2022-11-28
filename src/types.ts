@@ -104,6 +104,7 @@ export type AddressCollection = {
       XIDR?: string
       DAI?: string
     }
+    balancerProtocolFeeCollector?: string
   }
   tokens: {
     AMPL?: string

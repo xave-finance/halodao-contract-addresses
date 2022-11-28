@@ -77,7 +77,7 @@ const addresses: AddressCollection = {
   ammV2: {
     vault: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
     pools: {
-      all: {},
+      all: fxPools,
       genesis: [],
       enabled: [
         {
@@ -111,7 +111,8 @@ const addresses: AddressCollection = {
       XSGD: '0xe25277fF4bbF9081C75Ab0EB13B4A13a721f3E13',
       EURS: '0xb49f677943BC038e9857d61E7d053CaA2C1734C1',
       DAI: '0xAed0c38402a5d19df6E4c03F4E2DceD6e29c1ee9'
-    }
+    },
+    balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
   },
   tokens,
   lendingMarket: {
