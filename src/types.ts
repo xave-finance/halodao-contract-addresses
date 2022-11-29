@@ -128,6 +128,11 @@ export type AddressCollection = {
     fakeXSGD?: string
     fakeEURS?: string
   }
+  fxPools?: {
+    LP_XSGD_USDC: string
+    LP_DAI_USDC: string
+    LP_EURS_USDC: string
+  }
   lendingMarket?: {
     protocol: {
       lendingPoolAddressesProvider: string
