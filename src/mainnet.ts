@@ -150,7 +150,8 @@ const addresses: AddressCollection = {
     },
     lpAssets: {
       HLP_XSGD_USDC: curves.HLP_XSGD_USDC,
-      HLP_UST_USDC: curves.HLP_UST_USDC
+      HLP_UST_USDC: curves.HLP_UST_USDC,
+      LP_EURS_USDC: fxPools.LP_EURS_USDC
     },
     priceOracles: {
       XSGD: '0xE1bA4190e8a907154A4b7EFe4c5bbF0f584847a7',
