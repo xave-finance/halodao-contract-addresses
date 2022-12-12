@@ -167,6 +167,7 @@ export type AddressCollection = {
       HLP_GBP_USDC?: string
       LP_XSGD_USDC?: string
       LP_FXPHP_USDC?: string
+      LP_EURS_USDC?: string
     }
     priceOracles: {
       AMPL?: string
