@@ -33,6 +33,15 @@ const fxPools = {
   LP_EURS_USDC: '0xAd0e5e0778cAC28f1ff459602b31351871B5754a'
 }
 
+const fxPoolIds = {
+  XSGD_USDC:
+    '0x55bec22f8f6c69137ceaf284d9b441db1b9bfedc0002000000000000000003cd',
+  DAI_USDC:
+    '0x66bb9d104c55861feb3ec3559433f01f6373c9660002000000000000000003cf',
+  EURS_USDC:
+    '0xad0e5e0778cac28f1ff459602b31351871b5754a0002000000000000000003ce'
+}
+
 const addresses: AddressCollection = {
   protocol: {
     XAV: '0x40370aed88933021e20cf7c4d67e00417cda2202',
@@ -83,20 +92,17 @@ const addresses: AddressCollection = {
         {
           assets: [tokens.XSGD, tokens.USDC],
           address: fxPools.LP_XSGD_USDC,
-          poolId:
-            '0x55bec22f8f6c69137ceaf284d9b441db1b9bfedc0002000000000000000003cd'
+          poolId: fxPoolIds.XSGD_USDC
         },
         {
           assets: [tokens.DAI, tokens.USDC],
           address: fxPools.LP_DAI_USDC,
-          poolId:
-            '0x66bb9d104c55861feb3ec3559433f01f6373c9660002000000000000000003cf'
+          poolId: fxPoolIds.DAI_USDC
         },
         {
           assets: [tokens.EURS, tokens.USDC],
           address: fxPools.LP_EURS_USDC,
-          poolId:
-            '0xad0e5e0778cac28f1ff459602b31351871b5754a0002000000000000000003ce'
+          poolId: fxPoolIds.EURS_USDC
         }
       ],
       disabled: []
@@ -170,7 +176,25 @@ const addresses: AddressCollection = {
       USDC: '0xb9c4268a13c00af2F6e20458D6252d09faD8650e'
     },
     wrappedNativeToken: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
-  }
+  },
+  strats: [
+    {
+      shortName: 'EURS Thetanuts',
+      fullName: 'EURS-USDC-indexUSDC',
+      address: '0x3b347857272b1c237d8a68c652b88b4c8fdd6d44',
+      pool: {
+        address: fxPools.LP_EURS_USDC,
+        poolId: fxPoolIds.EURS_USDC,
+        assets: [tokens.EURS, tokens.USDC]
+      }
+    },
+    {
+      shortName: 'USDC Lending',
+      fullName: 'USDC',
+      address: ZERO_ADDRESS,
+      USDC: tokens.USDC
+    }
+  ]
 }
 
 export default addresses
