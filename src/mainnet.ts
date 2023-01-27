@@ -181,7 +181,7 @@ const addresses: AddressCollection = {
     {
       shortName: 'EURS Thetanuts',
       fullName: 'EURS-USDC-indexUSDC',
-      address: '0x3b347857272b1c237d8a68c652b88b4c8fdd6d44',
+      address: '0x6DA973ea5154E6Bb01E97794F0c692FF39Bef4b9',
       pool: {
         address: fxPools.LP_EURS_USDC,
         poolId: fxPoolIds.EURS_USDC,
