@@ -150,7 +150,7 @@ const addresses: AddressCollection = {
     {
       shortName: 'XSGD Thetanuts',
       fullName: 'XSGD-USDC-indexUSDC',
-      address: '0x3e02f6878D242FB6B85cC66dfc39e064CfFcfbd1',
+      address: '0x86C6A426508999C58fBc1aCA2bc244e08E7F4Ec6',
       pool: {
         address: fxPools.LP_XSGD_USDC,
         poolId: fxPoolIds.XSGD_USDC,
