@@ -20,7 +20,7 @@ const fxPoolIds = {
 
 const addresses: AddressCollection = {
   protocol: {
-    XAV: '0xFe19E55D1B35a1286712831575644C162ec3C940',
+    XAV: '0x4f2157aE2661e4312B8F2E458705fA5a9aeb3D46',
     RNBW: ZERO_ADDRESS,
     xRNBW: ZERO_ADDRESS
   },
