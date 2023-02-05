@@ -60,7 +60,8 @@ const addresses: AddressCollection = {
       XSGD: '0x4fbc1dFfd80F197CF99FAeDa8f7Bcae0Ebea4d81',
       EURS: '0x21420f2Fa4082d4Bf023698bB574F7D510345260',
       USDT: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7', // no USDT on Chainlink goerli, reusing USDC instead
-      DAI: '0x0d79df66BE487753B02D015Fb622DED7f0E9798d'
+      DAI: '0x0d79df66BE487753B02D015Fb622DED7f0E9798d',
+      'bb-a-usd': '0x839A63Ea63e615FC8F1eE98137a517D168941040'
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
   },
