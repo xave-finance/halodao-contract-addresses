@@ -103,6 +103,8 @@ export type AddressCollection = {
       CHF?: string
       XIDR?: string
       DAI?: string
+      USDT?: string
+      'bb-a-usd'?: string
     }
     balancerProtocolFeeCollector: string
   }
@@ -122,6 +124,8 @@ export type AddressCollection = {
     UST?: string
     CHF?: string
     DAI?: string
+    USDT?: string
+    'bb-a-usd'?: string
     indexUSDC?: string
     fakeUSDC?: string
     fakeFxPHP?: string
