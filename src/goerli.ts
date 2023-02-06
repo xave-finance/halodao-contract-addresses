@@ -94,8 +94,14 @@ const addresses: AddressCollection = {
       uiIncentiveDataProvider: '0x7eCfdE0Eb9cA7031248DfBFB49e8716d1621E810',
       uiHaloPoolDataProvider: '0x2701e942E2Ff766BC1276A0687A92bA7340E18d2'
     },
-    lpAssets: {},
-    priceOracles: {},
+    lpAssets: {
+      LP_XSGD_USDC: fxPools.LP_XSGD_USDC,
+      LP_EURS_USDC: fxPools.LP_EURS_USDC
+    },
+    priceOracles: {
+      LP_XSGD_USDC: '0xF628A9494E3dFafFcD291D946CE13CbEEB157F5D',
+      LP_EURS_USDC: '0x73306Bb8208897A81E455d234FE8F7edC3b6168F'
+    },
     hTokens: {},
     variableDebtTokens: {},
     wrappedNativeToken: '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6'
