@@ -102,7 +102,10 @@ const addresses: AddressCollection = {
       LP_XSGD_USDC: '0xF628A9494E3dFafFcD291D946CE13CbEEB157F5D',
       LP_EURS_USDC: '0x73306Bb8208897A81E455d234FE8F7edC3b6168F'
     },
-    hTokens: {},
+    hTokens: {
+      LP_XSGD_USDC: '0x68E0665ac7D0e67a4d529C056f249fF01ea356f5',
+      LP_EURS_USDC: '0x99f935949Bf7D7BA3Dbb64991fE94400fDAe2752'
+    },
     variableDebtTokens: {},
     wrappedNativeToken: '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6'
   }
