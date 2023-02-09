@@ -57,11 +57,11 @@ const addresses: AddressCollection = {
     swapLibrary: '0x9875C5C44C10e24AEa48C422f819c5c8f933701D',
     oracles: {
       USDC: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7',
-      XSGD: '0x4fbc1dFfd80F197CF99FAeDa8f7Bcae0Ebea4d81',
-      EURS: '0x21420f2Fa4082d4Bf023698bB574F7D510345260',
+      XSGD: '0x4fbc1dFfd80F197CF99FAeDa8f7Bcae0Ebea4d81', // mock XSGD/USD oracle
+      EURS: '0x44390589104C9164407A0E0562a9DBe6C24A0E05',
       USDT: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7', // no USDT on Chainlink goerli, reusing USDC instead
       DAI: '0x0d79df66BE487753B02D015Fb622DED7f0E9798d',
-      'bb-a-usd': '0x839A63Ea63e615FC8F1eE98137a517D168941040'
+      'bb-a-usd': '0x839A63Ea63e615FC8F1eE98137a517D168941040' // Xave's custom oracle
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
   },
