@@ -57,11 +57,17 @@ const addresses: AddressCollection = {
     swapLibrary: '0x9875C5C44C10e24AEa48C422f819c5c8f933701D',
     oracles: {
       USDC: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7',
-      XSGD: '0x4fbc1dFfd80F197CF99FAeDa8f7Bcae0Ebea4d81', // mock XSGD/USD oracle
+      XSGD: '0x3E58d34C8cf108897b1296eF462AD18522f7e122', // mock XSGD/USD oracle
       EURS: '0x44390589104C9164407A0E0562a9DBe6C24A0E05',
       USDT: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7', // no USDT on Chainlink goerli, reusing USDC instead
       DAI: '0x0d79df66BE487753B02D015Fb622DED7f0E9798d',
-      'bb-a-usd': '0x839A63Ea63e615FC8F1eE98137a517D168941040' // Xave's custom oracle
+      'bb-a-usd': '0xc4C958d5a71D144b8B9DBcA8b0A281266D61932C' // Xave's custom oracle
+    },
+    assimilators: {
+      XSGD_USD: '',
+      EURS_USD: '0x096337250551Ae6E4Bf423Ab5204415777553F80',
+      USDC_USD: '0x82670155e38CA77Bcefbb098940D3222A3283fdb',
+      'bb-a-usd_USD': '0x13b816A8B41B5C35dc147ca35b31ec1021104300'
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
   },
