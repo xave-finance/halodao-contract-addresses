@@ -64,7 +64,7 @@ const addresses: AddressCollection = {
       'bb-a-usd': '0xc4C958d5a71D144b8B9DBcA8b0A281266D61932C' // Xave's custom oracle
     },
     assimilators: {
-      XSGD_USD: '',
+      XSGD_USD: '0x4013e4d132692D1c99233345d06Aa13AB9133D95',
       EURS_USD: '0x096337250551Ae6E4Bf423Ab5204415777553F80',
       USDC_USD: '0x82670155e38CA77Bcefbb098940D3222A3283fdb',
       'bb-a-usd_USD': '0x13b816A8B41B5C35dc147ca35b31ec1021104300'
