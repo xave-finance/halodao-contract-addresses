@@ -2,6 +2,7 @@ type Pool = {
   address: string
   poolId: string
   assets: string[]
+  poolTokens?: string[]
 }
 
 type Assimilators = {
@@ -19,6 +20,8 @@ type Assimilators = {
   TCAD_USD?: string
   TGBP_USD?: string
   TAUD_USD?: string
+  'bb-a-usd_USD'?: string
+  'XSGD_bb-a-usd_USD'?: string
 }
 
 export type AddressCollection = {
@@ -85,6 +88,7 @@ export type AddressCollection = {
         LP_tagPHP_USDC?: string
         LP_LPHP_USDC?: string
         LP_fxAUD_USDC?: string
+        'LP_XSGD_bb-a-usd'?: string
       }
       genesis: Pool[]
       enabled: Pool[]
@@ -103,6 +107,8 @@ export type AddressCollection = {
       CHF?: string
       XIDR?: string
       DAI?: string
+      USDT?: string
+      'bb-a-usd'?: string
     }
     balancerProtocolFeeCollector: string
   }
@@ -122,11 +128,19 @@ export type AddressCollection = {
     UST?: string
     CHF?: string
     DAI?: string
+    USDT?: string
+    'bb-a-usd'?: string
+    'bb-a-USDC'?: string
+    'bb-a-DAI'?: string
+    'bb-a-USDT'?: string
     indexUSDC?: string
     fakeUSDC?: string
     fakeFxPHP?: string
     fakeXSGD?: string
     fakeEURS?: string
+    balUSDC?: string
+    balDAI?: string
+    balUSDT?: string
   }
   lendingMarket?: {
     protocol: {
