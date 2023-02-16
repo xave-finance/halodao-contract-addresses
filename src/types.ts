@@ -130,6 +130,9 @@ export type AddressCollection = {
     DAI?: string
     USDT?: string
     'bb-a-usd'?: string
+    'bb-a-USDC'?: string
+    'bb-a-DAI'?: string
+    'bb-a-USDT'?: string
     indexUSDC?: string
     fakeUSDC?: string
     fakeFxPHP?: string
