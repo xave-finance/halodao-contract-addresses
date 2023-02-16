@@ -7,9 +7,6 @@ const tokens = {
   USDT: '0x9FDc4881Ce3eE888A7D3162A8AccFB3875437B34',
   DAI: '0x7421F1bAb6d1D82c2f854B464Ecd81e0288F3550',
   'bb-a-usd': '0x7CCB99E3DBeF941a062E0da1b0d7635bdCFafB01', // balancer ComposableStablePool
-  'bb-a-USDC': '0x0595D1Df64279ddB51F1bdC405Fe2D0b4Cc86681', // balancer USDC:aUSDC AaveLinearPool
-  'bb-a-DAI': '0x5cEA6A84eD13590ED14903925Fa1A73c36297d99', // balancer DAI:aDAI AaveLinearPool
-  'bb-a-USDT': '0xeFD681A82970AC5d980b9B2D40499735e7BF3F1F', // balancer USDT:aUSDT AaveLinearPool
   balUSDC: '0xe0C9275E44Ea80eF17579d33c55136b7DA269aEb', // balancer USDC token
   balDAI: '0x8c9e6c40d3402480ACE624730524fACC5482798c', // balancer DAI token
   balUSDT: '0x1f1f156E0317167c11Aa412E3d1435ea29Dc3cCE' // balancer USDT token
