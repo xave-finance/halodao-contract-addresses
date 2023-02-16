@@ -135,6 +135,9 @@ export type AddressCollection = {
     fakeFxPHP?: string
     fakeXSGD?: string
     fakeEURS?: string
+    balUSDC?: string
+    balDAI?: string
+    balUSDT?: string
   }
   lendingMarket?: {
     protocol: {
