@@ -2,6 +2,7 @@ type Pool = {
   address: string
   poolId: string
   assets: string[]
+  poolTokens?: string[]
 }
 
 type Assimilators = {
@@ -86,6 +87,7 @@ export type AddressCollection = {
         LP_tagPHP_USDC?: string
         LP_LPHP_USDC?: string
         LP_fxAUD_USDC?: string
+        'LP_XSGD_bb-a-usd'?: string
       }
       genesis: Pool[]
       enabled: Pool[]
