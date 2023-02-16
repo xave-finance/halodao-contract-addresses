@@ -21,6 +21,7 @@ type Assimilators = {
   TGBP_USD?: string
   TAUD_USD?: string
   'bb-a-usd_USD'?: string
+  'XSGD_bb-a-usd_USD'?: string
 }
 
 export type AddressCollection = {

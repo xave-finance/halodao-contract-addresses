@@ -6,10 +6,13 @@ const tokens = {
   EURS: '0x2b1c6c85a1dB4b5CF9C4d4662d0556E5daBcf626',
   USDT: '0x9FDc4881Ce3eE888A7D3162A8AccFB3875437B34',
   DAI: '0x7421F1bAb6d1D82c2f854B464Ecd81e0288F3550',
-  'bb-a-usd': '0x7CCB99E3DBeF941a062E0da1b0d7635bdCFafB01',
-  'bb-a-USDC': '0x0595D1Df64279ddB51F1bdC405Fe2D0b4Cc86681',
-  'bb-a-DAI': '0x5cEA6A84eD13590ED14903925Fa1A73c36297d99',
-  'bb-a-USDT': '0xeFD681A82970AC5d980b9B2D40499735e7BF3F1F'
+  'bb-a-usd': '0x7CCB99E3DBeF941a062E0da1b0d7635bdCFafB01', // balancer ComposableStablePool
+  'bb-a-USDC': '0x0595D1Df64279ddB51F1bdC405Fe2D0b4Cc86681', // balancer USDC:aUSDC AaveLinearPool
+  'bb-a-DAI': '0x5cEA6A84eD13590ED14903925Fa1A73c36297d99', // balancer DAI:aDAI AaveLinearPool
+  'bb-a-USDT': '0xeFD681A82970AC5d980b9B2D40499735e7BF3F1F', // balancer USDT:aUSDT AaveLinearPool
+  balUSDC: '0xe0C9275E44Ea80eF17579d33c55136b7DA269aEb', // balancer USDC token
+  balDAI: '0x8c9e6c40d3402480ACE624730524fACC5482798c', // balancer DAI token
+  balUSDT: '0x1f1f156E0317167c11Aa412E3d1435ea29Dc3cCE' // balancer USDT token
 }
 
 const fxPools = {
@@ -59,9 +62,9 @@ const addresses: AddressCollection = {
           address: fxPools['LP_XSGD_bb-a-usd'],
           poolId: fxPoolIds['XSGD_bb-a-usd'],
           poolTokens: [
-            tokens.USDC,
-            tokens.DAI,
-            tokens.USDT,
+            tokens.balUSDC,
+            tokens.balDAI,
+            tokens.balUSDT,
             tokens['bb-a-USDC'],
             tokens['bb-a-DAI'],
             tokens['bb-a-USDT']
@@ -75,18 +78,19 @@ const addresses: AddressCollection = {
     assimilatorFactory: '0xbd02F2F69B8D79CD2566b6e425Ba2810ca5C2743',
     swapLibrary: '0x9875C5C44C10e24AEa48C422f819c5c8f933701D',
     oracles: {
-      USDC: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7',
+      USDC: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7', // Chainklink official USDC/USD oracle
       XSGD: '0x3E58d34C8cf108897b1296eF462AD18522f7e122', // mock XSGD/USD oracle
-      EURS: '0x44390589104C9164407A0E0562a9DBe6C24A0E05',
+      EURS: '0x44390589104C9164407A0E0562a9DBe6C24A0E05', // Chainklink official EURS/USD oracle
       USDT: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7', // no USDT on Chainlink goerli, reusing USDC instead
-      DAI: '0x0d79df66BE487753B02D015Fb622DED7f0E9798d',
-      'bb-a-usd': '0xc4C958d5a71D144b8B9DBcA8b0A281266D61932C' // Xave's custom oracle
+      DAI: '0x0d79df66BE487753B02D015Fb622DED7f0E9798d', // Chainklink official DAI/USD oracle
+      'bb-a-usd': '0x6755296346e8110330944f56DEa1329FeBAfD2De' // Xave's ComposableBoostedPoolUsdRate oracle
     },
     assimilators: {
       XSGD_USD: '0x4013e4d132692D1c99233345d06Aa13AB9133D95',
       EURS_USD: '0x096337250551Ae6E4Bf423Ab5204415777553F80',
       USDC_USD: '0x82670155e38CA77Bcefbb098940D3222A3283fdb',
-      'bb-a-usd_USD': '0x13b816A8B41B5C35dc147ca35b31ec1021104300'
+      'bb-a-usd_USD': '0x8fC18642E09d0Ee054B6648836FC36e26B6D69C7',
+      'XSGD_bb-a-usd_USD': '0x5CF260c99276cd73576dF098E62167E8E4661210'
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
   },
