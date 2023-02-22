@@ -3,6 +3,10 @@ type Pool = {
   poolId: string
   assets: string[]
   poolTokens?: string[]
+  subPools?: {
+    address: string
+    assets: string[]
+  }[]
 }
 
 type Assimilators = {

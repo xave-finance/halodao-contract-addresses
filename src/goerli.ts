@@ -18,7 +18,7 @@ const tokens = {
 const fxPools = {
   LP_XSGD_USDC: '0x5886F7BFCC5D61CD4Ad0DC34e72DEFa2c85dE104',
   LP_EURS_USDC: '0x1fbA91Ce46d2453e2d461b1a0FcF76588a07fE41',
-  'LP_XSGD_bb-a-usd': '0xeDdd595eFDc678781AF03F54BEc3373964C5fA10'
+  'LP_XSGD_bb-a-usd': '0xFB703cb0b74fEa6cc1fB18e8610c35059195B3BF'
 }
 
 const fxPoolIds = {
@@ -27,7 +27,7 @@ const fxPoolIds = {
   EURS_USDC:
     '0x1fba91ce46d2453e2d461b1a0fcf76588a07fe410002000000000000000003af',
   'XSGD_bb-a-usd':
-    '0xeddd595efdc678781af03f54bec3373964c5fa10000200000000000000000560'
+    '0xfb703cb0b74fea6cc1fb18e8610c35059195b3bf0002000000000000000005e1'
 }
 
 const addresses: AddressCollection = {
@@ -68,6 +68,20 @@ const addresses: AddressCollection = {
             tokens['bb-a-USDC'],
             tokens['bb-a-DAI'],
             tokens['bb-a-USDT']
+          ],
+          subPools: [
+            {
+              address: tokens['bb-a-USDC'],
+              assets: [tokens.balUSDC]
+            },
+            {
+              address: tokens['bb-a-DAI'],
+              assets: [tokens.balDAI]
+            },
+            {
+              address: tokens['bb-a-USDT'],
+              assets: [tokens.balUSDT]
+            }
           ]
         }
       ],
@@ -83,14 +97,14 @@ const addresses: AddressCollection = {
       EURS: '0x44390589104C9164407A0E0562a9DBe6C24A0E05', // Chainklink official EURS/USD oracle
       USDT: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7', // no USDT on Chainlink goerli, reusing USDC instead
       DAI: '0x0d79df66BE487753B02D015Fb622DED7f0E9798d', // Chainklink official DAI/USD oracle
-      'bb-a-usd': '0x9Db0c4Bf8e8CDf42D8C611019a0ee291a60C70E2' // Xave's ComposableBoostedPoolUsdRate oracle
+      'bb-a-usd': '0x24E2b913E79e02FAE9aEe3db5e325207BD7Fbda7' // Xave's ComposableBoostedPoolUsdRate oracle
     },
     assimilators: {
       XSGD_USD: '0x4013e4d132692D1c99233345d06Aa13AB9133D95',
       EURS_USD: '0x096337250551Ae6E4Bf423Ab5204415777553F80',
       USDC_USD: '0x82670155e38CA77Bcefbb098940D3222A3283fdb',
-      'bb-a-usd_USD': '0x605C0707cf604A48819F055B09C4e11DbC0C99ED',
-      'XSGD_bb-a-usd_USD': '0x27526bD0E4Fb7D342ac81F7362f40f0e9Ebd011a'
+      'bb-a-usd_USD': '0x2F8B7d241e54Ba764c1117E814d520cEB6797202',
+      'XSGD_bb-a-usd_USD': '0x2286BB12e26494afF729B8AEBbaD5eF93A9e0f98'
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
   },
