@@ -102,7 +102,8 @@ const addresses: AddressCollection = {
       'bb-a-usd': '0x889E8F2b15A1B462dC74C5F66eF90C3caa46A37D'
     },
     assimilators: {
-      'bb-a-usd_USD': '0x04E2a492AACbbaC02164da3EEC6404893cA08998'
+      'bb-a-usd_USD': '0x04E2a492AACbbaC02164da3EEC6404893cA08998',
+      'XSGD_bb-a-usd_USD': '0xBef2D248894648A6Fcb214C395044616150C6cEc'
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
   },
