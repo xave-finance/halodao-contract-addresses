@@ -21,13 +21,21 @@ const fxPools = {
   'LP_XSGD_bb-a-usd': '0x29F67b11C65D0C8568C71A5cb93f8931C3197b60'
 }
 
-const fxPoolIds = {
+const poolIds = {
   XSGD_USDC:
     '0x5886f7bfcc5d61cd4ad0dc34e72defa2c85de1040002000000000000000002e9',
   EURS_USDC:
     '0x1fba91ce46d2453e2d461b1a0fcf76588a07fe410002000000000000000003af',
   'XSGD_bb-a-usd':
-    '0x29f67b11c65d0c8568c71a5cb93f8931c3197b600002000000000000000005e3'
+    '0x29f67b11c65d0c8568c71a5cb93f8931c3197b600002000000000000000005e3',
+  'bb-a-usd':
+    '0x7ccb99e3dbef941a062e0da1b0d7635bdcfafb0100000000000000000000054a',
+  'bb-a-USDC':
+    '0x0595d1df64279ddb51f1bdc405fe2d0b4cc8668100000000000000000000005c',
+  'bb-a-DAI':
+    '0x5cea6a84ed13590ed14903925fa1a73c36297d9900000000000000000000005d',
+  'bb-a-USDT':
+    '0xefd681a82970ac5d980b9b2d40499735e7bf3f1f00000000000000000000005e'
 }
 
 const addresses: AddressCollection = {
@@ -50,17 +58,17 @@ const addresses: AddressCollection = {
         {
           assets: [tokens.XSGD, tokens.USDC],
           address: fxPools.LP_XSGD_USDC,
-          poolId: fxPoolIds.XSGD_USDC
+          poolId: poolIds.XSGD_USDC
         },
         {
           assets: [tokens.EURS, tokens.USDC],
           address: fxPools.LP_EURS_USDC,
-          poolId: fxPoolIds.EURS_USDC
+          poolId: poolIds.EURS_USDC
         },
         {
           assets: [tokens.XSGD, tokens['bb-a-usd']],
           address: fxPools['LP_XSGD_bb-a-usd'],
-          poolId: fxPoolIds['XSGD_bb-a-usd'],
+          poolId: poolIds['XSGD_bb-a-usd'],
           poolTokens: [
             tokens.balUSDC,
             tokens.balDAI,
@@ -72,14 +80,17 @@ const addresses: AddressCollection = {
           subPools: [
             {
               address: tokens['bb-a-USDC'],
+              poolId: poolIds['bb-a-USDC'],
               assets: [tokens.balUSDC]
             },
             {
               address: tokens['bb-a-DAI'],
+              poolId: poolIds['bb-a-DAI'],
               assets: [tokens.balDAI]
             },
             {
               address: tokens['bb-a-USDT'],
+              poolId: poolIds['bb-a-USDT'],
               assets: [tokens.balUSDT]
             }
           ]

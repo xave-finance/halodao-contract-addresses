@@ -5,6 +5,7 @@ type Pool = {
   poolTokens?: string[]
   subPools?: {
     address: string
+    poolId: string
     assets: string[]
   }[]
 }
