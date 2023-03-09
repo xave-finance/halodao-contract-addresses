@@ -123,10 +123,10 @@ const addresses: AddressCollection = {
     },
     assimilators: {
       USDC_USD: '0x75deB02b7B5631395c3DFD6F8027a9C8Ce95103e',
-      XSGD_USD: '',
+      XSGD_USD: '0xae76A9D5C56A8547a3dF9C074ed6F5Da634831fb',
       EURS_USD: '0xc7B5Bc5dcAA1534b0aA38cFC19e8c15bb023a164',
       'bb-a-usd_USD': '0x35247C932ECF5898d2eFBb462146067B889bAaF8',
-      'XSGD_bb-a-usd_USD': '',
+      'XSGD_bb-a-usd_USD': '0xD98A5Bdb5fA8E2feC69391397EB6b8D9d73428bf',
       'EURS_bb-a-usd_USD': '0x80FCFC519d0AaE7B3aAa97a9dB454eB416c67473'
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
