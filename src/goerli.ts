@@ -17,14 +17,15 @@ const tokens = {
 
 const fxPools = {
   LP_XSGD_USDC: '',
-  LP_EURS_USDC: '',
+  LP_EURS_USDC: '0x3F3557C7dCa644F6F5d6074FF560a8856155f632',
   'LP_XSGD_bb-a-usd': '',
   'LP_EURS_bb-a-usd': ''
 }
 
 const poolIds = {
   XSGD_USDC: '',
-  EURS_USDC: '',
+  EURS_USDC:
+    '0x3f3557c7dca644f6f5d6074ff560a8856155f63200020000000000000000066e',
   'XSGD_bb-a-usd': '',
   'EURS_bb-a-usd': '',
   'bb-a-usd':
@@ -114,7 +115,7 @@ const addresses: AddressCollection = {
     swapLibrary: '0x9875C5C44C10e24AEa48C422f819c5c8f933701D',
     oracles: {
       USDC: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7', // Chainklink official USDC/USD oracle
-      XSGD: '0x3E58d34C8cf108897b1296eF462AD18522f7e122', // mock XSGD/USD oracle
+      XSGD: '0x0f3336Ce2af9a465A69f110686f9ffF6b1b104E6', // mock XSGD/USD oracle
       EURS: '0x44390589104C9164407A0E0562a9DBe6C24A0E05', // Chainklink official EURS/USD oracle
       USDT: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7', // no USDT on Chainlink goerli, reusing USDC instead
       DAI: '0x0d79df66BE487753B02D015Fb622DED7f0E9798d', // Chainklink official DAI/USD oracle
@@ -122,7 +123,7 @@ const addresses: AddressCollection = {
     },
     assimilators: {
       USDC_USD: '0x75deB02b7B5631395c3DFD6F8027a9C8Ce95103e',
-      XSGD_USD: '0x386da2bb0f37b5D060dBc47177F2A686d6B34D0A',
+      XSGD_USD: '', // deploy a new one!
       EURS_USD: '0xc7B5Bc5dcAA1534b0aA38cFC19e8c15bb023a164',
       'bb-a-usd_USD': '0x35247C932ECF5898d2eFBb462146067B889bAaF8',
       'XSGD_bb-a-usd_USD': '0x451eBA413d3fD1429d3af1e5592fDF2843A61498',
