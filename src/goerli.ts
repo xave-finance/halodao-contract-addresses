@@ -118,15 +118,15 @@ const addresses: AddressCollection = {
       EURS: '0x44390589104C9164407A0E0562a9DBe6C24A0E05', // Chainklink official EURS/USD oracle
       USDT: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7', // no USDT on Chainlink goerli, reusing USDC instead
       DAI: '0x0d79df66BE487753B02D015Fb622DED7f0E9798d', // Chainklink official DAI/USD oracle
-      'bb-a-usd': '' // Xave's ComposableBoostedPoolOracle
+      'bb-a-usd': '0xA76dC5048F80D2f2974754D292B09a441ea60EcA' // Xave's ComposableBoostedPoolOracle
     },
     assimilators: {
-      USDC_USD: '',
-      XSGD_USD: '',
-      EURS_USD: '',
-      'bb-a-usd_USD': '',
-      'XSGD_bb-a-usd_USD': '',
-      'EURS_bb-a-usd_USD': ''
+      USDC_USD: '0x75deB02b7B5631395c3DFD6F8027a9C8Ce95103e',
+      XSGD_USD: '0x386da2bb0f37b5D060dBc47177F2A686d6B34D0A',
+      EURS_USD: '0xc7B5Bc5dcAA1534b0aA38cFC19e8c15bb023a164',
+      'bb-a-usd_USD': '0x35247C932ECF5898d2eFBb462146067B889bAaF8',
+      'XSGD_bb-a-usd_USD': '0x451eBA413d3fD1429d3af1e5592fDF2843A61498',
+      'EURS_bb-a-usd_USD': '0x80FCFC519d0AaE7B3aAa97a9dB454eB416c67473'
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
   },
