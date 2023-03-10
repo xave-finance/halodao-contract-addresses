@@ -4,6 +4,7 @@ const tokens = {
   USDC: '0xff970a61a04b1ca14834a43f5de4533ebddb5cc8',
   fxPHP: '0x3d147cD9aC957B2a5F968dE9d1c6B9d0872286a0',
   EURS: '0xD22a58f79e9481D1a88e00c343885A588b34b68B',
+  BAL: '0x040d1EdC9569d4Bab2D15287Dc5A4F10F56a56B8', // Balancer governance token
   fakeUSDC: '0x9cFf4A10b6Fb163a4DF369AaFed9d95838222ca6', // fake mintable token
   fakeFxPHP: '0x03612728266b82EF5dB751fbf15ea7F1370502eE', // fake mintable token
   fakeXSGD: '0x6d934DcbA7F8e89713b4334147c03e76f30CE094', // fake mintable token

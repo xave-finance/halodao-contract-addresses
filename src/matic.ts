@@ -12,6 +12,7 @@ const tokens = {
   fakeFxPHP: '0xe1Ca353a88a8822ed95293a7E76bd20eEA2ff662',
   fakeXSGD: '0x7112AE5d61eb28c7b00413882B59b7F796e2A505',
   fakeEURS: '0xBb54874397Beb2Dd8673eb3B8Cd7C07d54bbd02D',
+  BAL: '0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3', // Balancer governance token
   'bb-a-usd': '0x48e6B98ef6329f8f0A30eBB8c7C960330d648085', // balancer ComposableStablePool
   'bb-a-USDC': '0xF93579002DBE8046c43FEfE86ec78b1112247BB8', // balancer USDC:aUSDC AaveLinearPool
   'bb-a-DAI': '0x178E029173417b1F9C8bC16DCeC6f697bC323746', // balancer DAI:aDAI AaveLinearPool

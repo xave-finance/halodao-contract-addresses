@@ -6,6 +6,7 @@ const tokens = {
   EURS: '0x2b1c6c85a1dB4b5CF9C4d4662d0556E5daBcf626', // Xave mock EURS
 
   // Balancer tokens
+  BAL: '0xfA8449189744799aD2AcE7e0EBAC8BB7575eff47', // Balancer governance token
   USDC: '0xe0C9275E44Ea80eF17579d33c55136b7DA269aEb', // Balancer USDC token
   USDT: '0x1f1f156E0317167c11Aa412E3d1435ea29Dc3cCE', // Balancer USDT token
   DAI: '0x8c9e6c40d3402480ACE624730524fACC5482798c', // Balancer DAI token

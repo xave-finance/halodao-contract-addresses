@@ -143,6 +143,7 @@ export type AddressCollection = {
     CHF?: string
     DAI?: string
     USDT?: string
+    BAL?: string
     'bb-a-usd'?: string
     'bb-a-USDC'?: string
     'bb-a-DAI'?: string
