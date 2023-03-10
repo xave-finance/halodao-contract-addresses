@@ -8,6 +8,13 @@ type Pool = {
     poolId: string
     assets: string[]
   }[]
+  gauges?: {
+    main: string // LiquidityGauge (Mainnet) | PolygonRootGauge (Polygon)
+    l2?: {
+      rewardsOnly: string // RewardsOnlyGauge
+      rewardsHelper: string // ChildChainGaugeRewardHelper
+    }
+  }
 }
 
 type Assimilators = {

@@ -102,7 +102,10 @@ const addresses: AddressCollection = {
         {
           assets: [tokens.EURS, tokens.USDC],
           address: fxPools.LP_EURS_USDC,
-          poolId: fxPoolIds.EURS_USDC
+          poolId: fxPoolIds.EURS_USDC,
+          gauges: {
+            main: '0xB381D8923feff930b7AaeDF9563f1496ce0aCe36' // LiquidityGauge
+          }
         }
       ],
       disabled: []
