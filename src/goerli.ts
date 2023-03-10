@@ -2,32 +2,35 @@ import { AddressCollection, ZERO_ADDRESS } from './types'
 
 const tokens = {
   // Xave tokens
-  XSGD: '0xb4a183d38F754D83AA97810D80FC5BaCCd5c8441', // Xave mock USDC
-  EURS: '0x2b1c6c85a1dB4b5CF9C4d4662d0556E5daBcf626', // Xave mock USDC
+  XSGD: '0xb4a183d38F754D83AA97810D80FC5BaCCd5c8441', // Xave mock XSGD
+  EURS: '0x2b1c6c85a1dB4b5CF9C4d4662d0556E5daBcf626', // Xave mock EURS
 
   // Balancer tokens
-  USDC: '0xe0C9275E44Ea80eF17579d33c55136b7DA269aEb', // balancer mock USDC
-  USDT: '0x1f1f156E0317167c11Aa412E3d1435ea29Dc3cCE', // balancer USDT token
-  DAI: '0x8c9e6c40d3402480ACE624730524fACC5482798c', // balancer DAI token
-  'bb-a-usd': '0x7CCB99E3DBeF941a062E0da1b0d7635bdCFafB01', // balancer ComposableStablePool
-  'bb-a-USDC': '0x0595D1Df64279ddB51F1bdC405Fe2D0b4Cc86681', // balancer USDC:aUSDC AaveLinearPool
-  'bb-a-DAI': '0x5cEA6A84eD13590ED14903925Fa1A73c36297d99', // balancer DAI:aDAI AaveLinearPool
-  'bb-a-USDT': '0xeFD681A82970AC5d980b9B2D40499735e7BF3F1F' // balancer USDT:aUSDT AaveLinearPool
+  USDC: '0xe0C9275E44Ea80eF17579d33c55136b7DA269aEb', // Balancer USDC token
+  USDT: '0x1f1f156E0317167c11Aa412E3d1435ea29Dc3cCE', // Balancer USDT token
+  DAI: '0x8c9e6c40d3402480ACE624730524fACC5482798c', // Balancer DAI token
+  'bb-a-usd': '0x7CCB99E3DBeF941a062E0da1b0d7635bdCFafB01', // Balancer ComposableStablePool
+  'bb-a-USDC': '0x0595D1Df64279ddB51F1bdC405Fe2D0b4Cc86681', // Balancer USDC:aUSDC AaveLinearPool
+  'bb-a-DAI': '0x5cEA6A84eD13590ED14903925Fa1A73c36297d99', // Balancer DAI:aDAI AaveLinearPool
+  'bb-a-USDT': '0xeFD681A82970AC5d980b9B2D40499735e7BF3F1F' // Balancer USDT:aUSDT AaveLinearPool
 }
 
 const fxPools = {
-  LP_XSGD_USDC: '',
+  LP_XSGD_USDC: '0x8233CDcD08ccA2718065740e5EF767294361a05a',
   LP_EURS_USDC: '0x3F3557C7dCa644F6F5d6074FF560a8856155f632',
-  'LP_XSGD_bb-a-usd': '',
-  'LP_EURS_bb-a-usd': ''
+  'LP_XSGD_bb-a-usd': '0xF93AC32926574F67F112182ad95F8359c42715Da',
+  'LP_EURS_bb-a-usd': '0x83b630DBF3e90cF0b69dd4029c3d49AF7E48c355'
 }
 
 const poolIds = {
-  XSGD_USDC: '',
+  XSGD_USDC:
+    '0x8233cdcd08cca2718065740e5ef767294361a05a00020000000000000000067b',
   EURS_USDC:
     '0x3f3557c7dca644f6f5d6074ff560a8856155f63200020000000000000000066e',
-  'XSGD_bb-a-usd': '',
-  'EURS_bb-a-usd': '',
+  'XSGD_bb-a-usd':
+    '0xf93ac32926574f67f112182ad95f8359c42715da00020000000000000000067c',
+  'EURS_bb-a-usd':
+    '0x83b630dbf3e90cf0b69dd4029c3d49af7e48c35500020000000000000000067d',
   'bb-a-usd':
     '0x7ccb99e3dbef941a062e0da1b0d7635bdcfafb0100000000000000000000054a',
   'bb-a-USDC':
@@ -115,7 +118,7 @@ const addresses: AddressCollection = {
     swapLibrary: '0x9875C5C44C10e24AEa48C422f819c5c8f933701D',
     oracles: {
       USDC: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7', // Chainklink official USDC/USD oracle
-      XSGD: '0xebFF09c20a4de756cA86bF13E8878AeA795Bd6A7', // mock XSGD/USD oracle
+      XSGD: '0xebFF09c20a4de756cA86bF13E8878AeA795Bd6A7', // Xave mock XSGD/USD oracle
       EURS: '0x44390589104C9164407A0E0562a9DBe6C24A0E05', // Chainklink official EURS/USD oracle
       USDT: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7', // no USDT on Chainlink goerli, reusing USDC instead
       DAI: '0x0d79df66BE487753B02D015Fb622DED7f0E9798d', // Chainklink official DAI/USD oracle
