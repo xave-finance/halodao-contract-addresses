@@ -122,7 +122,9 @@ const addresses: AddressCollection = {
       EURS: '0xb49f677943BC038e9857d61E7d053CaA2C1734C1',
       DAI: '0xAed0c38402a5d19df6E4c03F4E2DceD6e29c1ee9'
     },
-    balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
+    balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
+    balancerGaugeController: '0xC128468b7Ce63eA702C1f104D55A2566b13D3ABD',
+    balancerTokenAdmin: '0xf302f9F50958c5593770FDf4d4812309fF77414f'
   },
   tokens,
   lendingMarket: {

@@ -125,6 +125,8 @@ export type AddressCollection = {
       'bb-a-usd'?: string
     }
     balancerProtocolFeeCollector: string
+    balancerGaugeController?: string
+    balancerTokenAdmin?: string
   }
   tokens: {
     AMPL?: string
