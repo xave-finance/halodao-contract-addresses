@@ -12,22 +12,27 @@ const tokens = {
   'bb-a-USDT': '0xeFD681A82970AC5d980b9B2D40499735e7BF3F1F', // balancer USDT:aUSDT AaveLinearPool
   balUSDC: '0xe0C9275E44Ea80eF17579d33c55136b7DA269aEb', // balancer USDC token
   balDAI: '0x8c9e6c40d3402480ACE624730524fACC5482798c', // balancer DAI token
-  balUSDT: '0x1f1f156E0317167c11Aa412E3d1435ea29Dc3cCE' // balancer USDT token
+  balUSDT: '0x1f1f156E0317167c11Aa412E3d1435ea29Dc3cCE', // balancer USDT token
 }
 
 const fxPools = {
   LP_XSGD_USDC: '0x5886F7BFCC5D61CD4Ad0DC34e72DEFa2c85dE104',
-  LP_EURS_USDC: '0x1fbA91Ce46d2453e2d461b1a0FcF76588a07fE41',
-  'LP_XSGD_bb-a-usd': '0x29F67b11C65D0C8568C71A5cb93f8931C3197b60'
+  // LP_EURS_USDC: '0x1fbA91Ce46d2453e2d461b1a0FcF76588a07fE41',
+  LP_EURS_USDC: '0x969B6D35c5C138A57132b132BE96Ef20d775101A',
+  'LP_XSGD_bb-a-usd': '0x29F67b11C65D0C8568C71A5cb93f8931C3197b60',
+  'LP_EURS_bb-a-usd': '0x3b9143c4EA802A9ebA63E4F1018333653bC5F76D'
 }
 
 const poolIds = {
   XSGD_USDC:
     '0x5886f7bfcc5d61cd4ad0dc34e72defa2c85de1040002000000000000000002e9',
+  // EURS_USDC:
+  //   '0x1fba91ce46d2453e2d461b1a0fcf76588a07fe410002000000000000000003af',
   EURS_USDC:
-    '0x1fba91ce46d2453e2d461b1a0fcf76588a07fe410002000000000000000003af',
+    '0x969b6d35c5c138a57132b132be96ef20d775101a000200000000000000000664',
   'XSGD_bb-a-usd':
     '0x29f67b11c65d0c8568c71a5cb93f8931c3197b600002000000000000000005e3',
+  'EURS_bb-a-usd': '0x3b9143c4ea802a9eba63e4f1018333653bc5f76d000200000000000000000665',
   'bb-a-usd':
     '0x7ccb99e3dbef941a062e0da1b0d7635bdcfafb0100000000000000000000054a',
   'bb-a-USDC':
@@ -54,6 +59,7 @@ const addresses: AddressCollection = {
     pools: {
       all: fxPools,
       genesis: [],
+
       enabled: [
         {
           assets: [tokens.XSGD, tokens.USDC],
@@ -61,7 +67,8 @@ const addresses: AddressCollection = {
           poolId: poolIds.XSGD_USDC
         },
         {
-          assets: [tokens.EURS, tokens.USDC],
+          // assets: [tokens.EURS, tokens.USDC],
+          assets: [tokens.EURS, tokens.balUSDC],
           address: fxPools.LP_EURS_USDC,
           poolId: poolIds.EURS_USDC
         },
@@ -103,11 +110,11 @@ const addresses: AddressCollection = {
     assimilatorFactory: '0xbd02F2F69B8D79CD2566b6e425Ba2810ca5C2743',
     swapLibrary: '0x9875C5C44C10e24AEa48C422f819c5c8f933701D',
     oracles: {
-      USDC: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7', // Chainklink official USDC/USD oracle
-      XSGD: '0x3E58d34C8cf108897b1296eF462AD18522f7e122', // mock XSGD/USD oracle
-      EURS: '0x44390589104C9164407A0E0562a9DBe6C24A0E05', // Chainklink official EURS/USD oracle
-      USDT: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7', // no USDT on Chainlink goerli, reusing USDC instead
-      DAI: '0x0d79df66BE487753B02D015Fb622DED7f0E9798d', // Chainklink official DAI/USD oracle
+      USDC: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7',
+      XSGD: '0x3E58d34C8cf108897b1296eF462AD18522f7e122',
+      EURS: '0x44390589104C9164407A0E0562a9DBe6C24A0E05',
+      USDT: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7',
+      DAI: '0x0d79df66BE487753B02D015Fb622DED7f0E9798d',
       'bb-a-usd': '0x24E2b913E79e02FAE9aEe3db5e325207BD7Fbda7' // Xave's ComposableBoostedPoolUsdRate oracle
     },
     assimilators: {
@@ -122,10 +129,8 @@ const addresses: AddressCollection = {
   tokens,
   lendingMarket: {
     protocol: {
-      lendingPoolAddressesProvider:
-        '0x4D7e44c5262B61817cA7bDD8E0Bd5748C5890131',
-      lendingPoolAddressesProviderRegistry:
-        '0x651a4C20f46F29CaC490A12111CfD76bab4EfE39',
+      lendingPoolAddressesProvider: '0x4D7e44c5262B61817cA7bDD8E0Bd5748C5890131',
+      lendingPoolAddressesProviderRegistry: '0x651a4C20f46F29CaC490A12111CfD76bab4EfE39',
       reserveLogic: '0x04a12215189F3aeEd6D04DE8b9d0AEf839CE7764',
       genericLogic: '0x609208B2E016fB4B61C0191beEAfF73e2CafCF1E',
       validationLogic: '0xFc8A694B1d44e52b85FC13032264dc9029183dF9',
@@ -134,8 +139,7 @@ const addresses: AddressCollection = {
       lendingPoolProxy: '0x6af3B5f7d7f4BE05C3dF360A3b573A7FB93E719B',
       lendingPoolConfiguratorImpl: '0x8F8791d44dcad03fec2995482CDfA9C69784f31c',
       lendingPoolConfigurator: '0x497fD821B014880c575aC98A23d9926f5148800E',
-      stableAndVariableTokensHelper:
-        '0x34305916713a0F9070f51dBcf5db945c4A3Ee48c',
+      stableAndVariableTokensHelper: '0x34305916713a0F9070f51dBcf5db945c4A3Ee48c',
       aTokensAndRatesHelper: '0xE3C2280f8d1af58443b487040521a9D923d6fda5',
       aaveOracle: '0x5d82ae79F6AF94C0159abf44034a2295aDd5C749',
       lendingRateOracle: '0xF403e0dD1A955f72eA8c9b6998D375f66C9E0957',
@@ -143,11 +147,9 @@ const addresses: AddressCollection = {
       stableDebtToken: '0x10eF9F05455bf85683f032E5f79301bBE7e40758',
       variableDebtToken: '0x87B2418E4DFEC74Bcba9453C7C8e63c6FA7E350b',
       aToken: '0x5533a2e3Db531a89b25D1ed3c6a1Baa584eEc319',
-      defaultReserveInterestRateStrategy:
-        '0x890D23Be36B81a1388FeCF3ca0FBC05709eD90a2',
+      defaultReserveInterestRateStrategy: '0x890D23Be36B81a1388FeCF3ca0FBC05709eD90a2',
       wethGateway: '0x7CcA8EBFac13a6176C49369727e2Eb0a8c95812e',
-      lendingPoolCollateralManager:
-        '0x6cdb26b79716eE42944dfA1B6a9D90b56bc16B6B',
+      lendingPoolCollateralManager: '0x6cdb26b79716eE42944dfA1B6a9D90b56bc16B6B',
       walletBalanceProvider: '0xED0506376035b1E1d84a8fc345D91800F9a88361',
       rnbwIncentivesController: '0x1669Fd5a3cf5cB806F9e401d08849B976d878fCc',
       treasury: '0x0E944C65261EdD33e228A920A7846B0cf5c50a45',
@@ -168,6 +170,71 @@ const addresses: AddressCollection = {
     },
     variableDebtTokens: {},
     wrappedNativeToken: '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6'
+  },
+  ammV3: {
+    vault: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
+    pools: {
+      embeddedAssets: [
+        tokens.balDAI,
+        tokens.balUSDC,
+        tokens.balUSDT
+      ],
+      enabled: [
+        {
+          assets: [tokens.XSGD, tokens['bb-a-usd']],
+          address: fxPools['LP_XSGD_bb-a-usd'],
+          poolId: poolIds['XSGD_bb-a-usd']
+        },
+      ],
+      linearPools: [
+        {
+          // underlyingToken: tokens.USDC,
+          address: tokens['bb-a-USDC'],
+          poolId: poolIds['bb-a-USDC'],
+          assets: [tokens.balUSDC]
+        },
+        {
+          // underlyingToken: tokens.DAI,
+          address: tokens['bb-a-DAI'],
+          poolId: poolIds['bb-a-DAI'],
+          assets: [tokens.balDAI]
+        },
+        {
+          // underlyingToken: tokens.USDT,
+          address: tokens['bb-a-USDT'],
+          poolId: poolIds['bb-a-USDT'],
+          assets: [tokens.balUSDT]
+        }
+      ],
+      'bb-a-usd': {
+        address: tokens['bb-a-usd'],
+        poolId: poolIds['bb-a-usd'],
+        assets: [
+          tokens['bb-a-DAI'],
+          tokens['bb-a-USDC'],
+          tokens['bb-a-USDT'],
+        ]
+      },
+      fxMetaPools: [
+        {
+          assets: [tokens.XSGD, tokens['bb-a-usd']],
+          address: fxPools['LP_XSGD_bb-a-usd'],
+          poolId: poolIds['XSGD_bb-a-usd'],
+        }
+      ],
+      // No direct paths
+      tokensWithConnectingPath: [
+        tokens.XSGD,
+      ],
+      tokensWithNoDirectPath: [
+        tokens.EURS,
+      ],
+      tokensWithDirectPath: [
+        tokens.balDAI,
+        tokens.balUSDC,
+        tokens.balUSDT,
+      ]
+    }
   }
 }
 

@@ -29,7 +29,8 @@ const curves = {
 const fxPools = {
   LP_XSGD_USDC: '0x726E324c29a1e49309672b244bdC4Ff62A270407',
   LP_DAI_USDC: '0x216B176513C500dBE1D677939103E350A9373a39',
-  LP_EURS_USDC: '0xfd24Afa5416C8De94FDbaf344840F524155A4DD0'
+  LP_EURS_USDC: '0xfd24Afa5416C8De94FDbaf344840F524155A4DD0',
+  'LP_XSGD_bb-a-usd': '0x882c7A84231484B3E9F3fD45aC04b1EB5d35b076'
 }
 
 const fxPoolIds = {
@@ -39,6 +40,23 @@ const fxPoolIds = {
     '0x216b176513c500dbe1d677939103e350a9373a390002000000000000000008da',
   EURS_USDC:
     '0xfd24afa5416c8de94fdbaf344840f524155a4dd00002000000000000000008db'
+}
+
+const poolIds = {
+  XSGD_USDC:
+    '0x726e324c29a1e49309672b244bdc4ff62a270407000200000000000000000702',
+  EURS_USDC:
+    '0xfd24afa5416c8de94fdbaf344840f524155a4dd00002000000000000000008db',
+  'XSGD_bb-a-usd':
+    '0x882c7a84231484b3e9f3fd45ac04b1eb5d35b076000200000000000000000a91',
+  'bb-a-usd':
+    '0x48e6b98ef6329f8f0a30ebb8c7c960330d64808500000000000000000000075b',
+  'bb-a-USDC':
+    '0xf93579002dbe8046c43fefe86ec78b1112247bb8000000000000000000000759',
+  'bb-a-DAI':
+    '0x178e029173417b1f9c8bc16dcec6f697bc323746000000000000000000000758',
+  'bb-a-USDT':
+    '0xff4ce5aaab5a627bf82f4a571ab1ce94aa365ea600000000000000000000075a'
 }
 
 const addresses: AddressCollection = {
@@ -69,21 +87,63 @@ const addresses: AddressCollection = {
     pools: {
       all: fxPools,
       genesis: [],
+      // enabled: [
+      //   {
+      //     assets: [tokens.XSGD, tokens.USDC],
+      //     address: fxPools.LP_XSGD_USDC,
+      //     poolId: fxPoolIds.XSGD_USDC
+      //   },
+      //   {
+      //     assets: [tokens.DAI, tokens.USDC],
+      //     address: fxPools.LP_DAI_USDC,
+      //     poolId: fxPoolIds.DAI_USDC
+      //   },
+      //   {
+      //     assets: [tokens.EURS, tokens.USDC],
+      //     address: fxPools.LP_EURS_USDC,
+      //     poolId: fxPoolIds.EURS_USDC
+      //   }
+      // ],
       enabled: [
         {
           assets: [tokens.XSGD, tokens.USDC],
           address: fxPools.LP_XSGD_USDC,
-          poolId: fxPoolIds.XSGD_USDC
-        },
-        {
-          assets: [tokens.DAI, tokens.USDC],
-          address: fxPools.LP_DAI_USDC,
-          poolId: fxPoolIds.DAI_USDC
+          poolId: poolIds.XSGD_USDC
         },
         {
           assets: [tokens.EURS, tokens.USDC],
           address: fxPools.LP_EURS_USDC,
-          poolId: fxPoolIds.EURS_USDC
+          poolId: poolIds.EURS_USDC
+        },
+        {
+          assets: [tokens.XSGD, tokens['bb-a-usd']],
+          address: fxPools['LP_XSGD_bb-a-usd'],
+          poolId: poolIds['XSGD_bb-a-usd'],
+          poolTokens: [
+            tokens.USDC,
+            tokens.DAI,
+            tokens.USDT,
+            tokens['bb-a-USDC'],
+            tokens['bb-a-DAI'],
+            tokens['bb-a-USDT']
+          ],
+          subPools: [
+            {
+              address: tokens['bb-a-USDC'],
+              poolId: poolIds['bb-a-USDC'],
+              assets: [tokens.USDC]
+            },
+            {
+              address: tokens['bb-a-DAI'],
+              poolId: poolIds['bb-a-DAI'],
+              assets: [tokens.DAI]
+            },
+            {
+              address: tokens['bb-a-USDT'],
+              poolId: poolIds['bb-a-USDT'],
+              assets: [tokens.USDT]
+            }
+          ]
         }
       ],
       disabled: []
@@ -174,7 +234,72 @@ const addresses: AddressCollection = {
       address: ZERO_ADDRESS,
       USDC: tokens.USDC
     }
-  ]
+  ],
+  ammV3: {
+    vault: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
+    pools: {
+      embeddedAssets: [
+        tokens.DAI,
+        tokens.USDC,
+        tokens.USDT
+      ],
+      enabled: [
+        {
+          assets: [tokens.XSGD, tokens['bb-a-usd']],
+          address: fxPools['LP_XSGD_bb-a-usd'],
+          poolId: poolIds['XSGD_bb-a-usd']
+        },
+      ],
+      linearPools: [
+        {
+          // underlyingToken: tokens.USDC,
+          address: tokens['bb-a-USDC'],
+          poolId: poolIds['bb-a-USDC'],
+          assets: [tokens.USDC]
+        },
+        {
+          // underlyingToken: tokens.DAI,
+          address: tokens['bb-a-DAI'],
+          poolId: poolIds['bb-a-DAI'],
+          assets: [tokens.DAI]
+        },
+        {
+          // underlyingToken: tokens.USDT,
+          address: tokens['bb-a-USDT'],
+          poolId: poolIds['bb-a-USDT'],
+          assets: [tokens.USDT]
+        }
+      ],
+      'bb-a-usd': {
+        address: tokens['bb-a-usd'],
+        poolId: poolIds['bb-a-usd'],
+        assets: [
+          tokens['bb-a-DAI'],
+          tokens['bb-a-USDC'],
+          tokens['bb-a-USDT'],
+        ]
+      },
+      fxMetaPools: [
+        {
+          assets: [tokens.XSGD, tokens['bb-a-usd']],
+          address: fxPools['LP_XSGD_bb-a-usd'],
+          poolId: poolIds['XSGD_bb-a-usd'],
+        }
+      ],
+      // No direct paths
+      tokensWithConnectingPath: [
+        tokens.XSGD,
+      ],
+      tokensWithNoDirectPath: [
+        tokens.EURS,
+      ],
+      tokensWithDirectPath: [
+        tokens.DAI,
+        tokens.USDC,
+        tokens.USDT,
+      ]
+    }
+  }
 }
 
 export default addresses

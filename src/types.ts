@@ -117,6 +117,7 @@ export type AddressCollection = {
     }
     balancerProtocolFeeCollector: string
   }
+  ammV3?: any
   tokens: {
     AMPL?: string
     wETH?: string
