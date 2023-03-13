@@ -8,6 +8,13 @@ type Pool = {
     poolId: string
     assets: string[]
   }[]
+  gauges?: {
+    main: string // LiquidityGauge (Mainnet) | PolygonRootGauge (Polygon)
+    l2?: {
+      rewardsOnly: string // RewardsOnlyGauge
+      rewardsHelper: string // ChildChainGaugeRewardHelper
+    }
+  }
 }
 
 type Assimilators = {
@@ -118,6 +125,8 @@ export type AddressCollection = {
       'bb-a-usd'?: string
     }
     balancerProtocolFeeCollector: string
+    balancerGaugeController?: string
+    balancerTokenAdmin?: string
   }
   ammV3?: any
   tokens: {
@@ -137,6 +146,7 @@ export type AddressCollection = {
     CHF?: string
     DAI?: string
     USDT?: string
+    BAL?: string
     'bb-a-usd'?: string
     'bb-a-USDC'?: string
     'bb-a-DAI'?: string

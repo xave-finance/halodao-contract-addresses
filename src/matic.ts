@@ -12,6 +12,7 @@ const tokens = {
   fakeFxPHP: '0xe1Ca353a88a8822ed95293a7E76bd20eEA2ff662',
   fakeXSGD: '0x7112AE5d61eb28c7b00413882B59b7F796e2A505',
   fakeEURS: '0xBb54874397Beb2Dd8673eb3B8Cd7C07d54bbd02D',
+  BAL: '0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3', // Balancer governance token
   'bb-a-usd': '0x48e6B98ef6329f8f0A30eBB8c7C960330d648085', // balancer ComposableStablePool
   'bb-a-USDC': '0xF93579002DBE8046c43FEfE86ec78b1112247BB8', // balancer USDC:aUSDC AaveLinearPool
   'bb-a-DAI': '0x178E029173417b1F9C8bC16DCeC6f697bC323746', // balancer DAI:aDAI AaveLinearPool
@@ -30,7 +31,7 @@ const fxPools = {
   LP_XSGD_USDC: '0x726E324c29a1e49309672b244bdC4Ff62A270407',
   LP_DAI_USDC: '0x216B176513C500dBE1D677939103E350A9373a39',
   LP_EURS_USDC: '0xfd24Afa5416C8De94FDbaf344840F524155A4DD0',
-  'LP_XSGD_bb-a-usd': '0x882c7a84231484b3e9f3fd45ac04b1eb5d35b076'
+  'LP_XSGD_bb-a-usd': '0x882c7A84231484B3E9F3fD45aC04b1EB5d35b076'
 }
 
 const fxPoolIds = {
@@ -89,28 +90,23 @@ const addresses: AddressCollection = {
     pools: {
       all: fxPools,
       genesis: [],
-      // enabled: [
-      //   {
-      //     assets: [tokens.XSGD, tokens.USDC],
-      //     address: fxPools.LP_XSGD_USDC,
-      //     poolId: fxPoolIds.XSGD_USDC
-      //   },
-      //   {
-      //     assets: [tokens.DAI, tokens.USDC],
-      //     address: fxPools.LP_DAI_USDC,
-      //     poolId: fxPoolIds.DAI_USDC
-      //   },
-      //   {
-      //     assets: [tokens.EURS, tokens.USDC],
-      //     address: fxPools.LP_EURS_USDC,
-      //     poolId: fxPoolIds.EURS_USDC
-      //   }
-      // ],
       enabled: [
         {
           assets: [tokens.XSGD, tokens.USDC],
           address: fxPools.LP_XSGD_USDC,
-          poolId: poolIds.XSGD_USDC
+          poolId: fxPoolIds.XSGD_USDC,
+          gauges: {
+            main: '0xe42382D005A620FaaA1B82543C9c04ED79Db03bA', // PolygonRootGauge
+            l2: {
+              rewardsOnly: '0x3ac845345fc2d51a3006ed384055cd5acde86441', // RewardsOnlyGauge
+              rewardsHelper: '0xaEb406b0E430BF5Ea2Dc0B9Fe62E4E53f74B3a33' // ChildChainGaugeRewardHelper
+            }
+          }
+        },
+        {
+          assets: [tokens.DAI, tokens.USDC],
+          address: fxPools.LP_DAI_USDC,
+          poolId: fxPoolIds.DAI_USDC
         },
         {
           assets: [tokens.EURS, tokens.USDC],
