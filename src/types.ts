@@ -27,6 +27,7 @@ type Assimilators = {
   TAUD_USD?: string
   'bb-a-usd_USD'?: string
   'XSGD_bb-a-usd_USD'?: string
+  'EURS_bb-a-usd_USD'?: string
 }
 
 export type AddressCollection = {
@@ -94,6 +95,7 @@ export type AddressCollection = {
         LP_LPHP_USDC?: string
         LP_fxAUD_USDC?: string
         'LP_XSGD_bb-a-usd'?: string
+        'LP_EURS_bb-a-usd'?: string
       }
       genesis: Pool[]
       enabled: Pool[]
