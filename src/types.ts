@@ -2,17 +2,22 @@ type Pool = {
   address: string
   poolId: string
   assets: string[]
-  poolTokens?: string[]
-  subPools?: {
-    address: string
-    poolId: string
-    assets: string[]
-  }[]
   gauges?: {
     main: string // LiquidityGauge (Mainnet) | PolygonRootGauge (Polygon)
     l2?: {
       rewardsOnly: string // RewardsOnlyGauge
       rewardsHelper: string // ChildChainGaugeRewardHelper
+    }
+  }
+}
+
+type BoostedPool = {
+  assets: string[]
+  poolId: string
+  subPools: {
+    [asset: string]: {
+      assets: string[]
+      poolId: string
     }
   }
 }
@@ -107,6 +112,8 @@ export type AddressCollection = {
       genesis: Pool[]
       enabled: Pool[]
       disabled: Pool[]
+      hidden: Pool[]
+      ['bb-a-usd']?: BoostedPool
     }
     fxPoolFactory: string
     proportionalLiquidity: string

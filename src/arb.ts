@@ -41,7 +41,9 @@ const addresses: AddressCollection = {
     pools: {
       all: {},
       genesis: [],
-      enabled: [
+      enabled: [],
+      disabled: [],
+      hidden: [
         {
           assets: [tokens.fakeFxPHP, tokens.fakeUSDC],
           address: '0x540C3126DF05CfB001eaEEBB08D1659439d02a95',
@@ -54,8 +56,7 @@ const addresses: AddressCollection = {
           poolId:
             '0x8e13acc4780f78d13e92a30b72df526be76561ef00020000000000000000007e'
         }
-      ],
-      disabled: []
+      ]
     },
     fxPoolFactory: ZERO_ADDRESS,
     proportionalLiquidity: '0x3af74d19F50f24C75e4000Fe665d718387b1DA74',

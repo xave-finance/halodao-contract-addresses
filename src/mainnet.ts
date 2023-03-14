@@ -91,16 +91,6 @@ const addresses: AddressCollection = {
       genesis: [],
       enabled: [
         {
-          assets: [tokens.XSGD, tokens.USDC],
-          address: fxPools.LP_XSGD_USDC,
-          poolId: fxPoolIds.XSGD_USDC
-        },
-        {
-          assets: [tokens.DAI, tokens.USDC],
-          address: fxPools.LP_DAI_USDC,
-          poolId: fxPoolIds.DAI_USDC
-        },
-        {
           assets: [tokens.EURS, tokens.USDC],
           address: fxPools.LP_EURS_USDC,
           poolId: fxPoolIds.EURS_USDC,
@@ -109,7 +99,20 @@ const addresses: AddressCollection = {
           }
         }
       ],
-      disabled: []
+      disabled: [
+        {
+          assets: [tokens.DAI, tokens.USDC],
+          address: fxPools.LP_DAI_USDC,
+          poolId: fxPoolIds.DAI_USDC
+        }
+      ],
+      hidden: [
+        {
+          assets: [tokens.XSGD, tokens.USDC],
+          address: fxPools.LP_XSGD_USDC,
+          poolId: fxPoolIds.XSGD_USDC
+        }
+      ]
     },
     fxPoolFactory: '0x81fE9e5B28dA92aE949b705DfDB225f7a7cc5134',
     proportionalLiquidity: '0xB741984C8ce63F4cbD923842Ee0B9e32Dd9df48c',

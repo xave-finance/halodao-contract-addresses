@@ -42,33 +42,6 @@ const poolIds = {
     '0xefd681a82970ac5d980b9b2d40499735e7bf3f1f00000000000000000000005e'
 }
 
-const bbausdPoolTokens = [
-  tokens.USDC,
-  tokens.DAI,
-  tokens.USDT,
-  tokens['bb-a-USDC'],
-  tokens['bb-a-DAI'],
-  tokens['bb-a-USDT']
-]
-
-const bbausdSubpools = [
-  {
-    address: tokens['bb-a-USDC'],
-    poolId: poolIds['bb-a-USDC'],
-    assets: [tokens.USDC]
-  },
-  {
-    address: tokens['bb-a-DAI'],
-    poolId: poolIds['bb-a-DAI'],
-    assets: [tokens.DAI]
-  },
-  {
-    address: tokens['bb-a-USDT'],
-    poolId: poolIds['bb-a-USDT'],
-    assets: [tokens.USDT]
-  }
-]
-
 const addresses: AddressCollection = {
   protocol: {
     XAV: '0x4f2157aE2661e4312B8F2E458705fA5a9aeb3D46',
@@ -99,19 +72,34 @@ const addresses: AddressCollection = {
         {
           assets: [tokens.XSGD, tokens['bb-a-usd']],
           address: fxPools['LP_XSGD_bb-a-usd'],
-          poolId: poolIds['XSGD_bb-a-usd'],
-          poolTokens: bbausdPoolTokens,
-          subPools: bbausdSubpools
+          poolId: poolIds['XSGD_bb-a-usd']
         },
         {
           assets: [tokens.EURS, tokens['bb-a-usd']],
           address: fxPools['LP_EURS_bb-a-usd'],
-          poolId: poolIds['EURS_bb-a-usd'],
-          poolTokens: bbausdPoolTokens,
-          subPools: bbausdSubpools
+          poolId: poolIds['EURS_bb-a-usd']
         }
       ],
-      disabled: []
+      disabled: [],
+      hidden: [],
+      ['bb-a-usd']: {
+        assets: [tokens['bb-a-USDC'], tokens['bb-a-DAI'], tokens['bb-a-USDT']],
+        poolId: poolIds['bb-a-usd'],
+        subPools: {
+          [tokens['bb-a-USDC']]: {
+            assets: [tokens['USDC']],
+            poolId: poolIds['bb-a-USDC']
+          },
+          [tokens['bb-a-USDT']]: {
+            assets: [tokens['USDT']],
+            poolId: poolIds['bb-a-USDT']
+          },
+          [tokens['bb-a-DAI']]: {
+            assets: [tokens['DAI']],
+            poolId: poolIds['bb-a-DAI']
+          }
+        }
+      }
     },
     fxPoolFactory: '0x13841C45274c68002F6D0cb0a40Ae7faa54e7e57',
     proportionalLiquidity: '0x7bC633DA66EBD9A5E44293D8A71e094aFd78c5D6',

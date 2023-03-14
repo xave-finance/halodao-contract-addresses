@@ -34,7 +34,7 @@ const fxPools = {
   'LP_XSGD_bb-a-usd': '0x882c7A84231484B3E9F3fD45aC04b1EB5d35b076'
 }
 
-const fxPoolIds = {
+const poolIds = {
   XSGD_USDC:
     '0x726e324c29a1e49309672b244bdc4ff62a270407000200000000000000000702',
   DAI_USDC:
@@ -42,7 +42,15 @@ const fxPoolIds = {
   EURS_USDC:
     '0xfd24afa5416c8de94fdbaf344840f524155a4dd00002000000000000000008db',
   'LP_XSGD_bb-a-usd':
-    '0x882C7A84231484B3E9F3FD45AC04B1EB5D35B076000200000000000000000A91'
+    '0x882C7A84231484B3E9F3FD45AC04B1EB5D35B076000200000000000000000A91',
+  'bb-a-usd':
+    '0x48e6b98ef6329f8f0a30ebb8c7c960330d64808500000000000000000000075b',
+  'bb-a-USDC':
+    '0xf93579002dbe8046c43fefe86ec78b1112247bb8000000000000000000000759',
+  'bb-a-DAI':
+    '0x178e029173417b1f9c8bc16dcec6f697bc323746000000000000000000000758',
+  'bb-a-USDT':
+    '0xff4ce5aaab5a627bf82f4a571ab1ce94aa365ea600000000000000000000075a'
 }
 
 const addresses: AddressCollection = {
@@ -77,7 +85,7 @@ const addresses: AddressCollection = {
         {
           assets: [tokens.XSGD, tokens.USDC],
           address: fxPools.LP_XSGD_USDC,
-          poolId: fxPoolIds.XSGD_USDC,
+          poolId: poolIds.XSGD_USDC,
           gauges: {
             main: '0xe42382D005A620FaaA1B82543C9c04ED79Db03bA', // PolygonRootGauge
             l2: {
@@ -85,24 +93,44 @@ const addresses: AddressCollection = {
               rewardsHelper: '0xaEb406b0E430BF5Ea2Dc0B9Fe62E4E53f74B3a33' // ChildChainGaugeRewardHelper
             }
           }
-        },
+        }
+      ],
+      disabled: [],
+      hidden: [
         {
           assets: [tokens.DAI, tokens.USDC],
           address: fxPools.LP_DAI_USDC,
-          poolId: fxPoolIds.DAI_USDC
+          poolId: poolIds.DAI_USDC
         },
         {
           assets: [tokens.EURS, tokens.USDC],
           address: fxPools.LP_EURS_USDC,
-          poolId: fxPoolIds.EURS_USDC
+          poolId: poolIds.EURS_USDC
         },
         {
           assets: [tokens.XSGD, tokens['bb-a-usd']],
           address: fxPools['LP_XSGD_bb-a-usd'],
-          poolId: fxPoolIds['LP_XSGD_bb-a-usd']
+          poolId: poolIds['LP_XSGD_bb-a-usd']
         }
       ],
-      disabled: []
+      ['bb-a-usd']: {
+        assets: [tokens['bb-a-USDC'], tokens['bb-a-DAI'], tokens['bb-a-USDT']],
+        poolId: poolIds['bb-a-usd'],
+        subPools: {
+          [tokens['bb-a-USDC']]: {
+            assets: [tokens['USDC']],
+            poolId: poolIds['bb-a-USDC']
+          },
+          [tokens['bb-a-USDT']]: {
+            assets: [tokens['USDT']],
+            poolId: poolIds['bb-a-USDT']
+          },
+          [tokens['bb-a-DAI']]: {
+            assets: [tokens['DAI']],
+            poolId: poolIds['bb-a-DAI']
+          }
+        }
+      }
     },
     fxPoolFactory: '0x627D759314D5c4007b461A74eBaFA7EBC5dFeD71',
     proportionalLiquidity: '0xe35A4e171F5568e8619DA1e097DAD18928187D85',
@@ -180,7 +208,7 @@ const addresses: AddressCollection = {
       address: '0x86C6A426508999C58fBc1aCA2bc244e08E7F4Ec6',
       pool: {
         address: fxPools.LP_XSGD_USDC,
-        poolId: fxPoolIds.XSGD_USDC,
+        poolId: poolIds.XSGD_USDC,
         assets: [tokens.XSGD, tokens.USDC]
       }
     },

@@ -34,7 +34,8 @@ const addresses: AddressCollection = {
       all: {},
       genesis: [],
       enabled: [],
-      disabled: []
+      disabled: [],
+      hidden: []
     },
     fxPoolFactory: ZERO_ADDRESS,
     proportionalLiquidity: ZERO_ADDRESS,
