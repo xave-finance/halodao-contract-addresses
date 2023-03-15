@@ -218,6 +218,16 @@ const addresses: AddressCollection = {
       fullName: 'USDC',
       address: ZERO_ADDRESS,
       USDC: tokens.USDC
+    },
+    {
+      shortName: 'XSGD BAL Rewards',
+      fullName: 'XSGD-USDC-BAL',
+      address: '0x3ac845345fc2d51a3006ed384055cd5acde86441',
+      pool: {
+        address: fxPools.LP_XSGD_USDC,
+        poolId: fxPoolIds.XSGD_USDC,
+        assets: [tokens.XSGD, tokens.USDC]
+      }
     }
   ]
 }
