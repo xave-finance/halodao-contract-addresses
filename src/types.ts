@@ -113,7 +113,7 @@ export type AddressCollection = {
       enabled: Pool[]
       disabled: Pool[]
       hidden: Pool[]
-      ['bb-a-usd']?: BoostedPool
+      'bb-a-usd'?: BoostedPool
     }
     fxPoolFactory: string
     proportionalLiquidity: string
