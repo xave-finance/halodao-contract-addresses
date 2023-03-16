@@ -43,7 +43,8 @@ const addresses: AddressCollection = {
             '0x4159d4279bac010ef4e4c1a7e085f6103956a95a000100000000000000000179'
         }
       ],
-      disabled: []
+      disabled: [],
+      hidden: []
     },
     fxPoolFactory: ZERO_ADDRESS,
     proportionalLiquidity: ZERO_ADDRESS,

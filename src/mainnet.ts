@@ -12,6 +12,7 @@ const tokens = {
   TCAD: '0x00000100F2A2bd000715001920eB70D229700085',
   TGBP: '0x00000000441378008EA67F4284A57932B1c000a5',
   DAI: '0x6B175474E89094C44Da98b954EedeAC495271d0F',
+  BAL: '0xba100000625a3754423978a60c9317c58a424e3D', // Balancer governance token
   fakeUSDC: '0x7558f7F023d676841ab118D4637a68943e650196', // fake mintable token
   fakeXSGD: '0x3E58d34C8cf108897b1296eF462AD18522f7e122', // fake mintable token
   fakeFxPHP: '0x02510A18068B57B010b4CBc2E02D8CE5cCBdf8F5' // fake mintable token
@@ -90,22 +91,28 @@ const addresses: AddressCollection = {
       genesis: [],
       enabled: [
         {
-          assets: [tokens.XSGD, tokens.USDC],
-          address: fxPools.LP_XSGD_USDC,
-          poolId: fxPoolIds.XSGD_USDC
-        },
+          assets: [tokens.EURS, tokens.USDC],
+          address: fxPools.LP_EURS_USDC,
+          poolId: fxPoolIds.EURS_USDC,
+          gauges: {
+            main: '0xB381D8923feff930b7AaeDF9563f1496ce0aCe36' // LiquidityGauge
+          }
+        }
+      ],
+      disabled: [
         {
           assets: [tokens.DAI, tokens.USDC],
           address: fxPools.LP_DAI_USDC,
           poolId: fxPoolIds.DAI_USDC
-        },
-        {
-          assets: [tokens.EURS, tokens.USDC],
-          address: fxPools.LP_EURS_USDC,
-          poolId: fxPoolIds.EURS_USDC
         }
       ],
-      disabled: []
+      hidden: [
+        {
+          assets: [tokens.XSGD, tokens.USDC],
+          address: fxPools.LP_XSGD_USDC,
+          poolId: fxPoolIds.XSGD_USDC
+        }
+      ]
     },
     fxPoolFactory: '0x81fE9e5B28dA92aE949b705DfDB225f7a7cc5134',
     proportionalLiquidity: '0xB741984C8ce63F4cbD923842Ee0B9e32Dd9df48c',
@@ -118,7 +125,9 @@ const addresses: AddressCollection = {
       EURS: '0xb49f677943BC038e9857d61E7d053CaA2C1734C1',
       DAI: '0xAed0c38402a5d19df6E4c03F4E2DceD6e29c1ee9'
     },
-    balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
+    balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
+    balancerGaugeController: '0xC128468b7Ce63eA702C1f104D55A2566b13D3ABD',
+    balancerTokenAdmin: '0xf302f9F50958c5593770FDf4d4812309fF77414f'
   },
   tokens,
   lendingMarket: {

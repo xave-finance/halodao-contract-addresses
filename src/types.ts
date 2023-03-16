@@ -2,7 +2,24 @@ type Pool = {
   address: string
   poolId: string
   assets: string[]
-  poolTokens?: string[]
+  gauges?: {
+    main: string // LiquidityGauge (Mainnet) | PolygonRootGauge (Polygon)
+    l2?: {
+      rewardsOnly: string // RewardsOnlyGauge
+      rewardsHelper: string // ChildChainGaugeRewardHelper
+    }
+  }
+}
+
+type BoostedPool = {
+  assets: string[]
+  poolId: string
+  subPools: {
+    [asset: string]: {
+      assets: string[]
+      poolId: string
+    }
+  }
 }
 
 type Assimilators = {
@@ -22,6 +39,7 @@ type Assimilators = {
   TAUD_USD?: string
   'bb-a-usd_USD'?: string
   'XSGD_bb-a-usd_USD'?: string
+  'EURS_bb-a-usd_USD'?: string
 }
 
 export type AddressCollection = {
@@ -89,10 +107,13 @@ export type AddressCollection = {
         LP_LPHP_USDC?: string
         LP_fxAUD_USDC?: string
         'LP_XSGD_bb-a-usd'?: string
+        'LP_EURS_bb-a-usd'?: string
       }
       genesis: Pool[]
       enabled: Pool[]
       disabled: Pool[]
+      hidden: Pool[]
+      'bb-a-usd'?: BoostedPool
     }
     fxPoolFactory: string
     proportionalLiquidity: string
@@ -111,6 +132,8 @@ export type AddressCollection = {
       'bb-a-usd'?: string
     }
     balancerProtocolFeeCollector: string
+    balancerGaugeController?: string
+    balancerTokenAdmin?: string
   }
   tokens: {
     AMPL?: string
@@ -129,6 +152,7 @@ export type AddressCollection = {
     CHF?: string
     DAI?: string
     USDT?: string
+    BAL?: string
     'bb-a-usd'?: string
     'bb-a-USDC'?: string
     'bb-a-DAI'?: string

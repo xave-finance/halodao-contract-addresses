@@ -1,33 +1,45 @@
 import { AddressCollection, ZERO_ADDRESS } from './types'
 
 const tokens = {
-  USDC: '0xB32EcEb4f6B5e840Fe0e4ff127D7761D13a4C092',
-  XSGD: '0xb4a183d38F754D83AA97810D80FC5BaCCd5c8441',
-  EURS: '0x2b1c6c85a1dB4b5CF9C4d4662d0556E5daBcf626',
-  USDT: '0x9FDc4881Ce3eE888A7D3162A8AccFB3875437B34',
-  DAI: '0x7421F1bAb6d1D82c2f854B464Ecd81e0288F3550',
-  'bb-a-usd': '0x7CCB99E3DBeF941a062E0da1b0d7635bdCFafB01', // balancer ComposableStablePool
-  'bb-a-USDC': '0x0595D1Df64279ddB51F1bdC405Fe2D0b4Cc86681', // balancer USDC:aUSDC AaveLinearPool
-  'bb-a-DAI': '0x5cEA6A84eD13590ED14903925Fa1A73c36297d99', // balancer DAI:aDAI AaveLinearPool
-  'bb-a-USDT': '0xeFD681A82970AC5d980b9B2D40499735e7BF3F1F', // balancer USDT:aUSDT AaveLinearPool
-  balUSDC: '0xe0C9275E44Ea80eF17579d33c55136b7DA269aEb', // balancer USDC token
-  balDAI: '0x8c9e6c40d3402480ACE624730524fACC5482798c', // balancer DAI token
-  balUSDT: '0x1f1f156E0317167c11Aa412E3d1435ea29Dc3cCE' // balancer USDT token
+  // Xave tokens
+  XSGD: '0xb4a183d38F754D83AA97810D80FC5BaCCd5c8441', // Xave mock XSGD
+  EURS: '0x2b1c6c85a1dB4b5CF9C4d4662d0556E5daBcf626', // Xave mock EURS
+
+  // Balancer tokens
+  BAL: '0xfA8449189744799aD2AcE7e0EBAC8BB7575eff47', // Balancer governance token
+  USDC: '0xe0C9275E44Ea80eF17579d33c55136b7DA269aEb', // Balancer USDC token
+  USDT: '0x1f1f156E0317167c11Aa412E3d1435ea29Dc3cCE', // Balancer USDT token
+  DAI: '0x8c9e6c40d3402480ACE624730524fACC5482798c', // Balancer DAI token
+  'bb-a-usd': '0x7CCB99E3DBeF941a062E0da1b0d7635bdCFafB01', // Balancer ComposableStablePool
+  'bb-a-USDC': '0x0595D1Df64279ddB51F1bdC405Fe2D0b4Cc86681', // Balancer USDC:aUSDC AaveLinearPool
+  'bb-a-DAI': '0x5cEA6A84eD13590ED14903925Fa1A73c36297d99', // Balancer DAI:aDAI AaveLinearPool
+  'bb-a-USDT': '0xeFD681A82970AC5d980b9B2D40499735e7BF3F1F' // Balancer USDT:aUSDT AaveLinearPool
 }
 
 const fxPools = {
-  LP_XSGD_USDC: '0x5886F7BFCC5D61CD4Ad0DC34e72DEFa2c85dE104',
-  LP_EURS_USDC: '0x1fbA91Ce46d2453e2d461b1a0FcF76588a07fE41',
-  'LP_XSGD_bb-a-usd': '0xeDdd595eFDc678781AF03F54BEc3373964C5fA10'
+  LP_XSGD_USDC: '0x8233CDcD08ccA2718065740e5EF767294361a05a',
+  LP_EURS_USDC: '0x3F3557C7dCa644F6F5d6074FF560a8856155f632',
+  'LP_XSGD_bb-a-usd': '0xF93AC32926574F67F112182ad95F8359c42715Da',
+  'LP_EURS_bb-a-usd': '0x83b630DBF3e90cF0b69dd4029c3d49AF7E48c355'
 }
 
-const fxPoolIds = {
+const poolIds = {
   XSGD_USDC:
-    '0x5886f7bfcc5d61cd4ad0dc34e72defa2c85de1040002000000000000000002e9',
+    '0x8233cdcd08cca2718065740e5ef767294361a05a00020000000000000000067b',
   EURS_USDC:
-    '0x1fba91ce46d2453e2d461b1a0fcf76588a07fe410002000000000000000003af',
+    '0x3f3557c7dca644f6f5d6074ff560a8856155f63200020000000000000000066e',
   'XSGD_bb-a-usd':
-    '0xeddd595efdc678781af03f54bec3373964c5fa10000200000000000000000560'
+    '0xf93ac32926574f67f112182ad95f8359c42715da00020000000000000000067c',
+  'EURS_bb-a-usd':
+    '0x83b630dbf3e90cf0b69dd4029c3d49af7e48c35500020000000000000000067d',
+  'bb-a-usd':
+    '0x7ccb99e3dbef941a062e0da1b0d7635bdcfafb0100000000000000000000054a',
+  'bb-a-USDC':
+    '0x0595d1df64279ddb51f1bdc405fe2d0b4cc8668100000000000000000000005c',
+  'bb-a-DAI':
+    '0x5cea6a84ed13590ed14903925fa1a73c36297d9900000000000000000000005d',
+  'bb-a-USDT':
+    '0xefd681a82970ac5d980b9b2d40499735e7bf3f1f00000000000000000000005e'
 }
 
 const addresses: AddressCollection = {
@@ -50,28 +62,44 @@ const addresses: AddressCollection = {
         {
           assets: [tokens.XSGD, tokens.USDC],
           address: fxPools.LP_XSGD_USDC,
-          poolId: fxPoolIds.XSGD_USDC
+          poolId: poolIds.XSGD_USDC
         },
         {
           assets: [tokens.EURS, tokens.USDC],
           address: fxPools.LP_EURS_USDC,
-          poolId: fxPoolIds.EURS_USDC
+          poolId: poolIds.EURS_USDC
         },
         {
           assets: [tokens.XSGD, tokens['bb-a-usd']],
           address: fxPools['LP_XSGD_bb-a-usd'],
-          poolId: fxPoolIds['XSGD_bb-a-usd'],
-          poolTokens: [
-            tokens.balUSDC,
-            tokens.balDAI,
-            tokens.balUSDT,
-            tokens['bb-a-USDC'],
-            tokens['bb-a-DAI'],
-            tokens['bb-a-USDT']
-          ]
+          poolId: poolIds['XSGD_bb-a-usd']
+        },
+        {
+          assets: [tokens.EURS, tokens['bb-a-usd']],
+          address: fxPools['LP_EURS_bb-a-usd'],
+          poolId: poolIds['EURS_bb-a-usd']
         }
       ],
-      disabled: []
+      disabled: [],
+      hidden: [],
+      ['bb-a-usd']: {
+        assets: [tokens['bb-a-USDC'], tokens['bb-a-DAI'], tokens['bb-a-USDT']],
+        poolId: poolIds['bb-a-usd'],
+        subPools: {
+          [tokens['bb-a-USDC']]: {
+            assets: [tokens['USDC']],
+            poolId: poolIds['bb-a-USDC']
+          },
+          [tokens['bb-a-USDT']]: {
+            assets: [tokens['USDT']],
+            poolId: poolIds['bb-a-USDT']
+          },
+          [tokens['bb-a-DAI']]: {
+            assets: [tokens['DAI']],
+            poolId: poolIds['bb-a-DAI']
+          }
+        }
+      }
     },
     fxPoolFactory: '0x13841C45274c68002F6D0cb0a40Ae7faa54e7e57',
     proportionalLiquidity: '0x7bC633DA66EBD9A5E44293D8A71e094aFd78c5D6',
@@ -79,18 +107,19 @@ const addresses: AddressCollection = {
     swapLibrary: '0x9875C5C44C10e24AEa48C422f819c5c8f933701D',
     oracles: {
       USDC: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7', // Chainklink official USDC/USD oracle
-      XSGD: '0x3E58d34C8cf108897b1296eF462AD18522f7e122', // mock XSGD/USD oracle
+      XSGD: '0xebFF09c20a4de756cA86bF13E8878AeA795Bd6A7', // Xave mock XSGD/USD oracle
       EURS: '0x44390589104C9164407A0E0562a9DBe6C24A0E05', // Chainklink official EURS/USD oracle
       USDT: '0xAb5c49580294Aff77670F839ea425f5b78ab3Ae7', // no USDT on Chainlink goerli, reusing USDC instead
       DAI: '0x0d79df66BE487753B02D015Fb622DED7f0E9798d', // Chainklink official DAI/USD oracle
-      'bb-a-usd': '0x9Db0c4Bf8e8CDf42D8C611019a0ee291a60C70E2' // Xave's ComposableBoostedPoolUsdRate oracle
+      'bb-a-usd': '0xA76dC5048F80D2f2974754D292B09a441ea60EcA' // Xave's ComposableBoostedPoolOracle
     },
     assimilators: {
-      XSGD_USD: '0x4013e4d132692D1c99233345d06Aa13AB9133D95',
-      EURS_USD: '0x096337250551Ae6E4Bf423Ab5204415777553F80',
-      USDC_USD: '0x82670155e38CA77Bcefbb098940D3222A3283fdb',
-      'bb-a-usd_USD': '0x605C0707cf604A48819F055B09C4e11DbC0C99ED',
-      'XSGD_bb-a-usd_USD': '0x27526bD0E4Fb7D342ac81F7362f40f0e9Ebd011a'
+      USDC_USD: '0x75deB02b7B5631395c3DFD6F8027a9C8Ce95103e',
+      XSGD_USD: '0xae76A9D5C56A8547a3dF9C074ed6F5Da634831fb',
+      EURS_USD: '0xc7B5Bc5dcAA1534b0aA38cFC19e8c15bb023a164',
+      'bb-a-usd_USD': '0x35247C932ECF5898d2eFBb462146067B889bAaF8',
+      'XSGD_bb-a-usd_USD': '0xD98A5Bdb5fA8E2feC69391397EB6b8D9d73428bf',
+      'EURS_bb-a-usd_USD': '0x80FCFC519d0AaE7B3aAa97a9dB454eB416c67473'
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
   },

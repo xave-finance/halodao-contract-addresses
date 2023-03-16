@@ -4,6 +4,7 @@ const tokens = {
   USDC: '0xff970a61a04b1ca14834a43f5de4533ebddb5cc8',
   fxPHP: '0x3d147cD9aC957B2a5F968dE9d1c6B9d0872286a0',
   EURS: '0xD22a58f79e9481D1a88e00c343885A588b34b68B',
+  BAL: '0x040d1EdC9569d4Bab2D15287Dc5A4F10F56a56B8', // Balancer governance token
   fakeUSDC: '0x9cFf4A10b6Fb163a4DF369AaFed9d95838222ca6', // fake mintable token
   fakeFxPHP: '0x03612728266b82EF5dB751fbf15ea7F1370502eE', // fake mintable token
   fakeXSGD: '0x6d934DcbA7F8e89713b4334147c03e76f30CE094', // fake mintable token
@@ -40,7 +41,9 @@ const addresses: AddressCollection = {
     pools: {
       all: {},
       genesis: [],
-      enabled: [
+      enabled: [],
+      disabled: [],
+      hidden: [
         {
           assets: [tokens.fakeFxPHP, tokens.fakeUSDC],
           address: '0x540C3126DF05CfB001eaEEBB08D1659439d02a95',
@@ -53,8 +56,7 @@ const addresses: AddressCollection = {
           poolId:
             '0x8e13acc4780f78d13e92a30b72df526be76561ef00020000000000000000007e'
         }
-      ],
-      disabled: []
+      ]
     },
     fxPoolFactory: ZERO_ADDRESS,
     proportionalLiquidity: '0x3af74d19F50f24C75e4000Fe665d718387b1DA74',
