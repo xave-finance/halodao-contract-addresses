@@ -31,7 +31,7 @@ const fxPools = {
   LP_XSGD_USDC: '0x726E324c29a1e49309672b244bdC4Ff62A270407',
   LP_DAI_USDC: '0x216B176513C500dBE1D677939103E350A9373a39',
   LP_EURS_USDC: '0xfd24Afa5416C8De94FDbaf344840F524155A4DD0',
-  'LP_XSGD_bb-a-usd': '0x882c7A84231484B3E9F3fD45aC04b1EB5d35b076'
+  'LP_XSGD_bb-a-usd': '0x12d54C811521D3804a69127d9DF083A8C38E1770'
 }
 
 const poolIds = {
@@ -41,8 +41,8 @@ const poolIds = {
     '0x216b176513c500dbe1d677939103e350a9373a390002000000000000000008da',
   EURS_USDC:
     '0xfd24afa5416c8de94fdbaf344840f524155a4dd00002000000000000000008db',
-  'LP_XSGD_bb-a-usd':
-    '0x882C7A84231484B3E9F3FD45AC04B1EB5D35B076000200000000000000000A91',
+  'XSGD_bb-a-usd':
+    '0x12d54c811521d3804a69127d9df083a8c38e1770000200000000000000000b0c',
   'bb-a-usd':
     '0x48e6b98ef6329f8f0a30ebb8c7c960330d64808500000000000000000000075b',
   'bb-a-USDC':
@@ -93,6 +93,11 @@ const addresses: AddressCollection = {
               rewardsHelper: '0xaEb406b0E430BF5Ea2Dc0B9Fe62E4E53f74B3a33' // ChildChainGaugeRewardHelper
             }
           }
+        },
+        {
+          assets: [tokens.XSGD, tokens['bb-a-usd']],
+          address: fxPools['LP_XSGD_bb-a-usd'],
+          poolId: poolIds['XSGD_bb-a-usd']
         }
       ],
       disabled: [],
@@ -106,11 +111,6 @@ const addresses: AddressCollection = {
           assets: [tokens.EURS, tokens.USDC],
           address: fxPools.LP_EURS_USDC,
           poolId: poolIds.EURS_USDC
-        },
-        {
-          assets: [tokens.XSGD, tokens['bb-a-usd']],
-          address: fxPools['LP_XSGD_bb-a-usd'],
-          poolId: poolIds['LP_XSGD_bb-a-usd']
         }
       ],
       ['bb-a-usd']: {
