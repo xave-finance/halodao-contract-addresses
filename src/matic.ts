@@ -132,10 +132,16 @@ const addresses: AddressCollection = {
         }
       }
     },
-    fxPoolFactory: '0x627D759314D5c4007b461A74eBaFA7EBC5dFeD71',
-    proportionalLiquidity: '0xe35A4e171F5568e8619DA1e097DAD18928187D85',
+    // fxPoolFactory: '0x627D759314D5c4007b461A74eBaFA7EBC5dFeD71',
+    // proportionalLiquidity: '0xe35A4e171F5568e8619DA1e097DAD18928187D85',
     assimilatorFactory: '0x9CB3961ec9E54563602d96D2b3332028aa54dd13',
-    swapLibrary: '0x6256447F6dAa532d5A650cFeAf305D2DD7Bd296E',
+    // swapLibrary: '0x6256447F6dAa532d5A650cFeAf305D2DD7Bd296E',
+
+    // New deployment 03/21/23
+    fxPoolFactory: '0x18bab048fd880d847b9b1dac5b110b6f98fd66c7',
+    proportionalLiquidity: '0xdefcd9f506954b2faed53910e44b3af4c9de34d1',
+    swapLibrary: '0x4ac6e38a5ee995706c898d7d8b201cb5c0346fa0',
+
     oracles: {
       USDC: '0xfE4A8cc5b5B2366C1B58Bea3858e81843581b2F7',
       fxPHP: '0x218231089Bebb2A31970c3b77E96eCfb3BA006D1',
