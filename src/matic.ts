@@ -31,7 +31,8 @@ const fxPools = {
   LP_XSGD_USDC: '0x726E324c29a1e49309672b244bdC4Ff62A270407',
   LP_DAI_USDC: '0x216B176513C500dBE1D677939103E350A9373a39',
   LP_EURS_USDC: '0xfd24Afa5416C8De94FDbaf344840F524155A4DD0',
-  'LP_XSGD_bb-a-usd': '0x12d54C811521D3804a69127d9DF083A8C38E1770'
+  'LP_XSGD_bb-a-usd': '0x2c7223699099ca6785a9da783ededfca5218bd27',
+  'LP_EURS_bb-a-usd': '0x70bbCeB61B5dD6645aABa80693B0078aee18E2e9'
 }
 
 const poolIds = {
@@ -42,7 +43,9 @@ const poolIds = {
   EURS_USDC:
     '0xfd24afa5416c8de94fdbaf344840f524155a4dd00002000000000000000008db',
   'XSGD_bb-a-usd':
-    '0x12d54c811521d3804a69127d9df083a8c38e1770000200000000000000000b0c',
+    '0x2c7223699099ca6785a9da783ededfca5218bd27000200000000000000000b0d',
+  'EURS_bb-a-usd':
+    '0x70bbceb61b5dd6645aaba80693b0078aee18e2e9000200000000000000000b0e',
   'bb-a-usd':
     '0x48e6b98ef6329f8f0a30ebb8c7c960330d64808500000000000000000000075b',
   'bb-a-USDC':
@@ -83,9 +86,14 @@ const addresses: AddressCollection = {
       genesis: [],
       enabled: [
         {
-          assets: [tokens.fakeXSGD, tokens['bb-a-usd']],
+          assets: [tokens.XSGD, tokens['bb-a-usd']],
           address: fxPools['LP_XSGD_bb-a-usd'],
           poolId: poolIds['XSGD_bb-a-usd']
+        },
+        {
+          assets: [tokens.EURS, tokens['bb-a-usd']],
+          address: fxPools['LP_EURS_bb-a-usd'],
+          poolId: poolIds['EURS_bb-a-usd']
         }
       ],
       disabled: [],
