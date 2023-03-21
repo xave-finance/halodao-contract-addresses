@@ -83,19 +83,7 @@ const addresses: AddressCollection = {
       genesis: [],
       enabled: [
         {
-          assets: [tokens.XSGD, tokens.USDC],
-          address: fxPools.LP_XSGD_USDC,
-          poolId: poolIds.XSGD_USDC,
-          gauges: {
-            main: '0xe42382D005A620FaaA1B82543C9c04ED79Db03bA', // PolygonRootGauge
-            l2: {
-              rewardsOnly: '0x3ac845345fc2d51a3006ed384055cd5acde86441', // RewardsOnlyGauge
-              rewardsHelper: '0xaEb406b0E430BF5Ea2Dc0B9Fe62E4E53f74B3a33' // ChildChainGaugeRewardHelper
-            }
-          }
-        },
-        {
-          assets: [tokens.XSGD, tokens['bb-a-usd']],
+          assets: [tokens.fakeXSGD, tokens['bb-a-usd']],
           address: fxPools['LP_XSGD_bb-a-usd'],
           poolId: poolIds['XSGD_bb-a-usd']
         }
