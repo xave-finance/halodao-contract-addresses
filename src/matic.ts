@@ -153,8 +153,8 @@ const addresses: AddressCollection = {
     },
     assimilators: {
       'bb-a-usd_USD': '0x49dd29b8d2c7a979e0a406225fefc48bbfe3f4ce',
-      'XSGD_bb-a-usd_USD': '',
-      'EURS_bb-a-usd_USD': ''
+      'XSGD_bb-a-usd_USD': '0xebc71B12E5dE13Fdc01Aa83A19eCA6752647a7E6',
+      'EURS_bb-a-usd_USD': '0x057b4e0f15b642494013984543872a801f99e3c3'
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
   },
