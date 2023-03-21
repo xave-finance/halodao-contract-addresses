@@ -143,11 +143,12 @@ const addresses: AddressCollection = {
       XSGD: '0x8CE3cAc0E6635ce04783709ca3CC4F5fc5304299',
       DAI: '0x4746DeC9e833A82EC7C2C1356372CcF2cfcD2F3D',
       USDT: '0x0A6513e40db6EB1b165753AD52E80663aeA50545',
-      'bb-a-usd': '0x889E8F2b15A1B462dC74C5F66eF90C3caa46A37D'
+      'bb-a-usd': '0x7111a302b929d14a323b489f234ef912903bf374'
     },
     assimilators: {
-      'bb-a-usd_USD': '0x04E2a492AACbbaC02164da3EEC6404893cA08998',
-      'XSGD_bb-a-usd_USD': '0xBef2D248894648A6Fcb214C395044616150C6cEc'
+      'bb-a-usd_USD': '0x49dd29b8d2c7a979e0a406225fefc48bbfe3f4ce',
+      'XSGD_bb-a-usd_USD': '',
+      'EURS_bb-a-usd_USD': ''
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
   },
