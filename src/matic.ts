@@ -222,7 +222,7 @@ const addresses: AddressCollection = {
     {
       shortName: 'XSGD BAL Rewards',
       fullName: 'XSGD-USDC-BAL',
-      address: '0x3ac845345fc2d51a3006ed384055cd5acde86441',
+      address: '0x6d5040f703c82c6357701934baf9fdfc9409a972',
       pool: {
         address: fxPools.LP_XSGD_USDC,
         poolId: fxPoolIds.XSGD_USDC,
