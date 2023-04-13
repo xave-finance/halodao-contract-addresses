@@ -95,7 +95,7 @@ const addresses: AddressCollection = {
           address: fxPools.LP_EURS_USDC,
           poolId: fxPoolIds.EURS_USDC,
           gauges: {
-            main: '0xB381D8923feff930b7AaeDF9563f1496ce0aCe36' // LiquidityGauge
+            main: '0xE629c43BCad1029E12ED51432B9dd3432b656cc9' // LiquidityGauge
           }
         }
       ],
