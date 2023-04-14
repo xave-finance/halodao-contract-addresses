@@ -134,6 +134,7 @@ export type AddressCollection = {
     balancerProtocolFeeCollector: string
     balancerGaugeController?: string
     balancerTokenAdmin?: string
+    balancerMinter?: string
   }
   tokens: {
     AMPL?: string
