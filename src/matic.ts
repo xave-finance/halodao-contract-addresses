@@ -92,7 +92,8 @@ const addresses: AddressCollection = {
               rewardsOnly: '0x3ac845345fc2d51a3006ed384055cd5acde86441', // RewardsOnlyGauge
               rewardsHelper: '0xaEb406b0E430BF5Ea2Dc0B9Fe62E4E53f74B3a33' // ChildChainGaugeRewardHelper
             }
-          }
+          },
+          rewardDistributor: '0x16f515883A8E8Fb4156D3E2f059D071c11fD8D35' // StraitsX fakeXSGD rewards distributor
         }
       ],
       disabled: [],
