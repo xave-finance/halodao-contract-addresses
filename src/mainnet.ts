@@ -95,7 +95,7 @@ const addresses: AddressCollection = {
           address: fxPools.LP_EURS_USDC,
           poolId: fxPoolIds.EURS_USDC,
           gauges: {
-            main: '0xB381D8923feff930b7AaeDF9563f1496ce0aCe36' // LiquidityGauge
+            main: '0xE629c43BCad1029E12ED51432B9dd3432b656cc9' // LiquidityGauge
           }
         }
       ],
@@ -127,7 +127,8 @@ const addresses: AddressCollection = {
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
     balancerGaugeController: '0xC128468b7Ce63eA702C1f104D55A2566b13D3ABD',
-    balancerTokenAdmin: '0xf302f9F50958c5593770FDf4d4812309fF77414f'
+    balancerTokenAdmin: '0xf302f9F50958c5593770FDf4d4812309fF77414f',
+    balancerMinter: '0x239e55F427D44C3cc793f49bFB507ebe76638a2b'
   },
   tokens,
   lendingMarket: {
