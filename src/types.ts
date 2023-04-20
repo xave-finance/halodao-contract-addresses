@@ -9,6 +9,7 @@ type Pool = {
       rewardsHelper: string // ChildChainGaugeRewardHelper
     }
   }
+  rewardDistributor?: string
 }
 
 type BoostedPool = {
