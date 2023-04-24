@@ -225,7 +225,7 @@ const addresses: AddressCollection = {
       address: '0x6d5040f703c82c6357701934baf9fdfc9409a972',
       pool: {
         address: fxPools.LP_XSGD_USDC,
-        poolId: fxPoolIds.XSGD_USDC,
+        poolId: poolIds.XSGD_USDC,
         assets: [tokens.XSGD, tokens.USDC]
       }
     }
