@@ -97,23 +97,7 @@ const addresses: AddressCollection = {
         }
       ],
       disabled: [],
-      hidden: [
-        {
-          assets: [tokens.DAI, tokens.USDC],
-          address: fxPools.LP_DAI_USDC,
-          poolId: poolIds.DAI_USDC
-        },
-        {
-          assets: [tokens.EURS, tokens.USDC],
-          address: fxPools.LP_EURS_USDC,
-          poolId: poolIds.EURS_USDC
-        },
-        {
-          assets: [tokens.XSGD, tokens['bb-a-usd']],
-          address: fxPools['LP_XSGD_bb-a-usd'],
-          poolId: poolIds['LP_XSGD_bb-a-usd']
-        }
-      ],
+      hidden: [],
       ['bb-a-usd']: {
         assets: [tokens['bb-a-USDC'], tokens['bb-a-DAI'], tokens['bb-a-USDT']],
         poolId: poolIds['bb-a-usd'],
