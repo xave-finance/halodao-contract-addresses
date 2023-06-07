@@ -89,7 +89,7 @@ const addresses: AddressCollection = {
           gauges: {
             main: '0xe42382D005A620FaaA1B82543C9c04ED79Db03bA', // PolygonRootGauge
             l2: {
-              rewardsOnly: '0x3ac845345fc2d51a3006ed384055cd5acde86441', // RewardsOnlyGauge
+              rewardsOnly: '0xa7165e1e3defe55dada5c4289268d57faba6dad2', // RewardsOnlyGauge
               rewardsHelper: '0xaEb406b0E430BF5Ea2Dc0B9Fe62E4E53f74B3a33' // ChildChainGaugeRewardHelper
             }
           },
