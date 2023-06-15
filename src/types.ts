@@ -4,6 +4,9 @@ type Pool = {
   assets: string[]
   gauges?: {
     main: string // LiquidityGauge (Mainnet) | PolygonRootGauge (Polygon)
+    child?: string // ChildLiquidityGauge for L2s
+
+    // deprecated as of June 2023 in favor of ChildLiquidityGauge (keeping it here for migration)
     l2?: {
       rewardsOnly: string // RewardsOnlyGauge
       rewardsHelper: string // ChildChainGaugeRewardHelper
