@@ -31,7 +31,8 @@ const fxPools = {
   LP_XSGD_USDC: '0x726E324c29a1e49309672b244bdC4Ff62A270407',
   LP_DAI_USDC: '0x216B176513C500dBE1D677939103E350A9373a39',
   LP_EURS_USDC: '0xfd24Afa5416C8De94FDbaf344840F524155A4DD0',
-  'LP_XSGD_bb-a-usd': '0x882c7A84231484B3E9F3fD45aC04b1EB5d35b076'
+  'LP_XSGD_bb-a-usd': '0x2c7223699099ca6785a9da783ededfca5218bd27',
+  'LP_EURS_bb-a-usd': '0x70bbCeB61B5dD6645aABa80693B0078aee18E2e9'
 }
 
 const poolIds = {
@@ -41,8 +42,10 @@ const poolIds = {
     '0x216b176513c500dbe1d677939103e350a9373a390002000000000000000008da',
   EURS_USDC:
     '0xfd24afa5416c8de94fdbaf344840f524155a4dd00002000000000000000008db',
-  'LP_XSGD_bb-a-usd':
-    '0x882C7A84231484B3E9F3FD45AC04B1EB5D35B076000200000000000000000A91',
+  'XSGD_bb-a-usd':
+    '0x2c7223699099ca6785a9da783ededfca5218bd27000200000000000000000b0d',
+  'EURS_bb-a-usd':
+    '0x70bbceb61b5dd6645aaba80693b0078aee18e2e9000200000000000000000b0e',
   'bb-a-usd':
     '0x48e6b98ef6329f8f0a30ebb8c7c960330d64808500000000000000000000075b',
   'bb-a-USDC':
@@ -83,9 +86,9 @@ const addresses: AddressCollection = {
       genesis: [],
       enabled: [
         {
-          assets: [tokens.XSGD, tokens.USDC],
-          address: fxPools.LP_XSGD_USDC,
-          poolId: poolIds.XSGD_USDC,
+          assets: [tokens.XSGD, tokens['bb-a-usd']],
+          address: fxPools['LP_XSGD_bb-a-usd'],
+          poolId: poolIds['XSGD_bb-a-usd'],
           gauges: {
             main: '0x145011e0C04805E11BEf23c1EEd848Faf49bB779', // PolygonRootGauge
             child: '0xA7165E1E3dEfe55DAdA5C4289268d57faBA6dAd2', // ChildLiquidityGauge
@@ -97,6 +100,11 @@ const addresses: AddressCollection = {
             }
           },
           rewardDistributor: '0x15308f419f141baf659160ADAC3255bff7f6B8C5' // StraitsX XSGD rewards distributor
+        },
+        {
+          assets: [tokens.EURS, tokens['bb-a-usd']],
+          address: fxPools['LP_EURS_bb-a-usd'],
+          poolId: poolIds['EURS_bb-a-usd']
         }
       ],
       disabled: [],
@@ -110,11 +118,6 @@ const addresses: AddressCollection = {
           assets: [tokens.EURS, tokens.USDC],
           address: fxPools.LP_EURS_USDC,
           poolId: poolIds.EURS_USDC
-        },
-        {
-          assets: [tokens.XSGD, tokens['bb-a-usd']],
-          address: fxPools['LP_XSGD_bb-a-usd'],
-          poolId: poolIds['LP_XSGD_bb-a-usd']
         }
       ],
       ['bb-a-usd']: {
@@ -136,10 +139,14 @@ const addresses: AddressCollection = {
         }
       }
     },
-    fxPoolFactory: '0x627D759314D5c4007b461A74eBaFA7EBC5dFeD71',
-    proportionalLiquidity: '0xe35A4e171F5568e8619DA1e097DAD18928187D85',
+    // fxPoolFactory: '0x627D759314D5c4007b461A74eBaFA7EBC5dFeD71',
+    // proportionalLiquidity: '0xe35A4e171F5568e8619DA1e097DAD18928187D85',
     assimilatorFactory: '0x9CB3961ec9E54563602d96D2b3332028aa54dd13',
-    swapLibrary: '0x6256447F6dAa532d5A650cFeAf305D2DD7Bd296E',
+    // swapLibrary: '0x6256447F6dAa532d5A650cFeAf305D2DD7Bd296E',
+    // New deployment 03/21/23
+    fxPoolFactory: '0x18bab048fd880d847b9b1dac5b110b6f98fd66c7',
+    proportionalLiquidity: '0xdefcd9f506954b2faed53910e44b3af4c9de34d1',
+    swapLibrary: '0x4ac6e38a5ee995706c898d7d8b201cb5c0346fa0',
     oracles: {
       USDC: '0xfE4A8cc5b5B2366C1B58Bea3858e81843581b2F7',
       fxPHP: '0x218231089Bebb2A31970c3b77E96eCfb3BA006D1',
@@ -147,11 +154,12 @@ const addresses: AddressCollection = {
       XSGD: '0x8CE3cAc0E6635ce04783709ca3CC4F5fc5304299',
       DAI: '0x4746DeC9e833A82EC7C2C1356372CcF2cfcD2F3D',
       USDT: '0x0A6513e40db6EB1b165753AD52E80663aeA50545',
-      'bb-a-usd': '0x889E8F2b15A1B462dC74C5F66eF90C3caa46A37D'
+      'bb-a-usd': '0x7111a302b929d14a323b489f234ef912903bf374'
     },
     assimilators: {
-      'bb-a-usd_USD': '0x04E2a492AACbbaC02164da3EEC6404893cA08998',
-      'XSGD_bb-a-usd_USD': '0xBef2D248894648A6Fcb214C395044616150C6cEc'
+      'bb-a-usd_USD': '0x49dd29b8d2c7a979e0a406225fefc48bbfe3f4ce',
+      'XSGD_bb-a-usd_USD': '0xebc71B12E5dE13Fdc01Aa83A19eCA6752647a7E6',
+      'EURS_bb-a-usd_USD': '0x057b4e0f15b642494013984543872a801f99e3c3'
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
     balancerMinter: '0x47b489bf5836f83abd928c316f8e39bc0587b020' // L2BalancerPseudoMinter
