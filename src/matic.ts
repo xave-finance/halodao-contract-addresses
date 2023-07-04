@@ -86,20 +86,24 @@ const addresses: AddressCollection = {
       genesis: [],
       enabled: [
         {
-          assets: [tokens.XSGD, tokens['bb-a-usd']],
-          address: fxPools['LP_XSGD_bb-a-usd'],
-          poolId: poolIds['XSGD_bb-a-usd'],
+          assets: [tokens.XSGD, tokens.USDC],
+          address: fxPools.LP_XSGD_USDC,
+          poolId: poolIds.XSGD_USDC,
           gauges: {
-            main: '0x145011e0C04805E11BEf23c1EEd848Faf49bB779', // PolygonRootGauge
-            child: '0xA7165E1E3dEfe55DAdA5C4289268d57faBA6dAd2', // ChildLiquidityGauge
-
+            main: '0x145011e0C04805E11BEf23c1EEd848Faf49bB779',
+            child: '0xA7165E1E3dEfe55DAdA5C4289268d57faBA6dAd2',
             // deprecated as of June 2023 in favor of ChildLiquidityGauge (keeping it here for migration)
             l2: {
-              rewardsOnly: '0x3aC845345fc2d51A3006Ed384055cD5ACde86441', // RewardsOnlyGauge
+              rewardsOnly: '0x3aC845345fc2d51A3006Ed384055cD5ACde86441',
               rewardsHelper: '0xaEb406b0E430BF5Ea2Dc0B9Fe62E4E53f74B3a33' // ChildChainGaugeRewardHelper
             }
           },
           rewardDistributor: '0x15308f419f141baf659160ADAC3255bff7f6B8C5' // StraitsX XSGD rewards distributor
+        },
+        {
+          assets: [tokens.XSGD, tokens['bb-a-usd']],
+          address: fxPools['LP_XSGD_bb-a-usd'],
+          poolId: poolIds['XSGD_bb-a-usd']
         },
         {
           assets: [tokens.EURS, tokens['bb-a-usd']],
