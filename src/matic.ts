@@ -153,7 +153,8 @@ const addresses: AddressCollection = {
       'bb-a-usd_USD': '0x04E2a492AACbbaC02164da3EEC6404893cA08998',
       'XSGD_bb-a-usd_USD': '0xBef2D248894648A6Fcb214C395044616150C6cEc'
     },
-    balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
+    balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
+    balancerMinter: '0x47b489bf5836f83abd928c316f8e39bc0587b020' // L2BalancerPseudoMinter
   },
   tokens,
   lendingMarket: {
