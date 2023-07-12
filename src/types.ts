@@ -31,6 +31,7 @@ type Assimilators = {
   XSGD_USD?: string
   fxPHP_USD?: string
   tagPHP_USD?: string
+  PHPT_USD?: string
   XIDR_USD?: string
   fxAUD_USD?: string
   EURS_USD?: string
@@ -134,6 +135,7 @@ export type AddressCollection = {
       DAI?: string
       USDT?: string
       'bb-a-usd'?: string
+      PHPT?: string
     }
     balancerProtocolFeeCollector: string
     balancerGaugeController?: string
@@ -152,6 +154,7 @@ export type AddressCollection = {
     TAUD?: string
     TGBP?: string
     fxPHP?: string
+    PHPT?: string
     fxAUD?: string
     UST?: string
     CHF?: string
