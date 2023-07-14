@@ -7,11 +7,12 @@ const tokens = {
 }
 
 const fxPools = {
-  LP_EUROC_USDC: ZERO_ADDRESS // @todo: update once fxpool is deployed
+  LP_EUROC_USDC: '0x55bEC22f8f6C69137cEAf284d9B441Db1B9bFedc'
 }
 
 const poolIds = {
-  EUROC_USDC: ZERO_ADDRESS // @todo: update once fxpool is deployed
+  EUROC_USDC:
+    '0x55bec22f8f6c69137ceaf284d9b441db1b9bfedc000200000000000000000011'
 }
 
 const addresses: AddressCollection = {
@@ -40,7 +41,7 @@ const addresses: AddressCollection = {
       disabled: [],
       hidden: []
     },
-    fxPoolFactory: ZERO_ADDRESS, // @todo: update once fxpool is deployed
+    fxPoolFactory: '0x81fE9e5B28dA92aE949b705DfDB225f7a7cc5134',
     proportionalLiquidity: '0xB741984C8ce63F4cbD923842Ee0B9e32Dd9df48c',
     assimilatorFactory: '0x5127fa6aEb261d519B9E843345265e2845dF449D',
     swapLibrary: '0x390Bcd94446fcC6DA992995c66b58e3A7a7b279C',
