@@ -11,6 +11,7 @@
     "/dist"
   ],
   "scripts": {
+    "build": "tsc",
     "npm-publish": "tsc && npm publish --access public"
   }
 }

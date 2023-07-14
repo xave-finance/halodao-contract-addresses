@@ -41,6 +41,7 @@ type Assimilators = {
   TCAD_USD?: string
   TGBP_USD?: string
   TAUD_USD?: string
+  EUROC_USD?: string
   'bb-a-usd_USD'?: string
   'XSGD_bb-a-usd_USD'?: string
   'EURS_bb-a-usd_USD'?: string
@@ -110,6 +111,7 @@ export type AddressCollection = {
         LP_tagPHP_USDC?: string
         LP_LPHP_USDC?: string
         LP_fxAUD_USDC?: string
+        LP_EUROC_USDC?: string
         'LP_XSGD_bb-a-usd'?: string
         'LP_EURS_bb-a-usd'?: string
       }
@@ -133,6 +135,7 @@ export type AddressCollection = {
       XIDR?: string
       DAI?: string
       USDT?: string
+      EUROC?: string
       'bb-a-usd'?: string
     }
     balancerProtocolFeeCollector: string
@@ -158,6 +161,7 @@ export type AddressCollection = {
     DAI?: string
     USDT?: string
     BAL?: string
+    EUROC?: string
     'bb-a-usd'?: string
     'bb-a-USDC'?: string
     'bb-a-DAI'?: string
