@@ -6,6 +6,7 @@ import arbTestnet from './arbTestnet'
 import matic from './matic'
 import lollidao_mainnet from './lollidao.mainnet'
 import goerli from './goerli'
+import sepolia from './sepolia'
 import avalanche from './avalanche'
 
 export {
@@ -17,5 +18,6 @@ export {
   matic,
   lollidao_mainnet,
   goerli,
+  sepolia,
   avalanche
 }

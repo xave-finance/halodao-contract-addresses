@@ -31,6 +31,7 @@ type Assimilators = {
   XSGD_USD?: string
   fxPHP_USD?: string
   tagPHP_USD?: string
+  PHPT_USD?: string
   XIDR_USD?: string
   fxAUD_USD?: string
   EURS_USD?: string
@@ -114,6 +115,7 @@ export type AddressCollection = {
         LP_EUROC_USDC?: string
         'LP_XSGD_bb-a-usd'?: string
         'LP_EURS_bb-a-usd'?: string
+        LP_PHPT_USDC?: string
       }
       genesis: Pool[]
       enabled: Pool[]
@@ -137,6 +139,7 @@ export type AddressCollection = {
       USDT?: string
       EUROC?: string
       'bb-a-usd'?: string
+      PHPT?: string
     }
     balancerProtocolFeeCollector: string
     balancerGaugeController?: string
@@ -155,6 +158,7 @@ export type AddressCollection = {
     TAUD?: string
     TGBP?: string
     fxPHP?: string
+    PHPT?: string
     fxAUD?: string
     UST?: string
     CHF?: string
