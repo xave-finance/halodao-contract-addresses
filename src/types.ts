@@ -113,6 +113,7 @@ export type AddressCollection = {
         LP_fxAUD_USDC?: string
         'LP_XSGD_bb-a-usd'?: string
         'LP_EURS_bb-a-usd'?: string
+        LP_PHPT_USDC?: string
       }
       genesis: Pool[]
       enabled: Pool[]
