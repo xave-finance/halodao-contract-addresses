@@ -35,7 +35,11 @@ const addresses: AddressCollection = {
         {
           assets: [tokens.EUROC, tokens.USDC],
           address: fxPools.LP_EUROC_USDC,
-          poolId: poolIds.EUROC_USDC
+          poolId: poolIds.EUROC_USDC,
+          gauges: {
+            main: ZERO_ADDRESS, // there won't be a mainnet root gauge for a while
+            child: '0x0c22Ff3f93B5c9f13e41FA9D270680E97AC13B28' // ChildLiquidityGauge
+          }
         }
       ],
       disabled: [],
@@ -54,7 +58,7 @@ const addresses: AddressCollection = {
       EUROC_USD: '0xb803906e5B39F8FA31c6bA2105925c5FA17beb54'
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
-    balancerMinter: '0xEa924b45a3fcDAAdf4E5cFB1665823B8F8F2039B' // L2BalancerPseudoMinter
+    balancerMinter: '0x85a80afee867aDf27B50BdB7b76DA70f1E853062' // L2BalancerPseudoMinter
   },
   tokens
 }
