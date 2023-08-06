@@ -13,20 +13,23 @@ const tokens = {
 }
 
 const fxPools = {
-  LP_XSGD_USDC: ZERO_ADDRESS,
-  LP_PHPT_USDC: ZERO_ADDRESS
+  LP_XSGD_USDC: '0x0F72AED8D93Bc802417cee1B28380d9771DD8bc0',
+  LP_EURS_USDC: '0x0885790d8056BA3e08dB076f9cd9db80C8D6ABf7',
+  LP_PHPX_USDC: '0x861b29Ea602Af99E99C51a34f49a603AAbc12159'
 }
 
 const poolIds = {
   XSGD_USDC:
-    '0x631baed5b6f1979975eb843a2a46654cc139d55c00020000000000000000001a',
-  PHPT_USDC:
-    '0x93442aaf3b04c2b31133023a2a4f6bb1b0a898c800020000000000000000001b'
+    '0x0f72aed8d93bc802417cee1b28380d9771dd8bc0000200000000000000000004',
+  EURS_USDC:
+    '0x0885790d8056ba3e08db076f9cd9db80c8d6abf7000200000000000000000005',
+  PHPX_USDC:
+    '0x861b29ea602af99e99c51a34f49a603aabc12159000200000000000000000006'
 }
 
 const addresses: AddressCollection = {
   protocol: {
-    XAV: '0x201662B19d339AB2e81b11cae56606AD15CE9525',
+    XAV: ZERO_ADDRESS,
     RNBW: ZERO_ADDRESS,
     xRNBW: ZERO_ADDRESS
   },
@@ -36,7 +39,7 @@ const addresses: AddressCollection = {
     epochManager: ZERO_ADDRESS
   },
   ammV2: {
-    vault: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
+    vault: '0x2b1c6c85a1dB4b5CF9C4d4662d0556E5daBcf626',
     pools: {
       all: fxPools,
       genesis: [],
@@ -47,31 +50,36 @@ const addresses: AddressCollection = {
           poolId: poolIds.XSGD_USDC
         },
         {
+          assets: [tokens.EURS, tokens.USDC],
+          address: fxPools.LP_EURS_USDC,
+          poolId: poolIds.EURS_USDC
+        },
+        {
           assets: [tokens.PHPX, tokens.USDC],
-          address: fxPools.LP_PHPT_USDC,
-          poolId: poolIds.PHPT_USDC
+          address: fxPools.LP_PHPX_USDC,
+          poolId: poolIds.PHPX_USDC
         }
       ],
       disabled: [],
       hidden: []
     },
-    fxPoolFactory: '0xf21b9ED717d0F5578541304abBd7881468d56630',
-    proportionalLiquidity: '0xbcB66eD6419857b49Fa5947af58865538F8fba2C',
+    fxPoolFactory: '0xDa36657adE23d2008Ea7bcB3b566c919498C5e2A',
+    proportionalLiquidity: '0xAa878928dc095523300585155843Ae142FBf309d',
     assimilatorFactory: ZERO_ADDRESS,
-    swapLibrary: '0x6F2275CaB5D20ec0DCc4878824EB9425029B2d14',
+    swapLibrary: '0x0Bdb612b8083cCbe8161a5B4320DD5B7d7a91062',
     oracles: {
-      USDC: '0x6EbB802Ad48aA39C50a4Bf175aDD81E966cE1D4D', // Xave mock USDC/USD oracle
-      XSGD: '0xa208bCd6942292CC78e325734607A68cdf635AFE', // Xave mock XSGD/USD oracle
-      PHPX: '0x579270F151D142eb8BdC081043a983307Aa15786', // Xave mock PHP/USD oracle
-      EURS: '0xcECD6ACc6B6Bb0f40B952C251BC303894f62a3ED' // Xave mock EURS/USD oracle
+      USDC: '0x7965Ce7bE2B1608c217D001BdC27B799e405cf2F', // Xave mock USDC/USD oracle
+      XSGD: '0x4E5b866564AC8695097e881f5CA86B2074BE7857', // Xave mock XSGD/USD oracle
+      PHPX: '0x9994F5e975b944f27bafcEdAC8075C33Dd8c074d', // Xave mock PHP/USD oracle
+      EURS: '0x6bf91F40A553C58d8cD56871a6D3516F102785a8' // Xave mock EURS/USD oracle
     },
     assimilators: {
-      USDC_USD: '0xde29585a4134752632a07f09BCA0f02F72a33B8d',
-      XSGD_USD: '0x972127aFf8e6464e50eFc0a2aD344063355AE424',
-      EURS_USD: '0xDFEa5ECCbB7D61D49dFa702ed8FeC4EC48944719',
-      PHPT_USD: '0xd69904f0ABFF772A7e5BCb5b1da500edcEFbA39F'
+      USDC_USD: '0x7965Ce7bE2B1608c217D001BdC27B799e405cf2F',
+      XSGD_USD: '0x4E5b866564AC8695097e881f5CA86B2074BE7857',
+      EURS_USD: '0x6bf91F40A553C58d8cD56871a6D3516F102785a8',
+      PHPX_USD: '0x9994F5e975b944f27bafcEdAC8075C33Dd8c074d'
     },
-    balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
+    balancerProtocolFeeCollector: '0x94BA31Fe011acdeE245b6b64c9E48E5aEb36589B'
   },
   tokens
 }
