@@ -9,13 +9,14 @@ const tokens = {
   XIDR: '0xafec667a5a02c1efc27dd617ce1df47c9e8f0f1e', // Xave mock XIDR token
 
   // Balancer tokens
-  BAL: ZERO_ADDRESS // Balancer governance token
+  BAL: '0x18e7bDB379928A651f093ef1bC328889b33A560c' // Xave Mock Balancer governance token
 }
 
 const fxPools = {
   LP_XSGD_USDC: '0x0F72AED8D93Bc802417cee1B28380d9771DD8bc0',
   LP_EURS_USDC: '0x0885790d8056BA3e08dB076f9cd9db80C8D6ABf7',
-  LP_PHPX_USDC: '0x861b29Ea602Af99E99C51a34f49a603AAbc12159'
+  LP_PHPX_USDC: '0x2B7D2eDc384d39f6F204b699D995EC7b7708A5BA',
+  LP_XIDR_USDC: '0xfA2878ecae189545F7658aA1734E9e8EdFFff29c'
 }
 
 const poolIds = {
@@ -24,7 +25,9 @@ const poolIds = {
   EURS_USDC:
     '0x0885790d8056ba3e08db076f9cd9db80c8d6abf7000200000000000000000005',
   PHPX_USDC:
-    '0x861b29ea602af99e99c51a34f49a603aabc12159000200000000000000000006'
+    '0x2b7d2edc384d39f6f204b699d995ec7b7708a5ba000200000000000000000007',
+  XIDR_USDC:
+    '0xfa2878ecae189545f7658aa1734e9e8edffff29c00020000000000000000000a'
 }
 
 const addresses: AddressCollection = {
@@ -58,6 +61,11 @@ const addresses: AddressCollection = {
           assets: [tokens.PHPX, tokens.USDC],
           address: fxPools.LP_PHPX_USDC,
           poolId: poolIds.PHPX_USDC
+        },
+        {
+          assets: [tokens.XIDR, tokens.USDC],
+          address: fxPools.LP_XIDR_USDC,
+          poolId: poolIds.XIDR_USDC
         }
       ],
       disabled: [],
@@ -71,13 +79,15 @@ const addresses: AddressCollection = {
       USDC: '0x7965Ce7bE2B1608c217D001BdC27B799e405cf2F', // Xave mock USDC/USD oracle
       XSGD: '0x4E5b866564AC8695097e881f5CA86B2074BE7857', // Xave mock XSGD/USD oracle
       PHPX: '0x9994F5e975b944f27bafcEdAC8075C33Dd8c074d', // Xave mock PHP/USD oracle
-      EURS: '0x6bf91F40A553C58d8cD56871a6D3516F102785a8' // Xave mock EURS/USD oracle
+      EURS: '0xcECD6ACc6B6Bb0f40B952C251BC303894f62a3ED', // Xave mock EURS/USD oracle
+      XIDR: '0x17D95442085bfa0dB18Afb7Fe1974CBc1CD9CF3C' // Xave mock XIDR/USD oracle
     },
     assimilators: {
       USDC_USD: '0x7965Ce7bE2B1608c217D001BdC27B799e405cf2F',
       XSGD_USD: '0x4E5b866564AC8695097e881f5CA86B2074BE7857',
       EURS_USD: '0x6bf91F40A553C58d8cD56871a6D3516F102785a8',
-      PHPX_USD: '0x9994F5e975b944f27bafcEdAC8075C33Dd8c074d'
+      PHPX_USD: '0x9994F5e975b944f27bafcEdAC8075C33Dd8c074d',
+      XIDR_USD: '0xe0d3aF0cAc1B8246aec2BF26Ce79F71EDA933659'
     },
     balancerProtocolFeeCollector: '0x94BA31Fe011acdeE245b6b64c9E48E5aEb36589B'
   },
