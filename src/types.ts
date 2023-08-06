@@ -140,6 +140,7 @@ export type AddressCollection = {
       EUROC?: string
       'bb-a-usd'?: string
       PHPT?: string
+      PHPX?: string
     }
     balancerProtocolFeeCollector: string
     balancerGaugeController?: string
