@@ -13,5 +13,8 @@
   "scripts": {
     "build": "tsc",
     "npm-publish": "tsc && npm publish --access public"
+  },
+  "dependencies": {
+    "typescript": "^3.8.3"
   }
 }
