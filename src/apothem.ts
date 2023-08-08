@@ -2,14 +2,14 @@ import { AddressCollection, ZERO_ADDRESS } from './types'
 
 const tokens = {
   // Xave tokens
-  XSGD: '0x48623292bd8293b747571934379b9d3e5423dbb6', // Xave mock XSGD
+  XSGD: '0x48623292bD8293b747571934379B9D3E5423DBB6', // Xave mock XSGD
   EURS: '0x298c1167E96528111544C8AD5401a2Ef57f5b7fF', // Xave mock EURS
   USDC: '0x834BD0EB271Cf98982E11578C2A7037f3e3d1B6b', // Xave mock USDC token
-  PHPX: '0x46b40474959dc321d990cdc8209e9fa103f2b45d', // Xave mock PHP token
-  XIDR: '0xafec667a5a02c1efc27dd617ce1df47c9e8f0f1e', // Xave mock XIDR token
+  PHPX: '0x46B40474959dC321D990Cdc8209e9fa103F2b45d', // Xave mock PHP token
+  XIDR: '0xAfeC667A5a02C1EFC27Dd617Ce1dF47C9E8f0F1e', // Xave mock XIDR token
 
   // Balancer tokens
-  BAL: '0x18e7bDB379928A651f093ef1bC328889b33A560c' // Xave Mock Balancer governance token
+  BAL: '0x499F0a05582685f8728fF2f61F5F20D8001b7D73' // Mock Balancer governance token
 }
 
 const fxPools = {
