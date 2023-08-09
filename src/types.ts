@@ -117,6 +117,7 @@ export type AddressCollection = {
         'LP_XSGD_bb-a-usd'?: string
         'LP_EURS_bb-a-usd'?: string
         LP_PHPT_USDC?: string
+        LP_PHPX_USDC?: string
       }
       genesis: Pool[]
       enabled: Pool[]
@@ -161,6 +162,7 @@ export type AddressCollection = {
     TGBP?: string
     fxPHP?: string
     PHPT?: string
+    PHPX?: string
     fxAUD?: string
     UST?: string
     CHF?: string
