@@ -8,6 +8,7 @@ import lollidao_mainnet from './lollidao.mainnet'
 import goerli from './goerli'
 import sepolia from './sepolia'
 import avalanche from './avalanche'
+import apothem from './apothem'
 
 export {
   mainnet,
@@ -19,5 +20,6 @@ export {
   lollidao_mainnet,
   goerli,
   sepolia,
-  avalanche
+  avalanche,
+  apothem
 }
