@@ -16,7 +16,9 @@ const tokens = {
   'bb-a-usd': '0x48e6B98ef6329f8f0A30eBB8c7C960330d648085', // balancer ComposableStablePool
   'bb-a-USDC': '0xF93579002DBE8046c43FEfE86ec78b1112247BB8', // balancer USDC:aUSDC AaveLinearPool
   'bb-a-DAI': '0x178E029173417b1F9C8bC16DCeC6f697bC323746', // balancer DAI:aDAI AaveLinearPool
-  'bb-a-USDT': '0xFf4ce5AAAb5a627bf82f4A571AB1cE94Aa365eA6' // balancer USDT:aUSDT AaveLinearPool
+  'bb-a-USDT': '0xFf4ce5AAAb5a627bf82f4A571AB1cE94Aa365eA6', // balancer USDT:aUSDT AaveLinearPool
+  BRLA: '0xE6A537a407488807F0bbeb0038B79004f19DDDFb',
+  VNXAU: '0xC8bB8eDa94931cA2F20EF43eA7dBD58E68400400'
 }
 
 const curves = {
@@ -147,7 +149,9 @@ const addresses: AddressCollection = {
       XSGD: '0x8CE3cAc0E6635ce04783709ca3CC4F5fc5304299',
       DAI: '0x4746DeC9e833A82EC7C2C1356372CcF2cfcD2F3D',
       USDT: '0x0A6513e40db6EB1b165753AD52E80663aeA50545',
-      'bb-a-usd': '0x889E8F2b15A1B462dC74C5F66eF90C3caa46A37D'
+      'bb-a-usd': '0x889E8F2b15A1B462dC74C5F66eF90C3caa46A37D',
+      BRLA: '0xB90DA3ff54C3ED09115abf6FbA0Ff4645586af2c', // Chainklink official BRL/USD oracle
+      VNXAU: '0x0C466540B2ee1a31b441671eac0ca886e051E410' // Chainklink official XAU/USD oracle
     },
     assimilators: {
       'bb-a-usd_USD': '0x04E2a492AACbbaC02164da3EEC6404893cA08998',

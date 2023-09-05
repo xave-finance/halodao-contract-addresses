@@ -3,7 +3,8 @@ import { AddressCollection, ZERO_ADDRESS } from './types'
 const tokens = {
   BAL: '0x8239A6b877804206C7799028232A7188DA487CeC',
   USDC: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
-  EUROC: '0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD'
+  EUROC: '0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD',
+  VCHF: '0x228a48df6819CCc2eCa01e2192ebAFfFdAD56c19'
 }
 
 const fxPools = {
@@ -51,7 +52,8 @@ const addresses: AddressCollection = {
     swapLibrary: '0x390Bcd94446fcC6DA992995c66b58e3A7a7b279C',
     oracles: {
       USDC: '0xF096872672F44d6EBA71458D74fe67F9a77a23B9', // Chainklink official USDC/USD oracle
-      EUROC: '0x192f2DBA961Bb0277520C082d6bfa87D5961333E' // Chainklink official EUR/USD oracle
+      EUROC: '0x192f2DBA961Bb0277520C082d6bfa87D5961333E', // Chainklink official EUR/USD oracle
+      VCHF: '0x3B37950485b450edF90cBB85d0cD27308Af4AB9A' // Chainklink official VCHF/USD oracle (tobe depricated on 09/08/23)
     },
     assimilators: {
       USDC_USD: '0x21720736Ada52d8887aFAC20B05f02005fD6f272',
