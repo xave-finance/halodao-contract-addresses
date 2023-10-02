@@ -167,6 +167,7 @@ const addresses: AddressCollection = {
       USDT: '0x0A6513e40db6EB1b165753AD52E80663aeA50545',
       'bb-a-usd': '0x889E8F2b15A1B462dC74C5F66eF90C3caa46A37D',
       BRLA: '0xB90DA3ff54C3ED09115abf6FbA0Ff4645586af2c', // Chainklink official BRL/USD oracle
+      //VNXAU: '0x0C466540B2ee1a31b441671eac0ca886e051E410' // Chainklink official XAU/USD oracle
       VNXAU: '0xff551F4AFDCB6eb1306Bf226b30593393dfb4F95' // Xave XAU->USD "gram" oracle
     },
     assimilators: {
