@@ -35,7 +35,8 @@ const fxPools = {
   LP_EURS_USDC: '0xfd24Afa5416C8De94FDbaf344840F524155A4DD0',
   'LP_XSGD_bb-a-usd': '0x882c7A84231484B3E9F3fD45aC04b1EB5d35b076',
   LP_BRLA_USDC: '0x8630Bd161689403AEA635f830E9eF5496e7E0bC1',
-  LP_VNXAU_USDC: '0x8A8275eDA88a6F4cC2Fa6A41837C1B5Dc7A3b095'
+  //LP_VNXAU_USDC: '0x8A8275eDA88a6F4cC2Fa6A41837C1B5Dc7A3b095', // uses chainlink XAU/USD official oracle
+  LP_VNXAU_USDC: '0xe93f9dd10b0ba38831cba4d5a9d092e22db130ec' // uses Xave's XAU/USD gram oracle
 }
 
 const poolIds = {
@@ -156,7 +157,8 @@ const addresses: AddressCollection = {
     },
     fxPoolFactory: '0x627D759314D5c4007b461A74eBaFA7EBC5dFeD71',
     proportionalLiquidity: '0xe35A4e171F5568e8619DA1e097DAD18928187D85',
-    assimilatorFactory: '0x9CB3961ec9E54563602d96D2b3332028aa54dd13',
+    // assimilatorFactory: '0x9CB3961ec9E54563602d96D2b3332028aa54dd13', // has the older VNXAU assimilator
+    assimilatorFactory: '0xA7BEe366876EF85f8B6aD84D612B8905e880F69d', // deployed 10/02/2023
     swapLibrary: '0x6256447F6dAa532d5A650cFeAf305D2DD7Bd296E',
     oracles: {
       USDC: '0xfE4A8cc5b5B2366C1B58Bea3858e81843581b2F7',
@@ -168,13 +170,14 @@ const addresses: AddressCollection = {
       'bb-a-usd': '0x889E8F2b15A1B462dC74C5F66eF90C3caa46A37D',
       BRLA: '0xB90DA3ff54C3ED09115abf6FbA0Ff4645586af2c', // Chainklink official BRL/USD oracle
       //VNXAU: '0x0C466540B2ee1a31b441671eac0ca886e051E410' // Chainklink official XAU/USD oracle
-      VNXAU: '0xff551F4AFDCB6eb1306Bf226b30593393dfb4F95' // Xave XAU->USD "gram" oracle
+      VNXAU: '0xff551F4AFDCB6eb1306Bf226b30593393dfb4F95' // Xave XAU/USD "gram" oracle
     },
     assimilators: {
       'bb-a-usd_USD': '0x04E2a492AACbbaC02164da3EEC6404893cA08998',
       'XSGD_bb-a-usd_USD': '0xBef2D248894648A6Fcb214C395044616150C6cEc',
       BRLA_USD: '0x55Ed7fA80A563B241E80C16DB52CAce5acfb136f',
-      VNXAU_USD: '0x6C181bf2E846051C1528543e489E718E09dccc17'
+      //VNXAU_USD: '0x6C181bf2E846051C1528543e489E718E09dccc17' // uses official XAU/USD chainlink oracle
+      VNXAU_USD: '0x278a5389b39E4814aB8f60559f9E0D1694E7Ea38' // uses Xave's XAU/USD gram oracle
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
     balancerMinter: '0x47b489bf5836f83abd928c316f8e39bc0587b020' // L2BalancerPseudoMinter
