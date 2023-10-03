@@ -58,8 +58,10 @@ const poolIds = {
     '0xff4ce5aaab5a627bf82f4a571ab1ce94aa365ea600000000000000000000075a',
   BRLA_USDC:
     '0x8630bd161689403aea635f830e9ef5496e7e0bc1000200000000000000000c35',
+  // VNXAU_USDC:
+  // '0x8a8275eda88a6f4cc2fa6a41837c1b5dc7a3b095000200000000000000000c36' // uses chainlink XAU/USD official oracle
   VNXAU_USDC:
-    '0x8a8275eda88a6f4cc2fa6a41837c1b5dc7a3b095000200000000000000000c36'
+    '0xe93f9dd10b0ba38831cba4d5a9d092e22db130ec000200000000000000000c44' // uses Xave's XAU/USD gram oracle
 }
 
 const addresses: AddressCollection = {
