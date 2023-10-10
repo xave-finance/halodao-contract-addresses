@@ -18,7 +18,9 @@ const tokens = {
   'bb-a-DAI': '0x178E029173417b1F9C8bC16DCeC6f697bC323746', // balancer DAI:aDAI AaveLinearPool
   'bb-a-USDT': '0xFf4ce5AAAb5a627bf82f4A571AB1cE94Aa365eA6', // balancer USDT:aUSDT AaveLinearPool
   BRLA: '0xE6A537a407488807F0bbeb0038B79004f19DDDFb',
-  VNXAU: '0xC8bB8eDa94931cA2F20EF43eA7dBD58E68400400'
+  VNXAU: '0xC8bB8eDa94931cA2F20EF43eA7dBD58E68400400',
+  VCHF: '0xCdB3867935247049e87c38eA270edD305D84c9AE',
+  VEUR: '0xE4095d9372E68d108225c306A4491cacfB33B097'
 }
 
 const curves = {
@@ -172,7 +174,9 @@ const addresses: AddressCollection = {
       'bb-a-usd': '0x889E8F2b15A1B462dC74C5F66eF90C3caa46A37D',
       BRLA: '0xB90DA3ff54C3ED09115abf6FbA0Ff4645586af2c', // Chainklink official BRL/USD oracle
       //VNXAU: '0x0C466540B2ee1a31b441671eac0ca886e051E410' // Chainklink official XAU/USD oracle
-      VNXAU: '0xff551F4AFDCB6eb1306Bf226b30593393dfb4F95' // Xave XAU/USD "gram" oracle
+      VNXAU: '0xff551F4AFDCB6eb1306Bf226b30593393dfb4F95', // Xave XAU/USD "gram" oracle
+      VCHF: '0xc76f762CedF0F78a439727861628E0fdfE1e70c2', // Chainklink official CHF/USD oracle
+      VEUR: '0x73366Fe0AA0Ded304479862808e02506FE556a98' // Chainklink official EUR/USD oracle
     },
     assimilators: {
       'bb-a-usd_USD': '0x04E2a492AACbbaC02164da3EEC6404893cA08998',
