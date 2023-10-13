@@ -38,7 +38,9 @@ const fxPools = {
   'LP_XSGD_bb-a-usd': '0x882c7A84231484B3E9F3fD45aC04b1EB5d35b076',
   LP_BRLA_USDC: '0x8630Bd161689403AEA635f830E9eF5496e7E0bC1',
   //LP_VNXAU_USDC: '0x8A8275eDA88a6F4cC2Fa6A41837C1B5Dc7A3b095', // uses chainlink XAU/USD official oracle
-  LP_VNXAU_USDC: '0xe93f9dd10b0ba38831cba4d5a9d092e22db130ec' // uses Xave's XAU/USD gram oracle
+  LP_VNXAU_USDC: '0xE93F9dD10b0ba38831CBa4D5a9D092E22Db130eC', // uses Xave's XAU/USD gram oracle
+  LP_VCHF_USDC: '0x7E8c6D9db2D1B522f32d050257DF0dC524593A07',
+  LP_VEUR_USDC: '0xE5093fA1F24619eb16c704a808fAd66Fb65a1305'
 }
 
 const poolIds = {
@@ -63,7 +65,11 @@ const poolIds = {
   // VNXAU_USDC:
   // '0x8a8275eda88a6f4cc2fa6a41837c1b5dc7a3b095000200000000000000000c36' // uses chainlink XAU/USD official oracle
   VNXAU_USDC:
-    '0xe93f9dd10b0ba38831cba4d5a9d092e22db130ec000200000000000000000c44' // uses Xave's XAU/USD gram oracle
+    '0xe93f9dd10b0ba38831cba4d5a9d092e22db130ec000200000000000000000c44', // uses Xave's XAU/USD gram oracle
+  VCHF_USDC:
+    '0x7e8c6d9db2d1b522f32d050257df0dc524593a07000200000000000000000c4e',
+  VEUR_USDC:
+    '0xe5093fa1f24619eb16c704a808fad66fb65a1305000200000000000000000c50'
 }
 
 const addresses: AddressCollection = {
@@ -120,6 +126,16 @@ const addresses: AddressCollection = {
           assets: [tokens.VNXAU, tokens.USDC],
           address: fxPools.LP_VNXAU_USDC,
           poolId: poolIds.VNXAU_USDC
+        },
+        {
+          assets: [tokens.VCHF, tokens.USDC],
+          address: fxPools.LP_VCHF_USDC,
+          poolId: poolIds.VCHF_USDC
+        },
+        {
+          assets: [tokens.VEUR, tokens.USDC],
+          address: fxPools.LP_VEUR_USDC,
+          poolId: poolIds.VEUR_USDC
         }
       ],
       disabled: [],
@@ -183,7 +199,9 @@ const addresses: AddressCollection = {
       'XSGD_bb-a-usd_USD': '0xBef2D248894648A6Fcb214C395044616150C6cEc',
       BRLA_USD: '0x55Ed7fA80A563B241E80C16DB52CAce5acfb136f',
       //VNXAU_USD: '0x6C181bf2E846051C1528543e489E718E09dccc17' // uses official XAU/USD chainlink oracle
-      VNXAU_USD: '0x278a5389b39E4814aB8f60559f9E0D1694E7Ea38' // uses Xave's XAU/USD gram oracle
+      VNXAU_USD: '0x278a5389b39E4814aB8f60559f9E0D1694E7Ea38', // uses Xave's XAU/USD gram oracle
+      VCHF_USD: '0xBeB0D490a418e96437b755d4404522ADF054D4E0',
+      VEUR_USD: '0x520427FAFdED1aa829922DC4A2BE8fA54B98eCFF'
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
     balancerMinter: '0x47b489bf5836f83abd928c316f8e39bc0587b020' // L2BalancerPseudoMinter
