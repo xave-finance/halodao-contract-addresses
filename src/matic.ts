@@ -126,16 +126,6 @@ const addresses: AddressCollection = {
           assets: [tokens.VNXAU, tokens.USDC],
           address: fxPools.LP_VNXAU_USDC,
           poolId: poolIds.VNXAU_USDC
-        },
-        {
-          assets: [tokens.VCHF, tokens.USDC],
-          address: fxPools.LP_VCHF_USDC,
-          poolId: poolIds.VCHF_USDC
-        },
-        {
-          assets: [tokens.VEUR, tokens.USDC],
-          address: fxPools.LP_VEUR_USDC,
-          poolId: poolIds.VEUR_USDC
         }
       ],
       disabled: [],
@@ -154,6 +144,16 @@ const addresses: AddressCollection = {
           assets: [tokens.XSGD, tokens['bb-a-usd']],
           address: fxPools['LP_XSGD_bb-a-usd'],
           poolId: poolIds['LP_XSGD_bb-a-usd']
+        },
+        {
+          assets: [tokens.VCHF, tokens.USDC],
+          address: fxPools.LP_VCHF_USDC,
+          poolId: poolIds.VCHF_USDC
+        },
+        {
+          assets: [tokens.VEUR, tokens.USDC],
+          address: fxPools.LP_VEUR_USDC,
+          poolId: poolIds.VEUR_USDC
         }
       ],
       ['bb-a-usd']: {
