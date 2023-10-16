@@ -46,6 +46,7 @@ type Assimilators = {
   VCHF_USD?: string
   BRLA_USD?: string
   VNXAU_USD?: string
+  VEUR_USD?: string
   'bb-a-usd_USD'?: string
   'XSGD_bb-a-usd_USD'?: string
   'EURS_bb-a-usd_USD'?: string
@@ -120,6 +121,7 @@ export type AddressCollection = {
         LP_VCHF_USDC?: string
         LP_BRLA_USDC?: string
         LP_VNXAU_USDC?: string
+        LP_VEUR_USDC?: string
         'LP_XSGD_bb-a-usd'?: string
         'LP_EURS_bb-a-usd'?: string
         LP_PHPT_USDC?: string
@@ -149,6 +151,7 @@ export type AddressCollection = {
       VCHF?: string
       BRLA?: string
       VNXAU?: string
+      VEUR?: string
       'bb-a-usd'?: string
       PHPT?: string
       PHPX?: string
@@ -182,6 +185,7 @@ export type AddressCollection = {
     VCHF?: string
     BRLA?: string
     VNXAU?: string
+    VEUR?: string
     'bb-a-usd'?: string
     'bb-a-USDC'?: string
     'bb-a-DAI'?: string
