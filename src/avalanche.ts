@@ -45,7 +45,7 @@ const addresses: AddressCollection = {
           address: fxPools.LP_EUROC_USDC,
           poolId: poolIds.EUROC_USDC,
           gauges: {
-            main: ZERO_ADDRESS, // there won't be a mainnet root gauge for a while
+            main: '0x40b4c2e260f803f868053789bd4a6c7edd1cdc39', // AvalancheRootGauge
             child: '0x0c22Ff3f93B5c9f13e41FA9D270680E97AC13B28' // ChildLiquidityGauge
           }
         },
