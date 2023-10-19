@@ -10,14 +10,17 @@ const tokens = {
 
 const fxPools = {
   LP_EUROC_USDC: '0x55bEC22f8f6C69137cEAf284d9B441Db1B9bFedc',
-  LP_VEUR_USDC: '0xAd0e5e0778cAC28f1ff459602b31351871B5754a'
+  LP_VEUR_USDC: '0xAd0e5e0778cAC28f1ff459602b31351871B5754a',
+  LP_VCHF_USDC: '0x66bB9D104c55861feb3Ec3559433F01f6373c966'
 }
 
 const poolIds = {
   EUROC_USDC:
     '0x55bec22f8f6c69137ceaf284d9b441db1b9bfedc000200000000000000000011',
   VEUR_USDC:
-    '0xad0e5e0778cac28f1ff459602b31351871b5754a000200000000000000000029'
+    '0xad0e5e0778cac28f1ff459602b31351871b5754a000200000000000000000029',
+  VCHF_USDC:
+    '0x66bb9d104c55861feb3ec3559433f01f6373c96600020000000000000000002a'
 }
 
 const addresses: AddressCollection = {
@@ -50,6 +53,11 @@ const addresses: AddressCollection = {
           assets: [tokens.VEUR, tokens.USDC],
           address: fxPools.LP_VEUR_USDC,
           poolId: poolIds.VEUR_USDC
+        },
+        {
+          assets: [tokens.VCHF, tokens.USDC],
+          address: fxPools.LP_VCHF_USDC,
+          poolId: poolIds.VCHF_USDC
         }
       ],
       disabled: [],
@@ -62,13 +70,14 @@ const addresses: AddressCollection = {
     oracles: {
       USDC: '0xF096872672F44d6EBA71458D74fe67F9a77a23B9', // Chainklink official USDC/USD oracle
       EUROC: '0x192f2DBA961Bb0277520C082d6bfa87D5961333E', // Chainklink official EUR/USD oracle
-      VCHF: '0x3B37950485b450edF90cBB85d0cD27308Af4AB9A', // Chainklink official VCHF/USD oracle (tobe depricated on 09/08/23)
+      VCHF: '0xA418573AB5226711c8564Eeb449c3618ABFaf677', // Chainklink official CHF/USD oracle
       VEUR: '0x192f2DBA961Bb0277520C082d6bfa87D5961333E' // Chainklink official EUR/USD oracle
     },
     assimilators: {
       USDC_USD: '0x21720736Ada52d8887aFAC20B05f02005fD6f272',
       EUROC_USD: '0xb803906e5B39F8FA31c6bA2105925c5FA17beb54',
-      VEUR_USD: '0x4cda5bDe8E78aBd4A53Fe6C1568C5C18d2D0f73E'
+      VEUR_USD: '0x4cda5bDe8E78aBd4A53Fe6C1568C5C18d2D0f73E',
+      VCHF_USD: '0xC2750ad1cbD8523BE6e51F7d8FC6394dD7194D2d'
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
     balancerMinter: '0x85a80afee867aDf27B50BdB7b76DA70f1E853062' // L2BalancerPseudoMinter
