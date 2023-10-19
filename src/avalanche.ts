@@ -62,7 +62,7 @@ const addresses: AddressCollection = {
     oracles: {
       USDC: '0xF096872672F44d6EBA71458D74fe67F9a77a23B9', // Chainklink official USDC/USD oracle
       EUROC: '0x192f2DBA961Bb0277520C082d6bfa87D5961333E', // Chainklink official EUR/USD oracle
-      VCHF: '0x3B37950485b450edF90cBB85d0cD27308Af4AB9A', // Chainklink official VCHF/USD oracle (tobe depricated on 09/08/23)
+      VCHF: '0xA418573AB5226711c8564Eeb449c3618ABFaf677', // Chainklink official VCHF/USD oracle
       VEUR: '0x192f2DBA961Bb0277520C082d6bfa87D5961333E' // Chainklink official EUR/USD oracle
     },
     assimilators: {
