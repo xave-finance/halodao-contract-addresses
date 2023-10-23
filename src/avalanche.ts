@@ -54,7 +54,7 @@ const addresses: AddressCollection = {
           address: fxPools.LP_VEUR_USDC,
           poolId: poolIds.VEUR_USDC,
           gauges: {
-            main: '',
+            main: ZERO_ADDRESS,
             child: '0x3A9D7506A235A52CfA30399361426709A08578bb' // ChildLiquidityGauge
           }
         },
@@ -63,7 +63,7 @@ const addresses: AddressCollection = {
           address: fxPools.LP_VCHF_USDC,
           poolId: poolIds.VCHF_USDC,
           gauges: {
-            main: '',
+            main: ZERO_ADDRESS,
             child: '0xC2B75a2eBFc9479EfA0eF9C4b013b4FE4b2ADf8A' // ChildLiquidityGauge
           }
         }
