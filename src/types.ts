@@ -134,6 +134,8 @@ export type AddressCollection = {
       'bb-a-usd'?: BoostedPool
     }
     fxPoolFactory: string
+    fxPoolDeployer: string
+    baseAssimilatorTemplate: string
     proportionalLiquidity: string
     assimilatorFactory: string
     swapLibrary: string
