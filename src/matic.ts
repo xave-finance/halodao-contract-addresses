@@ -177,6 +177,7 @@ const addresses: AddressCollection = {
     },
     fxPoolFactory: '0x627D759314D5c4007b461A74eBaFA7EBC5dFeD71',
     fxPoolDeployer: ZERO_ADDRESS,
+    fxPoolDeployerLib: ZERO_ADDRESS,
     baseAssimilatorTemplate: ZERO_ADDRESS,
     proportionalLiquidity: '0xe35A4e171F5568e8619DA1e097DAD18928187D85',
     // assimilatorFactory: '0x9CB3961ec9E54563602d96D2b3332028aa54dd13', // has the older VNXAU assimilator

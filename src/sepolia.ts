@@ -55,7 +55,8 @@ const addresses: AddressCollection = {
       hidden: []
     },
     fxPoolFactory: '0xf21b9ED717d0F5578541304abBd7881468d56630',
-    fxPoolDeployer: ZERO_ADDRESS,
+    fxPoolDeployer: "0xf89E599bB7c19bE276e95c1EA55A9684ac740255",
+    fxPoolDeployerLib: "0x922c1F1e97cAB57897AD7fAbe5B1d35Bae66dDBC",
     baseAssimilatorTemplate: "0x8DB14E029399C4500614161867b8bFc1a2F74019",
     proportionalLiquidity: '0xbcB66eD6419857b49Fa5947af58865538F8fba2C',
     assimilatorFactory: ZERO_ADDRESS,

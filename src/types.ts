@@ -135,6 +135,7 @@ export type AddressCollection = {
     }
     fxPoolFactory: string
     fxPoolDeployer: string
+    fxPoolDeployerLib: string
     baseAssimilatorTemplate: string
     proportionalLiquidity: string
     assimilatorFactory: string
