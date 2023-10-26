@@ -47,6 +47,9 @@ const addresses: AddressCollection = {
       hidden: []
     },
     fxPoolFactory: ZERO_ADDRESS,
+    fxPoolDeployer: ZERO_ADDRESS,
+    fxPoolDeployerLib: ZERO_ADDRESS,
+    baseAssimilatorTemplate: ZERO_ADDRESS,
     proportionalLiquidity: ZERO_ADDRESS,
     assimilatorFactory: ZERO_ADDRESS,
     swapLibrary: ZERO_ADDRESS,

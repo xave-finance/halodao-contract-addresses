@@ -90,6 +90,9 @@ const addresses: AddressCollection = {
       hidden: []
     },
     fxPoolFactory: '0xFa3Ae6811beC0d5eAe2dA48F032Ed2d6dc3250CD',
+    fxPoolDeployer: ZERO_ADDRESS,
+    fxPoolDeployerLib: ZERO_ADDRESS,
+    baseAssimilatorTemplate: ZERO_ADDRESS,
     proportionalLiquidity: '0x9E25F2EC62350C4E9Cc8e8aEa5e8754CE286ad13',
     assimilatorFactory: '0x63D756041460C7A9e195391e39e12D298c628eAb',
     swapLibrary: '0x11F236652df60085610AfFBa9C61Ba2A5F93Dfb3',
