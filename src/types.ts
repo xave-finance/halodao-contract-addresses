@@ -54,6 +54,7 @@ type Assimilators = {
 }
 
 export type AddressCollection = {
+  fxpoolOwner?: string
   protocol: {
     XAV: string
     RNBW: string

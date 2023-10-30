@@ -73,6 +73,7 @@ const poolIds = {
 }
 
 const addresses: AddressCollection = {
+  fxpoolOwner: '0xC76Ec28801ad09020fB89da48306176e56960CC5',
   protocol: {
     XAV: ZERO_ADDRESS,
     RNBW: '0x18e7bDB379928A651f093ef1bC328889b33A560c',
@@ -205,7 +206,7 @@ const addresses: AddressCollection = {
       VNXAU_USD: '0x278a5389b39E4814aB8f60559f9E0D1694E7Ea38', // uses Xave's XAU/USD gram oracle
       VCHF_USD: '0xBeB0D490a418e96437b755d4404522ADF054D4E0',
       VEUR_USD: '0x520427FAFdED1aa829922DC4A2BE8fA54B98eCFF',
-      USDC_USD: "0xfbdc1B9E50F8607E6649d92542B8c48B2fc49a1a" // from the fxpools deployed
+      USDC_USD: '0xfbdc1B9E50F8607E6649d92542B8c48B2fc49a1a' // from the fxpools deployed
     },
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
     balancerMinter: '0x47b489bf5836f83abd928c316f8e39bc0587b020' // L2BalancerPseudoMinter

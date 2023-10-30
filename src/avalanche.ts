@@ -24,6 +24,7 @@ const poolIds = {
 }
 
 const addresses: AddressCollection = {
+  fxpoolOwner: '0x9BF9Ee3cD264ca6Deabf476cd29643bDf174b60D',
   protocol: {
     XAV: ZERO_ADDRESS,
     RNBW: ZERO_ADDRESS,
