@@ -79,6 +79,8 @@ const addresses: AddressCollection = {
       EURS_USD: '0xDFEa5ECCbB7D61D49dFa702ed8FeC4EC48944719',
       PHPT_USD: '0xd69904f0ABFF772A7e5BCb5b1da500edcEFbA39F'
     },
+    // NB: sending to fxpoolOwner address in Sepolia
+    protocolFeesDistributor: '0xC76Ec28801ad09020fB89da48306176e56960CC5',
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
   },
   tokens

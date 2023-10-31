@@ -57,6 +57,7 @@ const addresses: AddressCollection = {
       USDC: '0xa24de01df22b63d23Ebc1882a5E3d4ec0d907bFB',
       EURS: '0x78F9e60608bF48a1155b4B2A5e31F32318a1d85F'
     },
+    protocolFeesDistributor: ZERO_ADDRESS,
     balancerProtocolFeeCollector: ZERO_ADDRESS
   },
   tokens
