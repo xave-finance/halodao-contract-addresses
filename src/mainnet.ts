@@ -120,9 +120,9 @@ const addresses: AddressCollection = {
       ]
     },
     fxPoolFactory: '0x81fE9e5B28dA92aE949b705DfDB225f7a7cc5134',
-    fxPoolDeployer: ZERO_ADDRESS,
-    fxPoolDeployerLib: ZERO_ADDRESS,
-    baseAssimilatorTemplate: ZERO_ADDRESS,
+    fxPoolDeployer: '0xfb23Bc0D2629268442CD6521CF4170698967105f',
+    fxPoolDeployerLib: '0x15308f419f141baf659160ADAC3255bff7f6B8C5',
+    baseAssimilatorTemplate: '0x6d5040F703c82C6357701934BaF9FDFc9409A972',
     proportionalLiquidity: '0xB741984C8ce63F4cbD923842Ee0B9e32Dd9df48c',
     assimilatorFactory: '0x5127fa6aEb261d519B9E843345265e2845dF449D',
     swapLibrary: '0x390Bcd94446fcC6DA992995c66b58e3A7a7b279C',
@@ -132,7 +132,7 @@ const addresses: AddressCollection = {
       XSGD: '0xe25277fF4bbF9081C75Ab0EB13B4A13a721f3E13',
       EURS: '0xb49f677943BC038e9857d61E7d053CaA2C1734C1',
       DAI: '0xAed0c38402a5d19df6E4c03F4E2DceD6e29c1ee9',
-      GBP: '0x5c0Ab2d9b5a7ed9f470386e82BB36A3613cDd4b5'
+      GBPT: '0x5c0Ab2d9b5a7ed9f470386e82BB36A3613cDd4b5'
     },
     assimilators: {
       USDC_USD: '0x21720736Ada52d8887aFAC20B05f02005fD6f272'

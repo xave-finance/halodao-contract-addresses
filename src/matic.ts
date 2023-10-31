@@ -180,8 +180,8 @@ const addresses: AddressCollection = {
       }
     },
     fxPoolFactory: '0x627D759314D5c4007b461A74eBaFA7EBC5dFeD71',
-    fxPoolDeployer: '0x14728E0997BE392Af7E35ff99191dc259d11D901',
-    fxPoolDeployerLib: '0xD8707A3f05e11492b52035D80e2F2550CB0DDA2f',
+    fxPoolDeployer: '0xF169c1Ae8De24Da43a3dC5c5F05De412b4848bD3',
+    fxPoolDeployerLib: '0x18062b20F82F50Ee517Ac7811DFEc9364A0255dB',
     baseAssimilatorTemplate: '0x106fd23aE72Eb9a02Ea2056f2b10F0d32394b003',
     proportionalLiquidity: '0xe35A4e171F5568e8619DA1e097DAD18928187D85',
     // assimilatorFactory: '0x9CB3961ec9E54563602d96D2b3332028aa54dd13', // has the older VNXAU assimilator
