@@ -108,6 +108,7 @@ const addresses: AddressCollection = {
       EURS: '0x0c15Ab9A0DB086e062194c273CC79f41597Bbf13',
       CHF: '0xed0616BeF04D374969f302a34AE4A63882490A8C'
     },
+    protocolFeesDistributor: ZERO_ADDRESS,
     balancerProtocolFeeCollector: ZERO_ADDRESS
   },
   tokens,

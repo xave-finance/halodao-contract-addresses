@@ -91,6 +91,7 @@ const addresses: AddressCollection = {
       VEUR_USD: '0x4cda5bDe8E78aBd4A53Fe6C1568C5C18d2D0f73E',
       VCHF_USD: '0xC2750ad1cbD8523BE6e51F7d8FC6394dD7194D2d'
     },
+    protocolFeesDistributor: '0x701ef89a5bDc282408dBb37AB8A9b1c491Bf94D0',
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
     balancerMinter: '0x85a80afee867aDf27B50BdB7b76DA70f1E853062' // L2BalancerPseudoMinter
   },

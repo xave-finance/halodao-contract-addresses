@@ -160,6 +160,7 @@ export type AddressCollection = {
       PHPT?: string
       PHPX?: string
     }
+    protocolFeesDistributor: string
     balancerProtocolFeeCollector: string
     balancerGaugeController?: string
     balancerTokenAdmin?: string

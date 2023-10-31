@@ -92,6 +92,7 @@ const addresses: AddressCollection = {
       PHPX_USD: '0x9994F5e975b944f27bafcEdAC8075C33Dd8c074d',
       XIDR_USD: '0xe0d3aF0cAc1B8246aec2BF26Ce79F71EDA933659'
     },
+    protocolFeesDistributor: ZERO_ADDRESS,
     balancerProtocolFeeCollector: '0x94BA31Fe011acdeE245b6b64c9E48E5aEb36589B'
   },
   tokens

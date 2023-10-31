@@ -62,6 +62,7 @@ const addresses: AddressCollection = {
     assimilatorFactory: ZERO_ADDRESS,
     swapLibrary: ZERO_ADDRESS,
     oracles: {},
+    protocolFeesDistributor: ZERO_ADDRESS,
     balancerProtocolFeeCollector: ZERO_ADDRESS
   },
   tokens: {}

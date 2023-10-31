@@ -208,6 +208,7 @@ const addresses: AddressCollection = {
       VEUR_USD: '0x520427FAFdED1aa829922DC4A2BE8fA54B98eCFF',
       USDC_USD: '0xfbdc1B9E50F8607E6649d92542B8c48B2fc49a1a' // from the fxpools deployed
     },
+    protocolFeesDistributor: '0x06Cc3a57ad3Afc8b9594913468F2F3d41A14a369',
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
     balancerMinter: '0x47b489bf5836f83abd928c316f8e39bc0587b020' // L2BalancerPseudoMinter
   },

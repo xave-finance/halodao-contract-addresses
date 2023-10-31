@@ -124,6 +124,7 @@ const addresses: AddressCollection = {
       'XSGD_bb-a-usd_USD': '0xD98A5Bdb5fA8E2feC69391397EB6b8D9d73428bf',
       'EURS_bb-a-usd_USD': '0x80FCFC519d0AaE7B3aAa97a9dB454eB416c67473'
     },
+    protocolFeesDistributor: ZERO_ADDRESS,
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
   },
   tokens,
