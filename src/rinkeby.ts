@@ -10,6 +10,10 @@ const tokens = {
 }
 
 const addresses: AddressCollection = {
+  ops: {
+    multisig: ZERO_ADDRESS,
+    deployer: '0x009c4ba01488A15816093F96BA91210494E2C644'
+  },
   protocol: {
     XAV: ZERO_ADDRESS,
     RNBW: '0x357bdb97FB9555bede5ed5201dBD15a8f3f6B7B8',

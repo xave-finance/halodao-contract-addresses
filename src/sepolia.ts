@@ -24,6 +24,10 @@ const poolIds = {
 }
 
 const addresses: AddressCollection = {
+  ops: {
+    multisig: '0x235A2ac113014F9dcb8aBA6577F20290832dDEFd',
+    deployer: '0x009c4ba01488A15816093F96BA91210494E2C644'
+  },
   protocol: {
     XAV: '0x201662B19d339AB2e81b11cae56606AD15CE9525',
     RNBW: ZERO_ADDRESS,
@@ -54,10 +58,6 @@ const addresses: AddressCollection = {
       disabled: [],
       hidden: []
     },
-    // @TODO in Sepolia we don't actually have access to this wallet
-    // for now this is used as testing to ensure that the pools are owned
-    // by the right address after a deployment (call to newFXPool())
-    fxpoolOwner: '0xC76Ec28801ad09020fB89da48306176e56960CC5',
     fxPoolFactory: '0xf21b9ED717d0F5578541304abBd7881468d56630',
     fxPoolDeployer: '0x72cEfA55e806B775B8855f39B581bB54f162632E',
     fxPoolDeployerLib: '0xC9cAe17093162947EDaE00D67a7d9bb509372C55',

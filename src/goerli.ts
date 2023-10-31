@@ -43,6 +43,10 @@ const poolIds = {
 }
 
 const addresses: AddressCollection = {
+  ops: {
+    multisig: ZERO_ADDRESS,
+    deployer: '0x009c4ba01488A15816093F96BA91210494E2C644'
+  },
   protocol: {
     XAV: '0x4f2157aE2661e4312B8F2E458705fA5a9aeb3D46',
     RNBW: ZERO_ADDRESS,

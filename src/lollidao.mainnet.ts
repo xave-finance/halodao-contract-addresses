@@ -8,6 +8,10 @@ const curves = {
 }
 
 const addresses: AddressCollection = {
+  ops: {
+    multisig: ZERO_ADDRESS,
+    deployer: '0x009c4ba01488A15816093F96BA91210494E2C644'
+  },
   protocol: {
     XAV: ZERO_ADDRESS,
     RNBW: ZERO_ADDRESS,

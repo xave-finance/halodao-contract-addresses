@@ -54,6 +54,10 @@ type Assimilators = {
 }
 
 export type AddressCollection = {
+  ops: {
+    multisig: string
+    deployer: string
+  }
   protocol: {
     XAV: string
     RNBW: string
@@ -133,7 +137,6 @@ export type AddressCollection = {
       hidden: Pool[]
       'bb-a-usd'?: BoostedPool
     }
-    fxpoolOwner?: string
     fxPoolFactory: string
     fxPoolDeployer: string
     fxPoolDeployerLib: string

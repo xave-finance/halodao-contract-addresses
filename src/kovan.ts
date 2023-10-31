@@ -25,6 +25,10 @@ const fxPools = {
 }
 
 const addresses: AddressCollection = {
+  ops: {
+    multisig: ZERO_ADDRESS,
+    deployer: '0x009c4ba01488A15816093F96BA91210494E2C644'
+  },
   protocol: {
     XAV: '0xDdD46A4966a2197396BeFdF1d922569bf5F3163b',
     RNBW: '0x16D185d025bF592114D1A68f83085F36159f6CdA',

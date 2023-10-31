@@ -73,6 +73,10 @@ const poolIds = {
 }
 
 const addresses: AddressCollection = {
+  ops: {
+    multisig: '0xC76Ec28801ad09020fB89da48306176e56960CC5',
+    deployer: '0x009c4ba01488A15816093F96BA91210494E2C644'
+  },
   protocol: {
     XAV: ZERO_ADDRESS,
     RNBW: '0x18e7bDB379928A651f093ef1bC328889b33A560c',
@@ -175,7 +179,6 @@ const addresses: AddressCollection = {
         }
       }
     },
-    fxpoolOwner: '0xC76Ec28801ad09020fB89da48306176e56960CC5',
     fxPoolFactory: '0x627D759314D5c4007b461A74eBaFA7EBC5dFeD71',
     fxPoolDeployer: '0x14728E0997BE392Af7E35ff99191dc259d11D901',
     fxPoolDeployerLib: '0xD8707A3f05e11492b52035D80e2F2550CB0DDA2f',
