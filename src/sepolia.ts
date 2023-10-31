@@ -54,10 +54,14 @@ const addresses: AddressCollection = {
       disabled: [],
       hidden: []
     },
+    // @TODO in Sepolia we don't actually have access to this wallet
+    // for now this is used as testing to ensure that the pools are owned
+    // by the right address after a deployment (call to newFXPool())
+    fxpoolOwner: '0xC76Ec28801ad09020fB89da48306176e56960CC5',
     fxPoolFactory: '0xf21b9ED717d0F5578541304abBd7881468d56630',
     fxPoolDeployer: '0x72cEfA55e806B775B8855f39B581bB54f162632E',
-    fxPoolDeployerLib: "0xC9cAe17093162947EDaE00D67a7d9bb509372C55",
-    baseAssimilatorTemplate: "0x8DB14E029399C4500614161867b8bFc1a2F74019",
+    fxPoolDeployerLib: '0xC9cAe17093162947EDaE00D67a7d9bb509372C55',
+    baseAssimilatorTemplate: '0x8DB14E029399C4500614161867b8bFc1a2F74019',
     proportionalLiquidity: '0xbcB66eD6419857b49Fa5947af58865538F8fba2C',
     assimilatorFactory: ZERO_ADDRESS,
     swapLibrary: '0x6F2275CaB5D20ec0DCc4878824EB9425029B2d14',

@@ -24,7 +24,6 @@ const poolIds = {
 }
 
 const addresses: AddressCollection = {
-  fxpoolOwner: '0x9BF9Ee3cD264ca6Deabf476cd29643bDf174b60D',
   protocol: {
     XAV: ZERO_ADDRESS,
     RNBW: ZERO_ADDRESS,
@@ -72,6 +71,7 @@ const addresses: AddressCollection = {
       disabled: [],
       hidden: []
     },
+    fxpoolOwner: '0x9BF9Ee3cD264ca6Deabf476cd29643bDf174b60D',
     fxPoolFactory: '0x81fE9e5B28dA92aE949b705DfDB225f7a7cc5134',
     fxPoolDeployer: ZERO_ADDRESS,
     fxPoolDeployerLib: ZERO_ADDRESS,
