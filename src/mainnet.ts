@@ -134,6 +134,9 @@ const addresses: AddressCollection = {
       DAI: '0xAed0c38402a5d19df6E4c03F4E2DceD6e29c1ee9',
       GBP: '0x5c0Ab2d9b5a7ed9f470386e82BB36A3613cDd4b5'
     },
+    assimilators: {
+      USDC_USD: '0x21720736Ada52d8887aFAC20B05f02005fD6f272'
+    },
     protocolFeesDistributor: '0xA1b11639783Ef8444f76722e63d0A969a18Ba09E',
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
     balancerGaugeController: '0xC128468b7Ce63eA702C1f104D55A2566b13D3ABD',
