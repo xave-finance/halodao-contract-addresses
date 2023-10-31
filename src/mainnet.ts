@@ -16,7 +16,7 @@ const tokens = {
   fakeUSDC: '0x7558f7F023d676841ab118D4637a68943e650196', // fake mintable token
   fakeXSGD: '0x3E58d34C8cf108897b1296eF462AD18522f7e122', // fake mintable token
   fakeFxPHP: '0x02510A18068B57B010b4CBc2E02D8CE5cCBdf8F5', // fake mintable token
-  GBPT: '0x86b4dbe5d203e634a12364c0e428fa242a3fba98'
+  GBPT: '0x86B4dBE5D203e634a12364C0e428fa242A3FbA98'
 }
 
 const curves = {
@@ -132,7 +132,7 @@ const addresses: AddressCollection = {
       XSGD: '0xe25277fF4bbF9081C75Ab0EB13B4A13a721f3E13',
       EURS: '0xb49f677943BC038e9857d61E7d053CaA2C1734C1',
       DAI: '0xAed0c38402a5d19df6E4c03F4E2DceD6e29c1ee9',
-      GBP: '0x5c0ab2d9b5a7ed9f470386e82bb36a3613cdd4b5'
+      GBP: '0x5c0Ab2d9b5a7ed9f470386e82BB36A3613cDd4b5'
     },
     protocolFeesDistributor: '0xA1b11639783Ef8444f76722e63d0A969a18Ba09E',
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
