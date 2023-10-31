@@ -159,6 +159,7 @@ export type AddressCollection = {
       BRLA?: string
       VNXAU?: string
       VEUR?: string
+      GBP?: string
       'bb-a-usd'?: string
       PHPT?: string
       PHPX?: string
