@@ -51,6 +51,7 @@ type Assimilators = {
   'XSGD_bb-a-usd_USD'?: string
   'EURS_bb-a-usd_USD'?: string
   PHPX_USD?: string
+  GBPT_USD?: string
 }
 
 export type AddressCollection = {
