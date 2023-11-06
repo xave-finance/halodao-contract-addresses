@@ -24,6 +24,10 @@ const poolIds = {
 }
 
 const addresses: AddressCollection = {
+  ops: {
+    multisig: '0x9BF9Ee3cD264ca6Deabf476cd29643bDf174b60D',
+    deployer: '0x009c4ba01488A15816093F96BA91210494E2C644'
+  },
   protocol: {
     XAV: ZERO_ADDRESS,
     RNBW: ZERO_ADDRESS,
@@ -72,9 +76,9 @@ const addresses: AddressCollection = {
       hidden: []
     },
     fxPoolFactory: '0x81fE9e5B28dA92aE949b705DfDB225f7a7cc5134',
-    fxPoolDeployer: ZERO_ADDRESS,
-    fxPoolDeployerLib: ZERO_ADDRESS,
-    baseAssimilatorTemplate: ZERO_ADDRESS,
+    fxPoolDeployer: '0x4042dC4110Ea9500338737605A60065c3de152C6',
+    fxPoolDeployerLib: '0x8e970CfD4CE57f43bC671EC8932bC294AE62cc48',
+    baseAssimilatorTemplate: '0x18FEFd0864BF9CE7Ad254030034Dafe01257FaB2',
     proportionalLiquidity: '0xB741984C8ce63F4cbD923842Ee0B9e32Dd9df48c',
     assimilatorFactory: '0x5127fa6aEb261d519B9E843345265e2845dF449D',
     swapLibrary: '0x390Bcd94446fcC6DA992995c66b58e3A7a7b279C',
@@ -90,6 +94,7 @@ const addresses: AddressCollection = {
       VEUR_USD: '0x4cda5bDe8E78aBd4A53Fe6C1568C5C18d2D0f73E',
       VCHF_USD: '0xC2750ad1cbD8523BE6e51F7d8FC6394dD7194D2d'
     },
+    protocolFeesDistributor: '0x701ef89a5bDc282408dBb37AB8A9b1c491Bf94D0',
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
     balancerMinter: '0x85a80afee867aDf27B50BdB7b76DA70f1E853062' // L2BalancerPseudoMinter
   },

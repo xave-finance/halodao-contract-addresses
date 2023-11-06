@@ -10,6 +10,10 @@ const tokens = {
 }
 
 const addresses: AddressCollection = {
+  ops: {
+    multisig: ZERO_ADDRESS,
+    deployer: '0x009c4ba01488A15816093F96BA91210494E2C644'
+  },
   protocol: {
     XAV: ZERO_ADDRESS,
     RNBW: '0x357bdb97FB9555bede5ed5201dBD15a8f3f6B7B8',
@@ -57,6 +61,7 @@ const addresses: AddressCollection = {
       USDC: '0xa24de01df22b63d23Ebc1882a5E3d4ec0d907bFB',
       EURS: '0x78F9e60608bF48a1155b4B2A5e31F32318a1d85F'
     },
+    protocolFeesDistributor: ZERO_ADDRESS,
     balancerProtocolFeeCollector: ZERO_ADDRESS
   },
   tokens

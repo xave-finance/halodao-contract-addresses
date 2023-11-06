@@ -73,6 +73,10 @@ const poolIds = {
 }
 
 const addresses: AddressCollection = {
+  ops: {
+    multisig: '0xC76Ec28801ad09020fB89da48306176e56960CC5',
+    deployer: '0x009c4ba01488A15816093F96BA91210494E2C644'
+  },
   protocol: {
     XAV: ZERO_ADDRESS,
     RNBW: '0x18e7bDB379928A651f093ef1bC328889b33A560c',
@@ -176,9 +180,9 @@ const addresses: AddressCollection = {
       }
     },
     fxPoolFactory: '0x627D759314D5c4007b461A74eBaFA7EBC5dFeD71',
-    fxPoolDeployer: ZERO_ADDRESS,
-    fxPoolDeployerLib: ZERO_ADDRESS,
-    baseAssimilatorTemplate: ZERO_ADDRESS,
+    fxPoolDeployer: '0xF169c1Ae8De24Da43a3dC5c5F05De412b4848bD3',
+    fxPoolDeployerLib: '0x18062b20F82F50Ee517Ac7811DFEc9364A0255dB',
+    baseAssimilatorTemplate: '0x106fd23aE72Eb9a02Ea2056f2b10F0d32394b003',
     proportionalLiquidity: '0xe35A4e171F5568e8619DA1e097DAD18928187D85',
     // assimilatorFactory: '0x9CB3961ec9E54563602d96D2b3332028aa54dd13', // has the older VNXAU assimilator
     assimilatorFactory: '0xA7BEe366876EF85f8B6aD84D612B8905e880F69d', // deployed 10/02/2023
@@ -204,8 +208,10 @@ const addresses: AddressCollection = {
       //VNXAU_USD: '0x6C181bf2E846051C1528543e489E718E09dccc17' // uses official XAU/USD chainlink oracle
       VNXAU_USD: '0x278a5389b39E4814aB8f60559f9E0D1694E7Ea38', // uses Xave's XAU/USD gram oracle
       VCHF_USD: '0xBeB0D490a418e96437b755d4404522ADF054D4E0',
-      VEUR_USD: '0x520427FAFdED1aa829922DC4A2BE8fA54B98eCFF'
+      VEUR_USD: '0x520427FAFdED1aa829922DC4A2BE8fA54B98eCFF',
+      USDC_USD: '0xfbdc1B9E50F8607E6649d92542B8c48B2fc49a1a' // from the fxpools deployed
     },
+    protocolFeesDistributor: '0x06Cc3a57ad3Afc8b9594913468F2F3d41A14a369',
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
     balancerMinter: '0x47b489bf5836f83abd928c316f8e39bc0587b020' // L2BalancerPseudoMinter
   },

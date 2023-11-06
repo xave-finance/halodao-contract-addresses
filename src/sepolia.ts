@@ -24,6 +24,10 @@ const poolIds = {
 }
 
 const addresses: AddressCollection = {
+  ops: {
+    multisig: '0x235A2ac113014F9dcb8aBA6577F20290832dDEFd',
+    deployer: '0x009c4ba01488A15816093F96BA91210494E2C644'
+  },
   protocol: {
     XAV: '0x201662B19d339AB2e81b11cae56606AD15CE9525',
     RNBW: ZERO_ADDRESS,
@@ -55,9 +59,9 @@ const addresses: AddressCollection = {
       hidden: []
     },
     fxPoolFactory: '0xf21b9ED717d0F5578541304abBd7881468d56630',
-    fxPoolDeployer: "0xf89E599bB7c19bE276e95c1EA55A9684ac740255",
-    fxPoolDeployerLib: "0x922c1F1e97cAB57897AD7fAbe5B1d35Bae66dDBC",
-    baseAssimilatorTemplate: "0x8DB14E029399C4500614161867b8bFc1a2F74019",
+    fxPoolDeployer: '0x7c303dF10563d17F70d387a5347487A79ABe2cd5',
+    fxPoolDeployerLib: '0x2e2f9F5BCA5A8cac4DB5d860dB2E0699e725Efe2',
+    baseAssimilatorTemplate: '0x8DB14E029399C4500614161867b8bFc1a2F74019',
     proportionalLiquidity: '0xbcB66eD6419857b49Fa5947af58865538F8fba2C',
     assimilatorFactory: ZERO_ADDRESS,
     swapLibrary: '0x6F2275CaB5D20ec0DCc4878824EB9425029B2d14',
@@ -75,6 +79,8 @@ const addresses: AddressCollection = {
       EURS_USD: '0xDFEa5ECCbB7D61D49dFa702ed8FeC4EC48944719',
       PHPT_USD: '0xd69904f0ABFF772A7e5BCb5b1da500edcEFbA39F'
     },
+    // NB: sending to fxpoolOwner address in Sepolia
+    protocolFeesDistributor: '0xC76Ec28801ad09020fB89da48306176e56960CC5',
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
   },
   tokens

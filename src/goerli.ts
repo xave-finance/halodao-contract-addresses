@@ -43,6 +43,10 @@ const poolIds = {
 }
 
 const addresses: AddressCollection = {
+  ops: {
+    multisig: ZERO_ADDRESS,
+    deployer: '0x009c4ba01488A15816093F96BA91210494E2C644'
+  },
   protocol: {
     XAV: '0x4f2157aE2661e4312B8F2E458705fA5a9aeb3D46',
     RNBW: ZERO_ADDRESS,
@@ -124,6 +128,7 @@ const addresses: AddressCollection = {
       'XSGD_bb-a-usd_USD': '0xD98A5Bdb5fA8E2feC69391397EB6b8D9d73428bf',
       'EURS_bb-a-usd_USD': '0x80FCFC519d0AaE7B3aAa97a9dB454eB416c67473'
     },
+    protocolFeesDistributor: ZERO_ADDRESS,
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
   },
   tokens,

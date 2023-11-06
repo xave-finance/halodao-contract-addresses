@@ -54,6 +54,10 @@ type Assimilators = {
 }
 
 export type AddressCollection = {
+  ops: {
+    multisig: string
+    deployer: string
+  }
   protocol: {
     XAV: string
     RNBW: string
@@ -155,10 +159,12 @@ export type AddressCollection = {
       BRLA?: string
       VNXAU?: string
       VEUR?: string
+      GBPT?: string
       'bb-a-usd'?: string
       PHPT?: string
       PHPX?: string
     }
+    protocolFeesDistributor: string
     balancerProtocolFeeCollector: string
     balancerGaugeController?: string
     balancerTokenAdmin?: string

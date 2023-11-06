@@ -18,6 +18,10 @@ const curves = {
 }
 
 const addresses: AddressCollection = {
+  ops: {
+    multisig: '0x19C96DbFfdFC2F6D5C30deF63F7D52234E516202',
+    deployer: '0x009c4ba01488A15816093F96BA91210494E2C644'
+  },
   protocol: {
     XAV: ZERO_ADDRESS,
     RNBW: '0xA4b7999A1456A481FB0F2fa7E431b9B641A00770',
@@ -71,6 +75,7 @@ const addresses: AddressCollection = {
       XSGD: '0xF0d38324d1F86a176aC727A4b0c43c9F9d9c5EB1',
       EURS: '0xA14d53bC1F1c0F31B4aA3BD109344E5009051a84'
     },
+    protocolFeesDistributor: '0x9c01609c1a2e537e6289bC68ee338221FD403DAE', // v1 treasury address (fallback)
     balancerProtocolFeeCollector: ZERO_ADDRESS
   },
   tokens,

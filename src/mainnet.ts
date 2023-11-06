@@ -15,7 +15,8 @@ const tokens = {
   BAL: '0xba100000625a3754423978a60c9317c58a424e3D', // Balancer governance token
   fakeUSDC: '0x7558f7F023d676841ab118D4637a68943e650196', // fake mintable token
   fakeXSGD: '0x3E58d34C8cf108897b1296eF462AD18522f7e122', // fake mintable token
-  fakeFxPHP: '0x02510A18068B57B010b4CBc2E02D8CE5cCBdf8F5' // fake mintable token
+  fakeFxPHP: '0x02510A18068B57B010b4CBc2E02D8CE5cCBdf8F5', // fake mintable token
+  GBPT: '0x86B4dBE5D203e634a12364C0e428fa242A3FbA98'
 }
 
 const curves = {
@@ -44,6 +45,10 @@ const fxPoolIds = {
 }
 
 const addresses: AddressCollection = {
+  ops: {
+    multisig: '0xA4d521ae4302ffcf3cD5b257B45B16DAC726A057',
+    deployer: '0x009c4ba01488A15816093F96BA91210494E2C644'
+  },
   protocol: {
     XAV: '0x40370aed88933021e20cf7c4d67e00417cda2202',
     RNBW: '0xe94b97b6b43639e238c851a7e693f50033efd75c',
@@ -115,9 +120,9 @@ const addresses: AddressCollection = {
       ]
     },
     fxPoolFactory: '0x81fE9e5B28dA92aE949b705DfDB225f7a7cc5134',
-    fxPoolDeployer: ZERO_ADDRESS,
-    fxPoolDeployerLib: ZERO_ADDRESS,
-    baseAssimilatorTemplate: ZERO_ADDRESS,
+    fxPoolDeployer: '0xfb23Bc0D2629268442CD6521CF4170698967105f',
+    fxPoolDeployerLib: '0x15308f419f141baf659160ADAC3255bff7f6B8C5',
+    baseAssimilatorTemplate: '0x6d5040F703c82C6357701934BaF9FDFc9409A972',
     proportionalLiquidity: '0xB741984C8ce63F4cbD923842Ee0B9e32Dd9df48c',
     assimilatorFactory: '0x5127fa6aEb261d519B9E843345265e2845dF449D',
     swapLibrary: '0x390Bcd94446fcC6DA992995c66b58e3A7a7b279C',
@@ -126,8 +131,13 @@ const addresses: AddressCollection = {
       fxPHP: '0x9481e7ad8BE6BbB22A8B9F7B9fB7588d1df65DF6',
       XSGD: '0xe25277fF4bbF9081C75Ab0EB13B4A13a721f3E13',
       EURS: '0xb49f677943BC038e9857d61E7d053CaA2C1734C1',
-      DAI: '0xAed0c38402a5d19df6E4c03F4E2DceD6e29c1ee9'
+      DAI: '0xAed0c38402a5d19df6E4c03F4E2DceD6e29c1ee9',
+      GBPT: '0x5c0Ab2d9b5a7ed9f470386e82BB36A3613cDd4b5'
     },
+    assimilators: {
+      USDC_USD: '0x21720736Ada52d8887aFAC20B05f02005fD6f272'
+    },
+    protocolFeesDistributor: '0xA1b11639783Ef8444f76722e63d0A969a18Ba09E',
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
     balancerGaugeController: '0xC128468b7Ce63eA702C1f104D55A2566b13D3ABD',
     balancerTokenAdmin: '0xf302f9F50958c5593770FDf4d4812309fF77414f',
