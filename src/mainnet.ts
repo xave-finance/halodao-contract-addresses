@@ -32,7 +32,8 @@ const curves = {
 const fxPools = {
   LP_XSGD_USDC: '0x55bEC22f8f6C69137cEAf284d9B441Db1B9bFedc',
   LP_DAI_USDC: '0x66bB9D104c55861feb3Ec3559433F01f6373c966',
-  LP_EURS_USDC: '0xAd0e5e0778cAC28f1ff459602b31351871B5754a'
+  LP_EURS_USDC: '0xAd0e5e0778cAC28f1ff459602b31351871B5754a',
+  LP_GBPT_USDC: '0xC58150838855a5605C9030398c6D22afd5Bb09EE'
 }
 
 const fxPoolIds = {
@@ -41,7 +42,9 @@ const fxPoolIds = {
   DAI_USDC:
     '0x66bb9d104c55861feb3ec3559433f01f6373c9660002000000000000000003cf',
   EURS_USDC:
-    '0xad0e5e0778cac28f1ff459602b31351871b5754a0002000000000000000003ce'
+    '0xad0e5e0778cac28f1ff459602b31351871b5754a0002000000000000000003ce',
+  GBPT_USDC:
+    '0xc58150838855a5605c9030398c6d22afd5bb09ee00020000000000000000061b'
 }
 
 const addresses: AddressCollection = {
@@ -102,6 +105,11 @@ const addresses: AddressCollection = {
           gauges: {
             main: '0xE629c43BCad1029E12ED51432B9dd3432b656cc9' // LiquidityGauge
           }
+        },
+        {
+          assets: [tokens.GBPT, tokens.USDC],
+          address: fxPools.LP_GBPT_USDC,
+          poolId: fxPoolIds.GBPT_USDC
         }
       ],
       disabled: [
@@ -135,7 +143,8 @@ const addresses: AddressCollection = {
       GBPT: '0x5c0Ab2d9b5a7ed9f470386e82BB36A3613cDd4b5'
     },
     assimilators: {
-      USDC_USD: '0x21720736Ada52d8887aFAC20B05f02005fD6f272'
+      USDC_USD: '0x21720736Ada52d8887aFAC20B05f02005fD6f272',
+      GBPT_USD: '0x3eC21B7b7A0aB3d6E82465e4676D4B42aa4E8052'
     },
     protocolFeesDistributor: '0xA1b11639783Ef8444f76722e63d0A969a18Ba09E',
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
