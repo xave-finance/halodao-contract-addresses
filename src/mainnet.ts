@@ -32,8 +32,10 @@ const curves = {
 const fxPools = {
   LP_XSGD_USDC: '0x55bEC22f8f6C69137cEAf284d9B441Db1B9bFedc',
   LP_DAI_USDC: '0x66bB9D104c55861feb3Ec3559433F01f6373c966',
-  LP_EURS_USDC: '0xAd0e5e0778cAC28f1ff459602b31351871B5754a',
-  LP_GBPT_USDC: '0xC58150838855a5605C9030398c6D22afd5Bb09EE'
+  LP_EURS_USDC_INACTIVE: '0xAd0e5e0778cAC28f1ff459602b31351871B5754a',
+  LP_GBPT_USDC_INACTIVE: '0xC58150838855a5605C9030398c6D22afd5Bb09EE',
+  LP_EURS_USDC: '0x5F8B11995D7F95faA59cA6fD5fFA1C0dbBe0EC7b',
+  LP_GBPT_USDC: '0x73f8E7A9A19E284a9Ac85704Af58454cFe75f059'
 }
 
 const fxPoolIds = {
@@ -41,10 +43,14 @@ const fxPoolIds = {
     '0x55bec22f8f6c69137ceaf284d9b441db1b9bfedc0002000000000000000003cd',
   DAI_USDC:
     '0x66bb9d104c55861feb3ec3559433f01f6373c9660002000000000000000003cf',
-  EURS_USDC:
+  EURS_USDC_INACTIVE:
     '0xad0e5e0778cac28f1ff459602b31351871b5754a0002000000000000000003ce',
+  GBPT_USDC_INACTIVE:
+    '0xc58150838855a5605c9030398c6d22afd5bb09ee00020000000000000000061b',
+  EURS_USDC:
+    '0x5f8b11995d7f95faa59ca6fd5ffa1c0dbbe0ec7b000200000000000000000630',
   GBPT_USDC:
-    '0xc58150838855a5605c9030398c6d22afd5bb09ee00020000000000000000061b'
+    '0x73f8e7a9a19e284a9ac85704af58454cfe75f059000200000000000000000631'
 }
 
 const addresses: AddressCollection = {
@@ -101,10 +107,7 @@ const addresses: AddressCollection = {
         {
           assets: [tokens.EURS, tokens.USDC],
           address: fxPools.LP_EURS_USDC,
-          poolId: fxPoolIds.EURS_USDC,
-          gauges: {
-            main: '0xE629c43BCad1029E12ED51432B9dd3432b656cc9' // LiquidityGauge
-          }
+          poolId: fxPoolIds.EURS_USDC
         },
         {
           assets: [tokens.GBPT, tokens.USDC],
@@ -117,6 +120,19 @@ const addresses: AddressCollection = {
           assets: [tokens.DAI, tokens.USDC],
           address: fxPools.LP_DAI_USDC,
           poolId: fxPoolIds.DAI_USDC
+        },
+        {
+          assets: [tokens.EURS, tokens.USDC],
+          address: fxPools.LP_EURS_USDC_INACTIVE,
+          poolId: fxPoolIds.EURS_USDC_INACTIVE,
+          gauges: {
+            main: '0xE629c43BCad1029E12ED51432B9dd3432b656cc9' // LiquidityGauge
+          }
+        },
+        {
+          assets: [tokens.GBPT, tokens.USDC],
+          address: fxPools.LP_GBPT_USDC_INACTIVE,
+          poolId: fxPoolIds.GBPT_USDC_INACTIVE
         }
       ],
       hidden: [
