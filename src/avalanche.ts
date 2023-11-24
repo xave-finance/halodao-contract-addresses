@@ -77,11 +77,11 @@ const addresses: AddressCollection = {
     },
     fxPoolFactory: '0x81fE9e5B28dA92aE949b705DfDB225f7a7cc5134',
     fxPoolDeployer: '0x4042dC4110Ea9500338737605A60065c3de152C6',
-    fxPoolDeployerLib: '0x8e970CfD4CE57f43bC671EC8932bC294AE62cc48',
+    fxPoolDeployerLib: '0xd05D8542827E4F534aB408c0ED21782d9FD412De',
     baseAssimilatorTemplate: '0x18FEFd0864BF9CE7Ad254030034Dafe01257FaB2',
-    proportionalLiquidity: '0xB741984C8ce63F4cbD923842Ee0B9e32Dd9df48c',
+    proportionalLiquidity: '0x6e879bd1B36D30eC2F3DC5EE6195c3fCfD24aA2a',
     assimilatorFactory: '0x5127fa6aEb261d519B9E843345265e2845dF449D',
-    swapLibrary: '0x390Bcd94446fcC6DA992995c66b58e3A7a7b279C',
+    swapLibrary: '0x6B4761DfaB4cF4C531ADC379e83e85D62B553dDE',
     oracles: {
       USDC: '0xF096872672F44d6EBA71458D74fe67F9a77a23B9', // Chainklink official USDC/USD oracle
       EUROC: '0x192f2DBA961Bb0277520C082d6bfa87D5961333E', // Chainklink official EUR/USD oracle

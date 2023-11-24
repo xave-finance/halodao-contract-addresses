@@ -181,12 +181,12 @@ const addresses: AddressCollection = {
     },
     fxPoolFactory: '0x627D759314D5c4007b461A74eBaFA7EBC5dFeD71',
     fxPoolDeployer: '0xF169c1Ae8De24Da43a3dC5c5F05De412b4848bD3',
-    fxPoolDeployerLib: '0x18062b20F82F50Ee517Ac7811DFEc9364A0255dB',
+    fxPoolDeployerLib: '0x9B67696f6335702B46075aE3A99101856934e1bE',
     baseAssimilatorTemplate: '0x106fd23aE72Eb9a02Ea2056f2b10F0d32394b003',
-    proportionalLiquidity: '0xe35A4e171F5568e8619DA1e097DAD18928187D85',
+    proportionalLiquidity: '0x7C68b34235b1166E121Fbb99c7316C2a3361ba8c',
     // assimilatorFactory: '0x9CB3961ec9E54563602d96D2b3332028aa54dd13', // has the older VNXAU assimilator
     assimilatorFactory: '0xA7BEe366876EF85f8B6aD84D612B8905e880F69d', // deployed 10/02/2023
-    swapLibrary: '0x6256447F6dAa532d5A650cFeAf305D2DD7Bd296E',
+    swapLibrary: '0x4d548b7604ED13973c8f542e9059Ecb5731a59dd',
     oracles: {
       USDC: '0xfE4A8cc5b5B2366C1B58Bea3858e81843581b2F7',
       fxPHP: '0x218231089Bebb2A31970c3b77E96eCfb3BA006D1',
