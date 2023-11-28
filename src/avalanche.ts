@@ -9,18 +9,27 @@ const tokens = {
 }
 
 const fxPools = {
-  LP_EUROC_USDC: '0x55bEC22f8f6C69137cEAf284d9B441Db1B9bFedc',
-  LP_VEUR_USDC: '0xAd0e5e0778cAC28f1ff459602b31351871B5754a',
-  LP_VCHF_USDC: '0x66bB9D104c55861feb3Ec3559433F01f6373c966'
+  LP_EUROC_USDC_INACTIVE: '0x55bEC22f8f6C69137cEAf284d9B441Db1B9bFedc',
+  LP_VEUR_USDC_INACTIVE: '0xAd0e5e0778cAC28f1ff459602b31351871B5754a',
+  LP_VCHF_USDC_INACTIVE: '0x66bB9D104c55861feb3Ec3559433F01f6373c966',
+  LP_EUROC_USDC: '0x7A1A919c033eBc0d9F23cBF2Aa41c24AEf826ca2',
+  LP_VEUR_USDC: '0x28F3a9e42667519c83cB090b5c4f6bd34e9F5569',
+  LP_VCHF_USDC: '0x0099111Ed107BDF0B05162356aEe433514AaC440'
 }
 
 const poolIds = {
-  EUROC_USDC:
+  EUROC_USDC_INACTIVE:
     '0x55bec22f8f6c69137ceaf284d9b441db1b9bfedc000200000000000000000011',
-  VEUR_USDC:
+  VEUR_USDC_INACTIVE:
     '0xad0e5e0778cac28f1ff459602b31351871b5754a000200000000000000000029',
+  VCHF_USDC_INACTIVE:
+    '0x66bb9d104c55861feb3ec3559433f01f6373c96600020000000000000000002a',
+  EUROC_USDC:
+    '0x7a1a919c033ebc0d9f23cbf2aa41c24aef826ca200020000000000000000002e',
+  VEUR_USDC:
+    '0x28f3a9e42667519c83cb090b5c4f6bd34e9f5569000200000000000000000031',
   VCHF_USDC:
-    '0x66bb9d104c55861feb3ec3559433f01f6373c96600020000000000000000002a'
+    '0x0099111ed107bdf0b05162356aee433514aac44000020000000000000000002f'
 }
 
 const addresses: AddressCollection = {
@@ -47,7 +56,24 @@ const addresses: AddressCollection = {
         {
           assets: [tokens.EUROC, tokens.USDC],
           address: fxPools.LP_EUROC_USDC,
-          poolId: poolIds.EUROC_USDC,
+          poolId: poolIds.EUROC_USDC
+        },
+        {
+          assets: [tokens.VEUR, tokens.USDC],
+          address: fxPools.LP_VEUR_USDC,
+          poolId: poolIds.VEUR_USDC
+        },
+        {
+          assets: [tokens.VCHF, tokens.USDC],
+          address: fxPools.LP_VCHF_USDC,
+          poolId: poolIds.VCHF_USDC
+        }
+      ],
+      disabled: [
+        {
+          assets: [tokens.EUROC, tokens.USDC],
+          address: fxPools.LP_EUROC_USDC_INACTIVE,
+          poolId: poolIds.EUROC_USDC_INACTIVE,
           gauges: {
             main: '0x40b4c2e260f803f868053789bd4a6c7edd1cdc39', // AvalancheRootGauge
             child: '0x0c22Ff3f93B5c9f13e41FA9D270680E97AC13B28' // ChildLiquidityGauge
@@ -55,8 +81,8 @@ const addresses: AddressCollection = {
         },
         {
           assets: [tokens.VEUR, tokens.USDC],
-          address: fxPools.LP_VEUR_USDC,
-          poolId: poolIds.VEUR_USDC,
+          address: fxPools.LP_VEUR_USDC_INACTIVE,
+          poolId: poolIds.VEUR_USDC_INACTIVE,
           gauges: {
             main: ZERO_ADDRESS,
             child: '0x3A9D7506A235A52CfA30399361426709A08578bb' // ChildLiquidityGauge
@@ -64,15 +90,14 @@ const addresses: AddressCollection = {
         },
         {
           assets: [tokens.VCHF, tokens.USDC],
-          address: fxPools.LP_VCHF_USDC,
-          poolId: poolIds.VCHF_USDC,
+          address: fxPools.LP_VCHF_USDC_INACTIVE,
+          poolId: poolIds.VCHF_USDC_INACTIVE,
           gauges: {
             main: ZERO_ADDRESS,
             child: '0xC2B75a2eBFc9479EfA0eF9C4b013b4FE4b2ADf8A' // ChildLiquidityGauge
           }
         }
       ],
-      disabled: [],
       hidden: []
     },
     fxPoolFactory: '0x81fE9e5B28dA92aE949b705DfDB225f7a7cc5134',

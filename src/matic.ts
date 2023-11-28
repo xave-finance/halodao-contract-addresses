@@ -32,19 +32,23 @@ const curves = {
 }
 
 const fxPools = {
-  LP_XSGD_USDC: '0x726E324c29a1e49309672b244bdC4Ff62A270407',
+  LP_XSGD_USDC_INACTIVE: '0x726E324c29a1e49309672b244bdC4Ff62A270407',
   LP_DAI_USDC: '0x216B176513C500dBE1D677939103E350A9373a39',
   LP_EURS_USDC: '0xfd24Afa5416C8De94FDbaf344840F524155A4DD0',
   'LP_XSGD_bb-a-usd': '0x882c7A84231484B3E9F3fD45aC04b1EB5d35b076',
-  LP_BRLA_USDC: '0x8630Bd161689403AEA635f830E9eF5496e7E0bC1',
+  LP_BRLA_USDC_INACTIVE: '0x8630Bd161689403AEA635f830E9eF5496e7E0bC1',
   //LP_VNXAU_USDC: '0x8A8275eDA88a6F4cC2Fa6A41837C1B5Dc7A3b095', // uses chainlink XAU/USD official oracle
-  LP_VNXAU_USDC: '0xE93F9dD10b0ba38831CBa4D5a9D092E22Db130eC', // uses Xave's XAU/USD gram oracle
-  LP_VCHF_USDC: '0x7E8c6D9db2D1B522f32d050257DF0dC524593A07',
-  LP_VEUR_USDC: '0xE5093fA1F24619eb16c704a808fAd66Fb65a1305'
+  LP_VNXAU_USDC_INACTIVE: '0xE93F9dD10b0ba38831CBa4D5a9D092E22Db130eC', // uses Xave's XAU/USD gram oracle
+  LP_VCHF_USDC_INACTIVE: '0x7E8c6D9db2D1B522f32d050257DF0dC524593A07',
+  LP_VEUR_USDC_INACTIVE: '0xE5093fA1F24619eb16c704a808fAd66Fb65a1305',
+  LP_XSGD_USDC: '0xE6D8FcD23eD4e417d7e9D1195eDf2cA634684e0E',
+  LP_BRLA_USDC: '0x427333B9F9D8Bd0B67fd5fC2213371DB0Ef178e1',
+  LP_VCHF_USDC: '0x32cc63fFECCb7C0508d64E4d37145313cC053B27',
+  LP_VNXAU_USDC: '0x6Bf004BeE6346852a29239B386aB4239FfbD66dE'
 }
 
 const poolIds = {
-  XSGD_USDC:
+  XSGD_USDC_INACTIVE:
     '0x726e324c29a1e49309672b244bdc4ff62a270407000200000000000000000702',
   DAI_USDC:
     '0x216b176513c500dbe1d677939103e350a9373a390002000000000000000008da',
@@ -60,16 +64,24 @@ const poolIds = {
     '0x178e029173417b1f9c8bc16dcec6f697bc323746000000000000000000000758',
   'bb-a-USDT':
     '0xff4ce5aaab5a627bf82f4a571ab1ce94aa365ea600000000000000000000075a',
-  BRLA_USDC:
+  BRLA_USDC_INACTIVE:
     '0x8630bd161689403aea635f830e9ef5496e7e0bc1000200000000000000000c35',
   // VNXAU_USDC:
   // '0x8a8275eda88a6f4cc2fa6a41837c1b5dc7a3b095000200000000000000000c36' // uses chainlink XAU/USD official oracle
-  VNXAU_USDC:
+  VNXAU_USDC_INACTIVE:
     '0xe93f9dd10b0ba38831cba4d5a9d092e22db130ec000200000000000000000c44', // uses Xave's XAU/USD gram oracle
-  VCHF_USDC:
+  VCHF_USDC_INACTIVE:
     '0x7e8c6d9db2d1b522f32d050257df0dc524593a07000200000000000000000c4e',
-  VEUR_USDC:
-    '0xe5093fa1f24619eb16c704a808fad66fb65a1305000200000000000000000c50'
+  VEUR_USDC_INACTIVE:
+    '0xe5093fa1f24619eb16c704a808fad66fb65a1305000200000000000000000c50',
+  XSGD_USDC:
+    '0xe6d8fcd23ed4e417d7e9d1195edf2ca634684e0e000200000000000000000caf',
+  BRLA_USDC:
+    '0x427333b9f9d8bd0b67fd5fc2213371db0ef178e1000200000000000000000cb0',
+  VCHF_USDC:
+    '0x32cc63ffeccb7c0508d64e4d37145313cc053b27000200000000000000000cb4',
+  VNXAU_USDC:
+    '0x6bf004bee6346852a29239b386ab4239ffbd66de000200000000000000000cb5'
 }
 
 const addresses: AddressCollection = {
@@ -108,7 +120,29 @@ const addresses: AddressCollection = {
         {
           assets: [tokens.XSGD, tokens.USDC],
           address: fxPools.LP_XSGD_USDC,
-          poolId: poolIds.XSGD_USDC,
+          poolId: poolIds.XSGD_USDC
+        },
+        {
+          assets: [tokens.BRLA, tokens.USDC],
+          address: fxPools.LP_BRLA_USDC,
+          poolId: poolIds.BRLA_USDC
+        },
+        {
+          assets: [tokens.VCHF, tokens.USDC],
+          address: fxPools.LP_VCHF_USDC,
+          poolId: poolIds.VCHF_USDC
+        },
+        {
+          assets: [tokens.VNXAU, tokens.USDC],
+          address: fxPools.LP_VNXAU_USDC,
+          poolId: poolIds.VNXAU_USDC
+        }
+      ],
+      disabled: [
+        {
+          assets: [tokens.XSGD, tokens.USDC],
+          address: fxPools.LP_XSGD_USDC_INACTIVE,
+          poolId: poolIds.XSGD_USDC_INACTIVE,
           gauges: {
             main: '0x145011e0C04805E11BEf23c1EEd848Faf49bB779', // PolygonRootGauge
             child: '0xA7165E1E3dEfe55DAdA5C4289268d57faBA6dAd2', // ChildLiquidityGauge
@@ -123,21 +157,20 @@ const addresses: AddressCollection = {
         },
         {
           assets: [tokens.BRLA, tokens.USDC],
-          address: fxPools.LP_BRLA_USDC,
-          poolId: poolIds.BRLA_USDC
+          address: fxPools.LP_BRLA_USDC_INACTIVE,
+          poolId: poolIds.BRLA_USDC_INACTIVE
         },
         {
           assets: [tokens.VNXAU, tokens.USDC],
-          address: fxPools.LP_VNXAU_USDC,
-          poolId: poolIds.VNXAU_USDC
+          address: fxPools.LP_VNXAU_USDC_INACTIVE,
+          poolId: poolIds.VNXAU_USDC_INACTIVE
         },
         {
           assets: [tokens.VCHF, tokens.USDC],
-          address: fxPools.LP_VCHF_USDC,
-          poolId: poolIds.VCHF_USDC
+          address: fxPools.LP_VCHF_USDC_INACTIVE,
+          poolId: poolIds.VCHF_USDC_INACTIVE
         }
       ],
-      disabled: [],
       hidden: [
         {
           assets: [tokens.DAI, tokens.USDC],
@@ -156,8 +189,8 @@ const addresses: AddressCollection = {
         },
         {
           assets: [tokens.VEUR, tokens.USDC],
-          address: fxPools.LP_VEUR_USDC,
-          poolId: poolIds.VEUR_USDC
+          address: fxPools.LP_VEUR_USDC_INACTIVE,
+          poolId: poolIds.VEUR_USDC_INACTIVE
         }
       ],
       ['bb-a-usd']: {
