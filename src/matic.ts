@@ -42,7 +42,9 @@ const fxPools = {
   LP_VCHF_USDC_INACTIVE: '0x7E8c6D9db2D1B522f32d050257DF0dC524593A07',
   LP_VEUR_USDC_INACTIVE: '0xE5093fA1F24619eb16c704a808fAd66Fb65a1305',
   LP_XSGD_USDC: '0xE6D8FcD23eD4e417d7e9D1195eDf2cA634684e0E',
-  LP_BRLA_USDC: '0x427333B9F9D8Bd0B67fd5fC2213371DB0Ef178e1'
+  LP_BRLA_USDC: '0x427333B9F9D8Bd0B67fd5fC2213371DB0Ef178e1',
+  LP_VCHF_USDC: '0x32cc63fFECCb7C0508d64E4d37145313cC053B27',
+  LP_VNXAU_USDC: '0x6Bf004BeE6346852a29239B386aB4239FfbD66dE'
 }
 
 const poolIds = {
@@ -75,7 +77,11 @@ const poolIds = {
   XSGD_USDC:
     '0xe6d8fcd23ed4e417d7e9d1195edf2ca634684e0e000200000000000000000caf',
   BRLA_USDC:
-    '0x427333b9f9d8bd0b67fd5fc2213371db0ef178e1000200000000000000000cb0'
+    '0x427333b9f9d8bd0b67fd5fc2213371db0ef178e1000200000000000000000cb0',
+  VCHF_USDC:
+    '0x32cc63ffeccb7c0508d64e4d37145313cc053b27000200000000000000000cb4',
+  VNXAU_USDC:
+    '0x6bf004bee6346852a29239b386ab4239ffbd66de000200000000000000000cb5'
 }
 
 const addresses: AddressCollection = {
@@ -120,6 +126,16 @@ const addresses: AddressCollection = {
           assets: [tokens.BRLA, tokens.USDC],
           address: fxPools.LP_BRLA_USDC,
           poolId: poolIds.BRLA_USDC
+        },
+        {
+          assets: [tokens.VCHF, tokens.USDC],
+          address: fxPools.LP_VCHF_USDC,
+          poolId: poolIds.VCHF_USDC
+        },
+        {
+          assets: [tokens.VNXAU, tokens.USDC],
+          address: fxPools.LP_VNXAU_USDC,
+          poolId: poolIds.VNXAU_USDC
         }
       ],
       disabled: [
@@ -173,8 +189,8 @@ const addresses: AddressCollection = {
         },
         {
           assets: [tokens.VEUR, tokens.USDC],
-          address: fxPools.LP_VEUR_USDC,
-          poolId: poolIds.VEUR_USDC
+          address: fxPools.LP_VEUR_USDC_INACTIVE,
+          poolId: poolIds.VEUR_USDC_INACTIVE
         }
       ],
       ['bb-a-usd']: {
