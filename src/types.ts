@@ -141,6 +141,24 @@ export type AddressCollection = {
         LP_EUROC_USDC_INACTIVE?: string
         LP_VEUR_USDC_INACTIVE?: string
       }
+      allPoolIds: {
+        EURS_USDC?: string
+        GBPT_USDC?: string
+        XSGD_USDC?: string
+        BRLA_USDC?: string
+        VCHF_USDC?: string
+        VEUR_USDC?: string
+        VNXAU_USDC?: string
+        EUROC_USDC?: string
+        EURS_USDC_INACTIVE?: string
+        GBPT_USDC_INACTIVE?: string
+        XSGD_USDC_INACTIVE?: string
+        BRLA_USDC_INACTIVE?: string
+        VCHF_USDC_INACTIVE?: string
+        VEUR_USDC_INACTIVE?: string
+        VNXAU_USDC_INACTIVE?: string
+        EUROC_USDC_INACTIVE?: string
+      }
       genesis: Pool[]
       enabled: Pool[]
       disabled: Pool[]

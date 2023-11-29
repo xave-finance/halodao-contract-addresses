@@ -49,6 +49,7 @@ const addresses: AddressCollection = {
     vault: '0x2b1c6c85a1dB4b5CF9C4d4662d0556E5daBcf626',
     pools: {
       all: fxPools,
+      allPoolIds: poolIds,
       genesis: [],
       enabled: [
         {
