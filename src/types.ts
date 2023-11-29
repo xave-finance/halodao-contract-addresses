@@ -197,6 +197,7 @@ export type AddressCollection = {
     balancerGaugeController?: string
     balancerTokenAdmin?: string
     balancerMinter?: string
+    fxPoolMigrator?: string
   }
   tokens: {
     AMPL?: string

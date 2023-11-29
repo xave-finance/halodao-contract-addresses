@@ -12,15 +12,18 @@ const tokens = {
 }
 
 const fxPools = {
-  LP_XSGD_USDC: '0x631bAED5B6F1979975eb843A2a46654CC139d55c',
-  LP_PHPT_USDC: '0x93442AAf3b04C2B31133023a2A4F6Bb1b0A898C8'
+  LP_XSGD_USDC_INACTIVE: '0x631bAED5B6F1979975eb843A2a46654CC139d55c',
+  LP_PHPT_USDC_INACTIVE: '0x93442AAf3b04C2B31133023a2A4F6Bb1b0A898C8',
+  LP_XSGD_USDC: '0xb842336B3143a7C76EFDbc3Eb5bFadCa04d4d2Fa'
 }
 
 const poolIds = {
-  XSGD_USDC:
+  XSGD_USDC_INACTIVE:
     '0x631baed5b6f1979975eb843a2a46654cc139d55c00020000000000000000001a',
-  PHPT_USDC:
-    '0x93442aaf3b04c2b31133023a2a4f6bb1b0a898c800020000000000000000001b'
+  PHPT_USDC_INACTIVE:
+    '0x93442aaf3b04c2b31133023a2a4f6bb1b0a898c800020000000000000000001b',
+  XSGD_USDC:
+    '0xb842336b3143a7c76efdbc3eb5bfadca04d4d2fa000200000000000000000058'
 }
 
 const addresses: AddressCollection = {
@@ -49,14 +52,20 @@ const addresses: AddressCollection = {
           assets: [tokens.XSGD, tokens.USDC],
           address: fxPools.LP_XSGD_USDC,
           poolId: poolIds.XSGD_USDC
+        }
+      ],
+      disabled: [
+        {
+          assets: [tokens.XSGD, tokens.USDC],
+          address: fxPools.LP_XSGD_USDC_INACTIVE,
+          poolId: poolIds.XSGD_USDC_INACTIVE
         },
         {
           assets: [tokens.PHPT, tokens.USDC],
-          address: fxPools.LP_PHPT_USDC,
-          poolId: poolIds.PHPT_USDC
+          address: fxPools.LP_PHPT_USDC_INACTIVE,
+          poolId: poolIds.PHPT_USDC_INACTIVE
         }
       ],
-      disabled: [],
       hidden: []
     },
     fxPoolFactory: '0xf21b9ED717d0F5578541304abBd7881468d56630',
@@ -82,7 +91,8 @@ const addresses: AddressCollection = {
     },
     // NB: sending to fxpoolOwner address in Sepolia
     protocolFeesDistributor: '0xC76Ec28801ad09020fB89da48306176e56960CC5',
-    balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F'
+    balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
+    fxPoolMigrator: '0x46d558411Ab2b9EbA2DD018689638E397F713d51'
   },
   tokens
 }
