@@ -92,7 +92,7 @@ const addresses: AddressCollection = {
     // NB: sending to fxpoolOwner address in Sepolia
     protocolFeesDistributor: '0xC76Ec28801ad09020fB89da48306176e56960CC5',
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
-    fxPoolMigrator: '0x46d558411Ab2b9EbA2DD018689638E397F713d51'
+    fxPoolMigrator: '0xB626E339a0EF63a15585FAAb4483a1732aaD0A94' // FXPoolMigratorProxy
   },
   tokens
 }
