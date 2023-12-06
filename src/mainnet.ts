@@ -167,7 +167,8 @@ const addresses: AddressCollection = {
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
     balancerGaugeController: '0xC128468b7Ce63eA702C1f104D55A2566b13D3ABD',
     balancerTokenAdmin: '0xf302f9F50958c5593770FDf4d4812309fF77414f',
-    balancerMinter: '0x239e55F427D44C3cc793f49bFB507ebe76638a2b'
+    balancerMinter: '0x239e55F427D44C3cc793f49bFB507ebe76638a2b',
+    fxPoolMigrator: '0xa3B1DF4f7cC8534B2026149FB9D75512c8E0A161'
   },
   tokens,
   lendingMarket: {
