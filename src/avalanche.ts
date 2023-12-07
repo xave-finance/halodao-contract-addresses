@@ -57,17 +57,29 @@ const addresses: AddressCollection = {
         {
           assets: [tokens.EUROC, tokens.USDC],
           address: fxPools.LP_EUROC_USDC,
-          poolId: poolIds.EUROC_USDC
+          poolId: poolIds.EUROC_USDC,
+          gauges: {
+            main: ZERO_ADDRESS,
+            child: '0x35Ade969237697BA794bdDb9045aF06eDC96a47f'
+          }
         },
         {
           assets: [tokens.VEUR, tokens.USDC],
           address: fxPools.LP_VEUR_USDC,
-          poolId: poolIds.VEUR_USDC
+          poolId: poolIds.VEUR_USDC,
+          gauges: {
+            main: ZERO_ADDRESS,
+            child: '0xe41978AcA73F93BF67c27B60232449F2F4a29168'
+          }
         },
         {
           assets: [tokens.VCHF, tokens.USDC],
           address: fxPools.LP_VCHF_USDC,
-          poolId: poolIds.VCHF_USDC
+          poolId: poolIds.VCHF_USDC,
+          gauges: {
+            main: ZERO_ADDRESS,
+            child: '0xEB96333b3E0EFEf18A45d40C6144b78B0Dc70981'
+          }
         }
       ],
       disabled: [

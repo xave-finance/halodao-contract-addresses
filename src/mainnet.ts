@@ -108,12 +108,18 @@ const addresses: AddressCollection = {
         {
           assets: [tokens.EURS, tokens.USDC],
           address: fxPools.LP_EURS_USDC,
-          poolId: fxPoolIds.EURS_USDC
+          poolId: fxPoolIds.EURS_USDC,
+          gauges: {
+            main: '0x008EB79DBE2Efcf8A9586F8F697464BE65D39eFf'
+          }
         },
         {
           assets: [tokens.GBPT, tokens.USDC],
           address: fxPools.LP_GBPT_USDC,
-          poolId: fxPoolIds.GBPT_USDC
+          poolId: fxPoolIds.GBPT_USDC,
+          gauges: {
+            main: '0x4a3d252d121c627F2450f06412Ca5c5A62e662f2'
+          }
         }
       ],
       disabled: [
