@@ -51,6 +51,7 @@ const addresses: AddressCollection = {
     vault: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
     pools: {
       all: fxPools,
+      allPoolIds: poolIds,
       genesis: [],
       enabled: [
         {
@@ -121,7 +122,8 @@ const addresses: AddressCollection = {
     },
     protocolFeesDistributor: '0x701ef89a5bDc282408dBb37AB8A9b1c491Bf94D0',
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
-    balancerMinter: '0x85a80afee867aDf27B50BdB7b76DA70f1E853062' // L2BalancerPseudoMinter
+    balancerMinter: '0x85a80afee867aDf27B50BdB7b76DA70f1E853062', // L2BalancerPseudoMinter
+    fxPoolMigrator: '0x40eC3c4447024061321ECB09075c462CF763d192'
   },
   tokens
 }

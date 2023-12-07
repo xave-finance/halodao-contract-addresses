@@ -53,6 +53,7 @@ const addresses: AddressCollection = {
     vault: ZERO_ADDRESS,
     pools: {
       all: {},
+      allPoolIds: {},
       genesis: [],
       enabled: [],
       disabled: [],

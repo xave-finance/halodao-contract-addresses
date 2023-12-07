@@ -131,6 +131,33 @@ export type AddressCollection = {
         'LP_EURS_bb-a-usd'?: string
         LP_PHPT_USDC?: string
         LP_PHPX_USDC?: string
+        LP_GBPT_USDC?: string
+        LP_EURS_USDC_INACTIVE?: string
+        LP_GBPT_USDC_INACTIVE?: string
+        LP_XSGD_USDC_INACTIVE?: string
+        LP_BRLA_USDC_INACTIVE?: string
+        LP_VCHF_USDC_INACTIVE?: string
+        LP_VNXAU_USDC_INACTIVE?: string
+        LP_EUROC_USDC_INACTIVE?: string
+        LP_VEUR_USDC_INACTIVE?: string
+      }
+      allPoolIds: {
+        EURS_USDC?: string
+        GBPT_USDC?: string
+        XSGD_USDC?: string
+        BRLA_USDC?: string
+        VCHF_USDC?: string
+        VEUR_USDC?: string
+        VNXAU_USDC?: string
+        EUROC_USDC?: string
+        EURS_USDC_INACTIVE?: string
+        GBPT_USDC_INACTIVE?: string
+        XSGD_USDC_INACTIVE?: string
+        BRLA_USDC_INACTIVE?: string
+        VCHF_USDC_INACTIVE?: string
+        VEUR_USDC_INACTIVE?: string
+        VNXAU_USDC_INACTIVE?: string
+        EUROC_USDC_INACTIVE?: string
       }
       genesis: Pool[]
       enabled: Pool[]
@@ -170,6 +197,7 @@ export type AddressCollection = {
     balancerGaugeController?: string
     balancerTokenAdmin?: string
     balancerMinter?: string
+    fxPoolMigrator?: string
   }
   tokens: {
     AMPL?: string
