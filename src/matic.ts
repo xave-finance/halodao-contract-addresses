@@ -248,7 +248,7 @@ const addresses: AddressCollection = {
     protocolFeesDistributor: '0x06Cc3a57ad3Afc8b9594913468F2F3d41A14a369',
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
     balancerMinter: '0x47b489bf5836f83abd928c316f8e39bc0587b020', // L2BalancerPseudoMinter
-    fxPoolMigrator: '0x7e95e905EC0165518cC388263a35CC03Ced4e95d'
+    fxPoolMigrator: '0x27A2167c3e40A84650B0444f4841D059dE3c9608'
   },
   tokens,
   lendingMarket: {
