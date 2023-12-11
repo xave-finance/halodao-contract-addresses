@@ -121,7 +121,12 @@ const addresses: AddressCollection = {
         {
           assets: [tokens.XSGD, tokens.USDC],
           address: fxPools.LP_XSGD_USDC,
-          poolId: poolIds.XSGD_USDC
+          poolId: poolIds.XSGD_USDC,
+          gauges: {
+            main: '0x2B7Bd050d7E0341fB49fF96f32eA59Bd8087d487',
+            child: '0x3DD7F73d807b7AA4A1112b30319201e9798D27C4'
+          },
+          rewardDistributor: '0x15308f419f141baf659160ADAC3255bff7f6B8C5'
         },
         {
           assets: [tokens.BRLA, tokens.USDC],
