@@ -5,7 +5,8 @@ const tokens = {
   USDC: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
   EUROC: '0xC891EB4cbdEFf6e073e859e987815Ed1505c2ACD',
   VCHF: '0x228a48df6819CCc2eCa01e2192ebAFfFdAD56c19',
-  VEUR: '0x7678e162f38ec9ef2Bfd1d0aAF9fd93355E5Fa0b'
+  VEUR: '0x7678e162f38ec9ef2Bfd1d0aAF9fd93355E5Fa0b',
+  ZUSD: '0x9626B9583519E9dAa1C3a7B2E374518743C91ed2'
 }
 
 const fxPools = {
@@ -124,7 +125,8 @@ const addresses: AddressCollection = {
       USDC: '0xF096872672F44d6EBA71458D74fe67F9a77a23B9', // Chainklink official USDC/USD oracle
       EUROC: '0x192f2DBA961Bb0277520C082d6bfa87D5961333E', // Chainklink official EUR/USD oracle
       VCHF: '0xA418573AB5226711c8564Eeb449c3618ABFaf677', // Chainklink official CHF/USD oracle
-      VEUR: '0x192f2DBA961Bb0277520C082d6bfa87D5961333E' // Chainklink official EUR/USD oracle
+      VEUR: '0x192f2DBA961Bb0277520C082d6bfa87D5961333E', // Chainklink official EUR/USD oracle,
+      ZUSD: '0x9562a4D96D5Fd5C7E2Db832E44e5D5a281e3063C' // Baki Oracle Adaptor
     },
     assimilators: {
       USDC_USD: '0x21720736Ada52d8887aFAC20B05f02005fD6f272',

@@ -191,6 +191,7 @@ export type AddressCollection = {
       'bb-a-usd'?: string
       PHPT?: string
       PHPX?: string
+      ZUSD?: string
     }
     protocolFeesDistributor: string
     balancerProtocolFeeCollector: string
@@ -236,6 +237,7 @@ export type AddressCollection = {
     balUSDC?: string
     balDAI?: string
     balUSDT?: string
+    ZUSD?: string
   }
   lendingMarket?: {
     protocol: {
