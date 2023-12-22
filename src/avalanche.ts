@@ -126,7 +126,8 @@ const addresses: AddressCollection = {
       EUROC: '0x192f2DBA961Bb0277520C082d6bfa87D5961333E', // Chainklink official EUR/USD oracle
       VCHF: '0xA418573AB5226711c8564Eeb449c3618ABFaf677', // Chainklink official CHF/USD oracle
       VEUR: '0x192f2DBA961Bb0277520C082d6bfa87D5961333E', // Chainklink official EUR/USD oracle,
-      ZUSD: '0x9562a4D96D5Fd5C7E2Db832E44e5D5a281e3063C' // Baki Oracle Adaptor
+      // ZUSD: '0x9562a4D96D5Fd5C7E2Db832E44e5D5a281e3063C' // Baki Oracle Adaptor old
+      ZUSD: '0x649ebbbF45cA586377f630cbb1dB773Ff329F0b5'
     },
     assimilators: {
       USDC_USD: '0x21720736Ada52d8887aFAC20B05f02005fD6f272',
