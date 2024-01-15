@@ -1,7 +1,7 @@
 import { AddressCollection, ZERO_ADDRESS } from './types'
 
 const tokens = {
-  USDC: '0xff970a61a04b1ca14834a43f5de4533ebddb5cc8',
+  USDC: '0xaf88d065e77c8cC2239327C5EDb3A432268e5831',
   fxPHP: '0x3d147cD9aC957B2a5F968dE9d1c6B9d0872286a0',
   EURS: '0xD22a58f79e9481D1a88e00c343885A588b34b68B',
   BAL: '0x040d1EdC9569d4Bab2D15287Dc5A4F10F56a56B8', // Balancer governance token
