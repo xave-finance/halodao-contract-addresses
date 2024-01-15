@@ -76,6 +76,9 @@ const addresses: AddressCollection = {
       XSGD: '0xF0d38324d1F86a176aC727A4b0c43c9F9d9c5EB1',
       EURS: '0xA14d53bC1F1c0F31B4aA3BD109344E5009051a84'
     },
+    assimilators: {
+      USDC_USD: '0x9c788dFe8834732C5322A996CA2055FA1fc2da2b'
+    },
     protocolFeesDistributor: '0x9c01609c1a2e537e6289bC68ee338221FD403DAE', // v1 treasury address (fallback)
     balancerProtocolFeeCollector: ZERO_ADDRESS
   },
