@@ -1,7 +1,7 @@
 import { AddressCollection, ZERO_ADDRESS } from './types'
 
 const tokens = {
-  USDC: '0xff970a61a04b1ca14834a43f5de4533ebddb5cc8',
+  USDC: '0xaf88d065e77c8cC2239327C5EDb3A432268e5831',
   fxPHP: '0x3d147cD9aC957B2a5F968dE9d1c6B9d0872286a0',
   EURS: '0xD22a58f79e9481D1a88e00c343885A588b34b68B',
   BAL: '0x040d1EdC9569d4Bab2D15287Dc5A4F10F56a56B8', // Balancer governance token
@@ -63,10 +63,10 @@ const addresses: AddressCollection = {
         }
       ]
     },
-    fxPoolFactory: ZERO_ADDRESS,
-    fxPoolDeployer: ZERO_ADDRESS,
-    fxPoolDeployerLib: ZERO_ADDRESS,
-    baseAssimilatorTemplate: ZERO_ADDRESS,
+    fxPoolFactory: ZERO_ADDRESS, // jump to fxpool deployer
+    fxPoolDeployer: '0x8BDdD2dcB49056f99556A4E0288c419391693aE7',
+    fxPoolDeployerLib: '0xc0b898928aF04269AEf41A1fbA5534a66B03F274',
+    baseAssimilatorTemplate: '0x0ade0b13CD2bd78849a7d074aD04469a32E14106',
     proportionalLiquidity: '0x3af74d19F50f24C75e4000Fe665d718387b1DA74',
     assimilatorFactory: '0xB474537769c335BC96cB86DeC70E6C7F36b39b1e',
     swapLibrary: '0xF82fd35163D1383e76ceD09c605DF5DB81439014',
@@ -74,7 +74,11 @@ const addresses: AddressCollection = {
       USDC: '0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3',
       fxPHP: '0xfF82AAF635645fD0bcc7b619C3F28004cDb58574',
       XSGD: '0xF0d38324d1F86a176aC727A4b0c43c9F9d9c5EB1',
-      EURS: '0xA14d53bC1F1c0F31B4aA3BD109344E5009051a84'
+      EURS: '0xA14d53bC1F1c0F31B4aA3BD109344E5009051a84',
+      MYR: '0x889E8F2b15A1B462dC74C5F66eF90C3caa46A37D'
+    },
+    assimilators: {
+      USDC_USD: '0x9c788dFe8834732C5322A996CA2055FA1fc2da2b'
     },
     protocolFeesDistributor: '0x9c01609c1a2e537e6289bC68ee338221FD403DAE', // v1 treasury address (fallback)
     balancerProtocolFeeCollector: ZERO_ADDRESS
