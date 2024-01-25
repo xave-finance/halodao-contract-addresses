@@ -240,6 +240,16 @@ export type AddressCollection = {
     balDAI?: string
     balUSDT?: string
     ZUSD?: string
+    PAXG?: string
+    USDP?: string
+    PYUSD?: string
+    TUSD?: string
+    FRAX?: string
+    LUSD?: string
+    USDD?: string
+    agEUR?: string
+    PAR?: string
+    CELO?: string
   }
   lendingMarket?: {
     protocol: {
