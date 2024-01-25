@@ -192,6 +192,8 @@ export type AddressCollection = {
       PHPT?: string
       PHPX?: string
       ZUSD?: string
+      MYR?: string
+      IDR?: string
     }
     protocolFeesDistributor: string
     balancerProtocolFeeCollector: string
