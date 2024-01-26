@@ -250,6 +250,60 @@ export type AddressCollection = {
     agEUR?: string
     PAR?: string
     CELO?: string
+    BNB?: string
+    LINK?: string
+    WBTC?: string
+    UNI?: string
+    MKR?: string
+    GRT?: string
+    AAVE?: string
+    SNX?: string
+    FXS?: string
+    WOO?: string
+    AXL?: string
+    '1INCH'?: string
+    UMA?: string
+    GMX?: string
+    COMP?: string
+    BAT?: string
+    ZRX?: string
+    ANKR?: string
+    YFI?: string
+    sAVAX?: string
+    PENDLE?: string
+    SUSHI?: string
+    CTSI?: string
+    BTC?: string
+    ORBS?: string
+    GYEN?: string
+    FEI?: string
+    stETH?: string
+    TONCOIN?: string
+    MATIC?: string
+    SHIB?: string
+    LEO?: string
+    OKB?: string
+    INJ?: string
+    LDO?: string
+    IMX?: string
+    ARB?: string
+    CRO?: string
+    MNT?: string
+    QNT?: string
+    RNDR?: string
+    rETH?: string
+    SAND?: string
+    TKX?: string
+    APE?: string
+    MANA?: string
+    frxETH?: string
+    Bonk?: string
+    RPL?: string
+    sfrxETH?: string
+    CRV?: string
+    NEXO?: string
+    fxcbETH?: string
+    GMT?: string
   }
   lendingMarket?: {
     protocol: {
