@@ -76,7 +76,7 @@ const addresses: AddressCollection = {
       fxPHP: '0xfF82AAF635645fD0bcc7b619C3F28004cDb58574',
       XSGD: '0xF0d38324d1F86a176aC727A4b0c43c9F9d9c5EB1',
       EURS: '0xA14d53bC1F1c0F31B4aA3BD109344E5009051a84',
-      MYR: '0x889E8F2b15A1B462dC74C5F66eF90C3caa46A37D' // Xave custom FX oracle
+      MYR: '0xaf56A46F52c84fD995fAdD1E3D117490625d814C' // Xave custom FX oracle
     },
     assimilators: {
       USDC_USD: '0x9c788dFe8834732C5322A996CA2055FA1fc2da2b'
