@@ -53,7 +53,9 @@ const tokens = {
   '1INCH': '0x9c2C5fd7b07E95EE044DDeba0E97a665F142394f',
   TXAU: '0xA6da8C8999c094432c77E7d318951D34019AF24B',
   TXAG: '0x57fCbd6503C8BE3B1AbAD191Bc7799ef414A5b31',
-  TXPT: '0x2e6978ceeA865948f4c5685e35AEC72652e3Cb88'
+  TXPT: '0x2e6978ceeA865948f4c5685e35AEC72652e3Cb88',
+  USDGLO: '0x0C466540B2ee1a31b441671eac0ca886e051E410',
+  SBC: '0xfdcC3dd6671eaB0709A4C0f3F53De9a333d80798'
 }
 
 const curves = {
@@ -272,9 +274,10 @@ const addresses: AddressCollection = {
       VNXAU: '0xff551F4AFDCB6eb1306Bf226b30593393dfb4F95', // Xave XAU/USD "gram" oracle
       VCHF: '0xc76f762CedF0F78a439727861628E0fdfE1e70c2', // Chainklink official CHF/USD oracle
       VEUR: '0x73366Fe0AA0Ded304479862808e02506FE556a98', // Chainklink official EUR/USD oracle
-      XAU: '0x0C466540B2ee1a31b441671eac0ca886e051E410', // Chainlink official XAU/USD oracle
-      XAG: '0x461c7B8D370a240DdB46B402748381C3210136b3', // Chainlink official XAG/USD oracle
-      XPT: '0x76631863c2ae7367aF8f37Cd10d251DA7f1DE186', // Chainlink official XPT/USD oracle
+      XAU: '0xff551F4AFDCB6eb1306Bf226b30593393dfb4F95', // Reused VNXAU oracle
+      XAG: '0x969BB0C68F9A4d0F913938c560142Fd476E9Bf05', // Xave XAG/USD "fram" oracle
+      XPT: '0xD33f96C6Edf4a683afc89d206CF4867B5650CF91', // Xave XPT/USD "fram" oracle
+      USD: '0x2d533b895544089F6160f1A8a6c0427c919A4a7f', // Xave Generic USD oracle
     },
     assimilators: {
       'bb-a-usd_USD': '0x04E2a492AACbbaC02164da3EEC6404893cA08998',

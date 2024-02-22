@@ -197,6 +197,7 @@ export type AddressCollection = {
       XAU?: string
       XAG?: string
       XPT?: string
+      USD?: string
     }
     protocolFeesDistributor: string
     balancerProtocolFeeCollector: string
@@ -310,6 +311,8 @@ export type AddressCollection = {
     TXAU?: string
     TXAG?: string
     TXPT?: string
+    USDGLO?: string
+    SBC?: string
   }
   lendingMarket?: {
     protocol: {
