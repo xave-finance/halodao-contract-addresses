@@ -65,11 +65,11 @@ const addresses: AddressCollection = {
       ]
     },
     fxPoolFactory: ZERO_ADDRESS, // jump to fxpool deployer
-    fxPoolDeployer: '0xC11596288F7a827eFC143E657faD5F389abe6f3a',
-    fxPoolDeployerLib: '0xc0b898928aF04269AEf41A1fbA5534a66B03F274',
+    fxPoolDeployer: '0x0bd5EC16658346eeCd5dE8c704a38Efe02B5DA69',
+    fxPoolDeployerLib: '0x18baB048FD880d847b9B1DAC5B110B6f98fD66c7',
     baseAssimilatorTemplate: '0x0ade0b13CD2bd78849a7d074aD04469a32E14106',
-    proportionalLiquidity: '0x3af74d19F50f24C75e4000Fe665d718387b1DA74',
-    assimilatorFactory: '0xB474537769c335BC96cB86DeC70E6C7F36b39b1e',
+    proportionalLiquidity: '0x4b7c29969a7140E51180749Bc1949bCa3fdDb541',
+    assimilatorFactory: '0x0', // replaced by fxPoolDeployer
     swapLibrary: '0xF82fd35163D1383e76ceD09c605DF5DB81439014',
     oracles: {
       USDC: '0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3',
