@@ -194,6 +194,10 @@ export type AddressCollection = {
       ZUSD?: string
       MYR?: string
       IDR?: string
+      XAU?: string
+      XAG?: string
+      XPT?: string
+      USD?: string
     }
     protocolFeesDistributor: string
     balancerProtocolFeeCollector: string
@@ -304,6 +308,11 @@ export type AddressCollection = {
     NEXO?: string
     fxcbETH?: string
     GMT?: string
+    TXAU?: string
+    TXAG?: string
+    TXPT?: string
+    USDGLO?: string
+    SBC?: string
   }
   lendingMarket?: {
     protocol: {
