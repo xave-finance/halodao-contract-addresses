@@ -79,7 +79,8 @@ const fxPools = {
   LP_XSGD_USDC: '0xE6D8FcD23eD4e417d7e9D1195eDf2cA634684e0E',
   LP_BRLA_USDC: '0x427333B9F9D8Bd0B67fd5fC2213371DB0Ef178e1',
   LP_VCHF_USDC: '0x32cc63fFECCb7C0508d64E4d37145313cC053B27',
-  LP_VNXAU_USDC: '0x6Bf004BeE6346852a29239B386aB4239FfbD66dE'
+  LP_VNXAU_USDC: '0x6Bf004BeE6346852a29239B386aB4239FfbD66dE',
+  LP_SBC_USDC: '0xd7523ef67460C88d79eE4a7b135C05b1AF249822',
 }
 
 const poolIds = {
@@ -116,7 +117,9 @@ const poolIds = {
   VCHF_USDC:
     '0x32cc63ffeccb7c0508d64e4d37145313cc053b27000200000000000000000cb4',
   VNXAU_USDC:
-    '0x6bf004bee6346852a29239b386ab4239ffbd66de000200000000000000000cb5'
+    '0x6bf004bee6346852a29239b386ab4239ffbd66de000200000000000000000cb5',
+  SBC_USDC:
+    '0xd7523ef67460c88d79ee4a7b135c05b1af249822000200000000000000000e12'
 }
 
 const addresses: AddressCollection = {
@@ -177,6 +180,11 @@ const addresses: AddressCollection = {
           assets: [tokens.VNXAU, tokens.USDC],
           address: fxPools.LP_VNXAU_USDC,
           poolId: poolIds.VNXAU_USDC
+        },
+        {
+          assets: [tokens.SBC, tokens.USDC],
+          address: fxPools.LP_SBC_USDC,
+          poolId: poolIds.SBC_USDC
         }
       ],
       disabled: [
@@ -277,7 +285,7 @@ const addresses: AddressCollection = {
       XAU: '0xff551F4AFDCB6eb1306Bf226b30593393dfb4F95', // Reused VNXAU oracle
       XAG: '0x969BB0C68F9A4d0F913938c560142Fd476E9Bf05', // Xave XAG/USD "fram" oracle
       XPT: '0xD33f96C6Edf4a683afc89d206CF4867B5650CF91', // Xave XPT/USD "fram" oracle
-      USD: '0x2d533b895544089F6160f1A8a6c0427c919A4a7f', // Xave Generic USD oracle
+      USD: '0x142CA0037eF73AEe701817a1C3eF15dB794d3162', // Xave Generic USD oracle
     },
     assimilators: {
       'bb-a-usd_USD': '0x04E2a492AACbbaC02164da3EEC6404893cA08998',
