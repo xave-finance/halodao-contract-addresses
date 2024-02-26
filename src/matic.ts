@@ -285,7 +285,7 @@ const addresses: AddressCollection = {
       XAU: '0xff551F4AFDCB6eb1306Bf226b30593393dfb4F95', // Reused VNXAU oracle
       XAG: '0x969BB0C68F9A4d0F913938c560142Fd476E9Bf05', // Xave XAG/USD "fram" oracle
       XPT: '0xD33f96C6Edf4a683afc89d206CF4867B5650CF91', // Xave XPT/USD "fram" oracle
-      USD: '0x2d533b895544089F6160f1A8a6c0427c919A4a7f', // Xave Generic USD oracle
+      USD: '0x142CA0037eF73AEe701817a1C3eF15dB794d3162', // Xave Generic USD oracle
     },
     assimilators: {
       'bb-a-usd_USD': '0x04E2a492AACbbaC02164da3EEC6404893cA08998',
