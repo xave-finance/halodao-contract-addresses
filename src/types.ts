@@ -28,6 +28,7 @@ type BoostedPool = {
 
 type Assimilators = {
   USDC_USD?: string
+  USDC_NATIVE_USD?: string
   XSGD_USD?: string
   fxPHP_USD?: string
   tagPHP_USD?: string
@@ -52,6 +53,7 @@ type Assimilators = {
   'EURS_bb-a-usd_USD'?: string
   PHPX_USD?: string
   GBPT_USD?: string
+  XUSD_USD?: string
 }
 
 export type AddressCollection = {
@@ -140,6 +142,7 @@ export type AddressCollection = {
         LP_VNXAU_USDC_INACTIVE?: string
         LP_EUROC_USDC_INACTIVE?: string
         LP_VEUR_USDC_INACTIVE?: string
+        LP_XSGD_XUSD?: string
       }
       allPoolIds: {
         EURS_USDC?: string
@@ -197,6 +200,8 @@ export type AddressCollection = {
       XAU?: string
       XAG?: string
       XPT?: string
+      XUSD?: string
+      USDC_NATIVE?: string
       USD?: string
     }
     protocolFeesDistributor: string
@@ -313,6 +318,8 @@ export type AddressCollection = {
     TXPT?: string
     USDGLO?: string
     SBC?: string
+    XUSD?: string
+    USDC_NATIVE?: string
   }
   lendingMarket?: {
     protocol: {
@@ -373,6 +380,7 @@ export type AddressCollection = {
       LP_XSGD_USDC?: string
       LP_FXPHP_USDC?: string
       LP_EURS_USDC?: string
+      XUSD?: string
     }
     hTokens?: {
       HLP_XSGD_USDC?: string
