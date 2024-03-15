@@ -297,7 +297,7 @@ const addresses: AddressCollection = {
       VCHF_USD: '0xBeB0D490a418e96437b755d4404522ADF054D4E0',
       VEUR_USD: '0x520427FAFdED1aa829922DC4A2BE8fA54B98eCFF',
       USDC_USD: '0xfbdc1B9E50F8607E6649d92542B8c48B2fc49a1a', // from the fxpools deployed
-      USDC_NATIVE_USD: '0xfbdc1B9E50F8607E6649d92542B8c48B2fc49a1a' // from the fxpools deployed
+      USDC_NATIVE_USD: '0x93925d10BcdDbd3551e2EBC9a7a5A093dA4AE2ae' // from the fxpools deployed
     },
     protocolFeesDistributor: '0x06Cc3a57ad3Afc8b9594913468F2F3d41A14a369',
     balancerProtocolFeeCollector: '0xce88686553686DA562CE7Cea497CE749DA109f9F',
