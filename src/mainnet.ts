@@ -192,6 +192,7 @@ const addresses: AddressCollection = {
     fxPoolFactory: '0x81fE9e5B28dA92aE949b705DfDB225f7a7cc5134',
     fxPoolDeployer: '0xfb23Bc0D2629268442CD6521CF4170698967105f',
     fxPoolDeployerLib: '0xCb0b358cF6133aA55B5E4483aD0F4dE511590C77',
+    fxPoolDeployerTracker: '0x9E0d068Ede387888f8A24c92F7486920c200EfD5',
     baseAssimilatorTemplate: '0x6d5040F703c82C6357701934BaF9FDFc9409A972',
     proportionalLiquidity: '0x5E4E3f0413a2E76d093054d672A86f418B1f6333',
     assimilatorFactory: '0x5127fa6aEb261d519B9E843345265e2845dF449D',
