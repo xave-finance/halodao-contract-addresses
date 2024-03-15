@@ -263,6 +263,7 @@ const addresses: AddressCollection = {
     fxPoolFactory: '0x627D759314D5c4007b461A74eBaFA7EBC5dFeD71',
     fxPoolDeployer: '0xF169c1Ae8De24Da43a3dC5c5F05De412b4848bD3',
     fxPoolDeployerLib: '0x9B67696f6335702B46075aE3A99101856934e1bE',
+    fxPoolDeployerTracker: '0xa2fC51a7f5246a718848F5bdAdBc4a78191A8E2a',
     baseAssimilatorTemplate: '0x106fd23aE72Eb9a02Ea2056f2b10F0d32394b003',
     proportionalLiquidity: '0x7C68b34235b1166E121Fbb99c7316C2a3361ba8c',
     // assimilatorFactory: '0x9CB3961ec9E54563602d96D2b3332028aa54dd13', // has the older VNXAU assimilator
