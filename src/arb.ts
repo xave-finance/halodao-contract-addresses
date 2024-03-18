@@ -67,6 +67,7 @@ const addresses: AddressCollection = {
     fxPoolFactory: ZERO_ADDRESS, // jump to fxpool deployer
     fxPoolDeployer: '0x0bd5EC16658346eeCd5dE8c704a38Efe02B5DA69',
     fxPoolDeployerLib: '0x18baB048FD880d847b9B1DAC5B110B6f98fD66c7',
+    fxPoolDeployerTracker: '0xEa0a6fcc52Fcea683f962b6Bfd7f4F93E3804EA8',
     baseAssimilatorTemplate: '0x0ade0b13CD2bd78849a7d074aD04469a32E14106',
     proportionalLiquidity: '0x4b7c29969a7140E51180749Bc1949bCa3fdDb541',
     assimilatorFactory: '0x0', // replaced by fxPoolDeployer

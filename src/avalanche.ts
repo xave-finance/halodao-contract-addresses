@@ -145,6 +145,7 @@ const addresses: AddressCollection = {
     fxPoolFactory: '0x81fE9e5B28dA92aE949b705DfDB225f7a7cc5134',
     fxPoolDeployer: '0x4042dC4110Ea9500338737605A60065c3de152C6',
     fxPoolDeployerLib: '0xd05D8542827E4F534aB408c0ED21782d9FD412De',
+    fxPoolDeployerTracker: '0x7ff7B43CEAc9a1163cCB525ac9Dc1dE9A8837b4B',
     baseAssimilatorTemplate: '0x18FEFd0864BF9CE7Ad254030034Dafe01257FaB2',
     proportionalLiquidity: '0x6e879bd1B36D30eC2F3DC5EE6195c3fCfD24aA2a',
     assimilatorFactory: '0x5127fa6aEb261d519B9E843345265e2845dF449D',
