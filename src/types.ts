@@ -198,8 +198,11 @@ export type AddressCollection = {
       ZUSD?: string
       MYR?: string
       IDR?: string
+      XAUGRAM?: string
       XAU?: string
+      XAGGRAM?: string
       XAG?: string
+      XPTGRAM?: string
       XPT?: string
       XUSD?: string
       USDC_NATIVE?: string
