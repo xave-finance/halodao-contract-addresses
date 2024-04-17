@@ -73,7 +73,7 @@ const addresses: AddressCollection = {
     xRNBW: ZERO_ADDRESS
   },
   rewards: {
-    ammRewards: ZERO_ADDRESS,
+    ammRewards: '0xfF7f7da68caFaB5c1c7E7D784646c750afa016e5',
     rewardsManager: ZERO_ADDRESS,
     epochManager: ZERO_ADDRESS
   },
