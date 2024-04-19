@@ -9,6 +9,7 @@ import goerli from './goerli'
 import sepolia from './sepolia'
 import avalanche from './avalanche'
 import apothem from './apothem'
+import katla from './katla'
 import { AddressCollection } from './types'
 
 export {
@@ -23,5 +24,6 @@ export {
   sepolia,
   avalanche,
   apothem,
+  katla,
   AddressCollection
 }
