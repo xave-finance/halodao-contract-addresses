@@ -74,6 +74,7 @@ const addresses: AddressCollection = {
   },
   rewards: {
     ammRewards: '0xfF7f7da68caFaB5c1c7E7D784646c750afa016e5',
+    EIGHTY_TWENTY_XAV_USDC_WEIGHTED_POOL: '0xEfC4B97cB57e8a09Cba82d20261E78475CefFAAc',
     rewardsManager: ZERO_ADDRESS,
     epochManager: ZERO_ADDRESS
   },

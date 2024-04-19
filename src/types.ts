@@ -72,6 +72,7 @@ export type AddressCollection = {
     ammRewards: string
     rewardsManager?: string
     epochManager?: string
+    EIGHTY_TWENTY_XAV_USDC_WEIGHTED_POOL?: string
   }
   ammV1?: {
     factory: string
