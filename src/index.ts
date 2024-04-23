@@ -10,6 +10,7 @@ import sepolia from './sepolia'
 import avalanche from './avalanche'
 import apothem from './apothem'
 import katla from './katla'
+import artio from './artio'
 import { AddressCollection } from './types'
 
 export {
@@ -25,5 +26,6 @@ export {
   avalanche,
   apothem,
   katla,
+  artio,
   AddressCollection
 }
