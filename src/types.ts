@@ -209,6 +209,7 @@ export type AddressCollection = {
       USDC_NATIVE?: string
       USD?: string
       AUX?: string
+      HONEY?: string
     }
     protocolFeesDistributor: string
     balancerProtocolFeeCollector: string
@@ -327,6 +328,7 @@ export type AddressCollection = {
     XUSD?: string
     USDC_NATIVE?: string
     AUX?: string
+    HONEY?: string
   }
   lendingMarket?: {
     protocol: {
