@@ -209,6 +209,7 @@ export type AddressCollection = {
       USDC_NATIVE?: string
       USD?: string
       AUX?: string
+      COP?: string
     }
     protocolFeesDistributor: string
     balancerProtocolFeeCollector: string
