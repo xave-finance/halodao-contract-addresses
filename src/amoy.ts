@@ -42,7 +42,7 @@ const addresses: AddressCollection = {
     epochManager: ZERO_ADDRESS
   },
   ammV2: {
-    vault: '0xBA12222222228d8Ba445958a75a0704d566BF2C8',
+    vault: '0x58A2a5b6c5Aa29f3D50A2ac957d6C6B9B2b559b8',
     pools: {
       all: fxPools,
       allPoolIds: poolIds,
@@ -68,7 +68,7 @@ const addresses: AddressCollection = {
       hidden: []
     },
     fxPoolFactory: ZERO_ADDRESS,
-    fxPoolDeployer: '0xe5761A142CD8456730CEA61462a02430717e5375',
+    fxPoolDeployer: '0x018CEF7740535a156e0981059ACf19E74A886116',
     fxPoolDeployerLib: ZERO_ADDRESS,
     baseAssimilatorTemplate: '',
     proportionalLiquidity: '',
@@ -78,13 +78,7 @@ const addresses: AddressCollection = {
       USDC: '0x1aF00782F74DdC4c7fCEFe8752113084FEBCDA45', // Chainklink official USDC/USD oracle
       XSGD: '0x254e3D5F964E770F3a51a19d809bcE36308d797d', // Xave mock XSGD/USD oracle
       PHX: '0x3251e99cEf4b9bA03a6434B767aa5Ad11ca6cc31',
-      PHPC: '0x3251e99cEf4b9bA03a6434B767aa5Ad11ca6cc31', // Xave mock PHP/USD oracle
-    },
-    assimilators: {
-      USDC_USD: '',
-      XSGD_USD: '',
-      EURS_USD: '',
-      PHPT_USD: ''
+      PHPC: '0x3251e99cEf4b9bA03a6434B767aa5Ad11ca6cc31' // Xave mock PHP/USD oracle
     },
     // NB: sending to fxpoolOwner address in Sepolia
     protocolFeesDistributor: '',
