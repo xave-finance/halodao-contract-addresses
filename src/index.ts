@@ -1,29 +1,31 @@
-import mainnet from './mainnet'
-import kovan from './kovan'
-import rinkeby from './rinkeby'
+import amoy from './amoy'
+import apothem from './apothem'
 import arb from './arb'
 import arbTestnet from './arbTestnet'
-import matic from './matic'
-import lollidao_mainnet from './lollidao.mainnet'
-import goerli from './goerli'
-import sepolia from './sepolia'
 import avalanche from './avalanche'
-import apothem from './apothem'
+import goerli from './goerli'
 import katla from './katla'
+import kovan from './kovan'
+import lollidao_mainnet from './lollidao.mainnet'
+import mainnet from './mainnet'
+import matic from './matic'
+import rinkeby from './rinkeby'
+import sepolia from './sepolia'
 import { AddressCollection } from './types'
 
 export {
-  mainnet,
-  kovan,
-  rinkeby,
+  AddressCollection,
+  amoy,
+  apothem,
   arb,
   arbTestnet,
-  matic,
-  lollidao_mainnet,
-  goerli,
-  sepolia,
   avalanche,
-  apothem,
+  goerli,
   katla,
-  AddressCollection
+  kovan,
+  lollidao_mainnet,
+  mainnet,
+  matic,
+  rinkeby,
+  sepolia
 }

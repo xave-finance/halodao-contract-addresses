@@ -144,6 +144,9 @@ export type AddressCollection = {
         LP_EUROC_USDC_INACTIVE?: string
         LP_VEUR_USDC_INACTIVE?: string
         LP_XSGD_XUSD?: string
+        XSGD_USDC?: string
+        PHX_USDC?: string
+        PHPC_USDC?: string
       }
       allPoolIds: {
         EURS_USDC?: string
@@ -210,6 +213,8 @@ export type AddressCollection = {
       USD?: string
       AUX?: string
       COP?: string
+      PHX?: string
+      PHPC?: string
     }
     protocolFeesDistributor: string
     balancerProtocolFeeCollector: string
