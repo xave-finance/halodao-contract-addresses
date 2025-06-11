@@ -215,6 +215,7 @@ export type AddressCollection = {
       COP?: string
       PHX?: string
       PHPC?: string
+      PHT?: string
     }
     protocolFeesDistributor: string
     balancerProtocolFeeCollector: string
@@ -333,6 +334,7 @@ export type AddressCollection = {
     XUSD?: string
     USDC_NATIVE?: string
     AUX?: string
+    PHT?: string
   }
   lendingMarket?: {
     protocol: {

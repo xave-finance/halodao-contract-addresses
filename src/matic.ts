@@ -57,7 +57,8 @@ const tokens = {
   TXPT: '0x2e6978ceeA865948f4c5685e35AEC72652e3Cb88',
   USDGLO: '0x4F604735c1cF31399C6E711D5962b2B3E0225AD3',
   SBC: '0xfdcC3dd6671eaB0709A4C0f3F53De9a333d80798',
-  COPM: '0x12050c705152931cFEe3DD56c52Fb09Dea816C23'
+  COPM: '0x12050c705152931cFEe3DD56c52Fb09Dea816C23',
+  PHT: '0xe75220cB014Dfb2D354bb59be26d7458bB8d0706'
 }
 
 const curves = {
@@ -289,7 +290,8 @@ const addresses: AddressCollection = {
       XAGGRAM: '0x969BB0C68F9A4d0F913938c560142Fd476E9Bf05', // Xave XAG/USD "gram" oracle
       XPTGRAM: '0xD33f96C6Edf4a683afc89d206CF4867B5650CF91', // Xave XPT/USD "gram" oracle
       USD: '0x142CA0037eF73AEe701817a1C3eF15dB794d3162', // Xave Generic USD oracle
-      COP: '0xfAA9147190c2C2cc5B8387B4f49016bDB3380572' // Chainklink official COP/USD oracle
+      COP: '0xfAA9147190c2C2cc5B8387B4f49016bDB3380572', // Chainklink official COP/USD oracle
+      PHT: '0x218231089Bebb2A31970c3b77E96eCfb3BA006D1' // Chainklink official PHP/USD oracle
     },
     assimilators: {
       'bb-a-usd_USD': '0x04E2a492AACbbaC02164da3EEC6404893cA08998',
